@@ -8,19 +8,18 @@
 import { BLOCKS } from '../blocks/blocks.js';
 
 const LIVE = 'These are replaced with live numbers: {studies} {replications} {papers} {builds} {firstYear} {lastYear} {span}';
-const EM = 'Wrap words in *asterisks* to set them in the italic accent.';
 
 export const SITE_FIELDS = [
   { type: 'section', label: 'Who you are' },
   { key: 'name', label: 'Name', type: 'text' },
   { key: 'eyebrow', label: 'Line above your name', type: 'tags', hint: 'Short facts, separated by commas' },
-  { key: 'tagline', label: 'Tagline', type: 'text', hint: EM },
-  { key: 'lede', label: 'Sentence under the tagline', type: 'textarea', hint: LIVE },
 
   { type: 'section', label: 'About' },
   { key: 'about', type: 'group', fields: [
-    { key: 'statement', label: 'Opening statement (lights up word by word)', type: 'textarea', hint: EM },
-    { key: 'note', label: 'Second paragraph', type: 'textarea', hint: LIVE },
+    { key: 'title', label: 'Heading', type: 'text', title: true },
+    { key: 'statement', label: 'Opening paragraph (lights up word by word)', type: 'textarea', hint: LIVE },
+    { key: 'looking', label: 'What you are looking for', type: 'textarea', hint: 'For example the kind of role, and when. Leave empty to hide it.' },
+    { key: 'note', label: 'Anything else', type: 'textarea', hint: 'Leave empty to hide it.' },
   ] },
   { key: 'stats', label: 'Big numbers', type: 'list', singular: 'number', title: 'label', item: [
     { key: 'value', label: 'Number', type: 'text', hint: 'A number, or a live one such as {studies}' },
@@ -32,36 +31,32 @@ export const SITE_FIELDS = [
     { key: 'detail', label: 'Minor, honours or focus', type: 'text' },
     { key: 'when', label: 'When', type: 'text' },
   ], blank: { school: '', degree: '', detail: '', when: '' } },
+  { key: 'experience', label: 'Experience', type: 'list', singular: 'role', title: 'role', subtitle: 'org', item: [
+    { key: 'role', label: 'Role', type: 'text' },
+    { key: 'org', label: 'Where', type: 'text' },
+    { key: 'when', label: 'When', type: 'text' },
+    { key: 'text', label: 'What you did, with a number if you have one', type: 'textarea' },
+  ], blank: { role: '', org: '', when: '', text: '' } },
   { key: 'toolkit', label: 'Toolkit', type: 'tags', hint: 'Languages and tools, separated by commas' },
-  { key: 'capabilities', label: 'What you do', type: 'list', singular: 'card', title: 'title', item: [
-    { key: 'title', label: 'Title', type: 'text' },
-    { key: 'text', label: 'Text', type: 'textarea' },
-    { key: 'theme', label: 'Corner drawing', type: 'select', options: ['foundations', 'pricing', 'strategy', 'exclusion', 'measurement', 'regulation', 'macro', 'innovation', 'applied'] },
-  ], blank: { title: '', text: '', theme: 'measurement' } },
 
   { type: 'section', label: 'Section headings' },
   { key: 'sections', type: 'group', fields: [
     { key: 'research', label: 'Research', type: 'group', fields: [
-      { key: 'title', label: 'Heading', type: 'text', hint: EM },
-      { key: 'lede', label: 'Sentence under it', type: 'textarea' },
+      { key: 'title', label: 'Heading', type: 'text', title: true },
+      { key: 'featured', label: 'Heading over the featured studies', type: 'text', title: true },
+      { key: 'index', label: 'Heading over the full list', type: 'text', title: true },
     ] },
-    { key: 'builds', label: 'Lab', type: 'group', fields: [
-      { key: 'title', label: 'Heading', type: 'text', hint: EM },
-      { key: 'lede', label: 'Sentence under it', type: 'textarea' },
-    ] },
-    { key: 'contact', label: 'Contact', type: 'group', fields: [
-      { key: 'title', label: 'Heading', type: 'text', hint: EM },
-      { key: 'text', label: 'Sentence under it', type: 'textarea' },
-    ] },
+    { key: 'builds', label: 'Lab', type: 'group', fields: [{ key: 'title', label: 'Heading', type: 'text', title: true }] },
+    { key: 'contact', label: 'Contact', type: 'group', fields: [{ key: 'title', label: 'Heading', type: 'text', title: true }] },
   ] },
 
   { type: 'section', label: 'How to reach you' },
-  { type: 'note', label: 'Anything left blank is simply not shown. An email address entered here is public.' },
+  { type: 'note', label: 'Anything left blank is not shown. An email address entered here is public.' },
   { key: 'contact', type: 'group', fields: [
-    { key: 'email', label: 'Email', type: 'text', placeholder: 'you@example.com' },
+    { key: 'email', label: 'Email', type: 'text', placeholder: 'you@example.com', plain: true },
     { key: 'linkedin', label: 'LinkedIn', type: 'url', placeholder: 'https://www.linkedin.com/in/…' },
     { key: 'github', label: 'GitHub', type: 'url' },
-    { key: 'resume', label: 'Résumé (a link, or a file path in this repository)', type: 'text', placeholder: 'assets/resume.pdf' },
+    { key: 'resume', label: 'Résumé (a link, or a file path in this repository)', type: 'text', placeholder: 'assets/resume.pdf', plain: true },
   ] },
 
   { type: 'section', label: 'Small print' },
@@ -70,13 +65,13 @@ export const SITE_FIELDS = [
     { key: 'source', label: '"View source" link', type: 'url' },
   ] },
   { key: 'meta', type: 'group', fields: [
-    { key: 'title', label: 'Browser tab title', type: 'text' },
+    { key: 'title', label: 'Browser tab title', type: 'text', plain: true },
     { key: 'description', label: 'Description for search engines and link previews', type: 'textarea' },
   ] },
 ];
 
 export const studyFields = (themes) => [
-  { key: 'title', label: 'Title', type: 'text' },
+  { key: 'title', label: 'Title', type: 'text', title: true },
   { key: 'dek', label: 'The question, in a sentence or two', type: 'textarea' },
   { key: 'finding', label: 'What you found, in one line', type: 'textarea' },
   { key: 'repo', label: 'Repository', type: 'url' },
@@ -108,7 +103,7 @@ export const BUILD_FIELDS = [
 ];
 
 export const PAGE_FIELDS = [
-  { key: 'title', label: 'Title', type: 'text', hint: EM },
+  { key: 'title', label: 'Title', type: 'text', title: true },
   { key: 'eyebrow', label: 'Small label above the title', type: 'text' },
   { key: 'summary', label: 'Summary under the title', type: 'textarea' },
 ];
@@ -132,19 +127,19 @@ export const TEMPLATES = [
       block('text', { body: 'Start with the problem. What was the question, and why was it worth answering?' }),
       block('stats', { items: [{ value: '0', label: 'the headline number' }, { value: '0', label: 'a second number' }, { value: '0', label: 'a third' }] }),
       block('steps', { heading: 'How it was done', items: [{ title: 'First', meta: '', text: 'What you did first.' }, { title: 'Then', meta: '', text: 'What you did next.' }, { title: 'Finally', meta: '', text: 'How it ended.' }] }),
-      block('quote', { text: 'The finding, in *one line.*', cite: '' }),
+      block('quote', { text: 'The finding, in one line.', cite: '' }),
       block('preview', { heading: 'See it' }),
-      block('cta', { title: 'Read the *full study*', label: 'Open the repository', href: '' }),
+      block('cta', { title: 'The full study', label: 'Open the repository', href: '' }),
     ] },
   },
   {
-    id: 'showcase', label: 'Interactive showcase',
+    id: 'showcase', label: 'Interactive page',
     about: 'Puts one of your interactive pages on stage, running live, with the story around it.',
     page: { eyebrow: 'Interactive', summary: 'What this thing is and what to try first.', blocks: [
       block('embed', { url: '', height: 680, caption: 'Use it right here, or open it full size.' }),
       block('text', { heading: 'What you are looking at', body: 'Explain what the page does and how to use it.' }),
       block('cards', { heading: 'How it works', items: [{ label: '01', title: 'The idea', text: 'Why it exists.', theme: 'innovation' }, { label: '02', title: 'The build', text: 'What it is made of.', theme: 'measurement' }, { label: '03', title: 'What I learned', text: 'What you would do differently.', theme: 'macro' }] }),
-      block('cta', { title: 'Open it *full size*', label: 'Open', href: '' }),
+      block('cta', { title: 'Full size', label: 'Open', href: '' }),
     ] },
   },
   {
@@ -172,7 +167,7 @@ export const TEMPLATES = [
       block('steps', { heading: 'Experience', items: [{ title: 'Role, Organisation', meta: '2026 to now', text: 'What you did and what came of it.' }, { title: 'Role, Organisation', meta: '2025', text: 'What you did and what came of it.' }] }),
       block('steps', { heading: 'Education', items: [{ title: 'B.S. Economics, University of Minnesota', meta: 'Class of 2027', text: 'Minor in Statistics.' }] }),
       block('cards', { heading: 'Skills', items: [{ label: 'Methods', title: 'Econometrics', text: '', theme: 'measurement' }, { label: 'Code', title: 'Python, Stata, R', text: '', theme: 'innovation' }, { label: 'Writing', title: 'Plain-English research', text: '', theme: 'pricing' }] }),
-      block('cta', { title: 'Take a *copy*', label: 'Download the PDF', href: '' }),
+      block('cta', { title: 'Résumé as a PDF', label: 'Download', href: '' }),
     ] },
   },
   { id: 'blank', label: 'Blank', about: 'An empty page. Add blocks one at a time.', page: { eyebrow: '', summary: '', blocks: [] } },
@@ -181,7 +176,7 @@ export const TEMPLATES = [
 /** Folder names a page cannot use, because something else already lives there. */
 export const RESERVED = ['assets', 'content', 'studio', 'page', 'index', '404'];
 
-/** Read a study's title, question, year and authors out of its README. */
+/** Read a study's title, question, year, authors and charts out of its README. */
 export function studyFromReadme(markdown, repoUrl) {
   const lines = String(markdown).split('\n').map((l) => l.trim());
   const at = lines.findIndex((l) => l.startsWith('# '));
@@ -197,5 +192,15 @@ export function studyFromReadme(markdown, repoUrl) {
   const heads = lines.filter((l) => l.startsWith('## ')).map((l) => l.slice(3).trim());
   const how = heads.findIndex((t) => /^How I (tested|built|checked|measured|asked)/.test(t));
   const finding = how >= 0 && heads[how + 1] && !/^(Why it matters|Limits|Further)/.test(heads[how + 1]) ? heads[how + 1] : '';
-  return { slug: repoUrl.replace(/\/$/, '').split('/').pop(), title, dek, finding, repo: repoUrl, year, cite, authors: lasts.join(', '), original: !lasts.length };
+  // Every chart the write-up shows, with the caption it was given.
+  const figures = [...String(markdown).matchAll(/!\[([^\]]*)\]\(([^)\s]+)\)/g)]
+    .filter(([, , src]) => !/^https?:/.test(src) && /\.(png|jpe?g|svg)$/i.test(src))
+    .map(([, alt, src]) => ({ src: src.replace(/^\.\//, ''), alt: alt.trim() }));
+  return { slug: repoUrl.replace(/\/$/, '').split('/').pop(), title, dek, finding, repo: repoUrl, year, cite, authors: lasts.join(', '), original: !lasts.length, ...(figures.length ? { figures } : {}) };
+}
+
+/** The citation at the top of a methods review: "**Paper:** …" up to the next item. */
+export function paperFromReview(review) {
+  const m = String(review || '').match(/(?:-\s+)?\*\*Papers?[:.]\*\*([\s\S]*?)(?=\n-\s+\*\*|\n\*\*|\n\n)/);
+  return m ? m[1].replace(/\s+/g, ' ').replace(/[*_`]/g, '').trim() : '';
 }

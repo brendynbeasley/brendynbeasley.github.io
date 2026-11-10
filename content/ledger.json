@@ -1,0 +1,104 @@
+{
+  "note": "Number of studies whose write-up or technical notes use each method or data source. Rebuilt by tools/data.mjs.",
+  "of": 94,
+  "methods": [
+    {
+      "label": "Regression",
+      "n": 83
+    },
+    {
+      "label": "Clustered standard errors",
+      "n": 60
+    },
+    {
+      "label": "Fixed effects",
+      "n": 54
+    },
+    {
+      "label": "Panel data",
+      "n": 38
+    },
+    {
+      "label": "Bootstrap",
+      "n": 18
+    },
+    {
+      "label": "Placebo tests",
+      "n": 8
+    },
+    {
+      "label": "Event studies",
+      "n": 7
+    },
+    {
+      "label": "Instrumental variables",
+      "n": 6
+    },
+    {
+      "label": "Permutation tests",
+      "n": 4
+    },
+    {
+      "label": "Difference-in-differences",
+      "n": 4
+    },
+    {
+      "label": "Monte Carlo simulation",
+      "n": 3
+    }
+  ],
+  "sources": [
+    {
+      "label": "Census Bureau",
+      "n": 50
+    },
+    {
+      "label": "FRED",
+      "n": 41
+    },
+    {
+      "label": "Bureau of Labor Statistics",
+      "n": 26
+    },
+    {
+      "label": "Bureau of Economic Analysis",
+      "n": 22
+    },
+    {
+      "label": "SEC filings",
+      "n": 20
+    },
+    {
+      "label": "Energy Information Administration",
+      "n": 9
+    },
+    {
+      "label": "NBER-CES manufacturing",
+      "n": 7
+    },
+    {
+      "label": "Compustat",
+      "n": 7
+    },
+    {
+      "label": "IRS tax tables",
+      "n": 6
+    },
+    {
+      "label": "Medicare and Medicaid",
+      "n": 5
+    },
+    {
+      "label": "Patent records",
+      "n": 5
+    },
+    {
+      "label": "Airline ticket sample",
+      "n": 4
+    },
+    {
+      "label": "FERC",
+      "n": 3
+    }
+  ]
+}

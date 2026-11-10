@@ -3,7 +3,11 @@
    ========================================================================== */
 
 .phead { position: relative; min-height: 86vh; min-height: 86svh; display: flex; align-items: center; padding-block: calc(var(--bar) + 40px) 60px; }
-.phead > .wrap { width: min(100% - 2 * var(--gutter), var(--max)); }
+.phead::before {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(90deg, color-mix(in srgb, var(--paper) 80%, transparent), color-mix(in srgb, var(--paper) 55%, transparent) 36%, transparent 64%);
+}
+.phead > .wrap { position: relative; width: min(100% - 2 * var(--gutter), var(--max)); }
 .phead__in { max-width: min(54%, 720px); }
 .phead__title { font-size: clamp(44px, 6.6vw, 112px); text-wrap: balance; animation: rise 1.2s var(--e-out) 0.1s both; }
 .phead__summary { margin-top: clamp(16px, 2.6vh, 28px); max-width: 44ch; font-size: clamp(17px, 1.5vw, 21px); color: var(--ink-2); text-wrap: pretty; animation: rise 1.2s var(--e-out) 0.3s both; }
@@ -53,6 +57,9 @@
 .embed figcaption, .picture figcaption, .quote figcaption { margin-top: 14px; }
 .picture img { width: 100%; border: 1px solid var(--rule); border-radius: var(--radius); background: var(--card); }
 
+/* Live exhibits placed on a page */
+.exhibit-slot[data-kind="minnesota"] .mnmap { height: min(78vh, 720px); }
+
 /* Quote and call to action */
 .quote blockquote { font-size: clamp(30px, 4.6vw, 76px); line-height: 1.04; max-width: 20ch; text-wrap: balance; }
 .quote blockquote::before { content: "“"; color: var(--accent); margin-left: -0.42em; }
@@ -62,7 +69,7 @@
 .cta p { max-width: 50ch; font-size: 18px; }
 
 /* The end of a page */
-.pend { position: relative; min-height: 84vh; min-height: 84svh; display: flex; align-items: flex-start; padding-top: clamp(30px, 6vh, 70px); border-top: 1px solid var(--rule); }
+.pend { position: relative; min-height: 70vh; min-height: 70svh; display: flex; align-items: flex-start; padding-top: clamp(30px, 6vh, 70px); border-top: 1px solid var(--rule); }
 .pend > .wrap { width: min(100% - 2 * var(--gutter), var(--max)); display: grid; gap: 14px; }
 .pend__link { display: inline-flex; align-items: center; gap: 0.3em; width: fit-content; font-size: clamp(38px, 5.6vw, 92px); text-decoration: none; }
 .pend__link .ico { font-size: 0.5em; color: var(--accent); transition: transform 0.6s var(--e-out); }

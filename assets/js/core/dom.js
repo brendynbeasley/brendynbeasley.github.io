@@ -7,7 +7,7 @@ export const $ = (sel, root = document) => root.querySelector(sel);
 export const $$ = (sel, root = document) => [...root.querySelectorAll(sel)];
 
 const SVG_NS = 'http://www.w3.org/2000/svg';
-const SVG_TAGS = new Set(['svg', 'path', 'circle', 'line', 'polyline', 'rect', 'g', 'defs', 'text']);
+const SVG_TAGS = new Set(['svg', 'path', 'circle', 'line', 'polyline', 'rect', 'g', 'defs', 'text', 'pattern', 'clipPath', 'title']);
 
 /**
  * h('a.btn', { href }, 'Open', icon('arrow'))

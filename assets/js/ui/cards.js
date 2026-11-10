@@ -1,7 +1,7 @@
 /**
  * cards.js — the two kinds of box that hold things on this site.
  *
- *   StudyCard   a "plate": a research study, with its question and its finding.
+ *   StudyCard   a "plate": a research study, with its question, a chart and its finding.
  *   WindowCard  a browser window: a linked page, with a preview of the page.
  *
  * Both take a plain object straight from the content files and return a DOM node.
@@ -20,15 +20,19 @@ export class StudyCard {
   render(i = 0) {
     const s = this.study;
     const asked = s.original ? `${s.cite} · ${s.year}` : `Asked in ${s.year} · ${s.authors || s.cite}`;
-    return h('a.plate.study', { ...linkAttrs(s.url || s.repo), 'data-reveal': 'wipe', style: { '--i': i % 2 } },
+    const chart = s.figures?.[0];
+    const raw = (s.repo || '').replace('https://github.com/', 'https://raw.githubusercontent.com/');
+    return h('a.plate.study', { ...linkAttrs(s.url || s.repo), 'data-study': s.slug, 'data-reveal': 'wipe', style: { '--i': i % 2 } },
       h('div.plate__head',
         h('span.label', asked),
         glyph(s.theme, s.slug)),
       h('h3.plate__title', s.title),
       h('p.plate__text', s.dek),
+      // The first chart from the study's own write-up, loaded from its repository.
+      chart && h('div.study__chart', h('img', { src: `${raw}/HEAD/${chart.src}`, alt: chart.alt || `Chart from ${s.title}`, loading: 'lazy', decoding: 'async' })),
       s.finding && h('p.study__found', h('span.label', 'Found'), h('span', s.finding)),
       h('div.plate__foot',
-        h('span.plate__go', s.original ? 'Open the project' : 'Read the study', icon('arrow')),
+        h('span.plate__go', 'Open', icon('arrow')),
         this.theme && h('span.label', this.theme.label)));
   }
 }

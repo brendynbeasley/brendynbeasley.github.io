@@ -57,12 +57,14 @@ export class Store {
 
   /** Load the files every page needs, and work out the numbers quoted in the copy. */
   static async site() {
-    const [site, research, builds, pages, literature] = await Promise.all([
+    const [site, research, builds, pages, literature, ledger, cournot] = await Promise.all([
       Store.json('content/site.json'),
       Store.json('content/research.json'),
       Store.json('content/builds.json'),
       Store.json('content/pages.json'),
       Store.json('content/literature.json', { optional: true }),
+      Store.json('content/ledger.json', { optional: true }),
+      Store.json('content/data/cournot.json', { optional: true }),
     ]);
     const studies = research.items || [];
     const replications = studies.filter((s) => !s.original);
@@ -70,13 +72,15 @@ export class Store {
     const facts = {
       studies: studies.length,
       replications: replications.length,
-      builds: (builds.items || []).length,
+      originals: studies.length - replications.length,
+      featured: studies.filter((s) => s.featured).length,
+      builds: (builds.items || []).filter((b) => !b.draft).length,
       papers: literature?.total ?? 0,
       firstYear: years.length ? Math.min(...years) : '',
       lastYear: years.length ? Math.max(...years) : '',
     };
     facts.span = facts.lastYear && facts.firstYear ? facts.lastYear - facts.firstYear : 0;
-    return { site, research, builds, pages, literature, facts };
+    return { site, research, builds, pages, literature, ledger, cournot, facts };
   }
 
   /**

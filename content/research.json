@@ -57,7 +57,22 @@
       "authors": "Cournot",
       "cite": "Cournot (1838)",
       "finding": "The first generic takes off about 30%, close to Cournot's prediction",
-      "featured": true
+      "featured": true,
+      "figures": [
+        {
+          "src": "results/price_by_sellers.png",
+          "alt": "Generic price by number of sellers"
+        },
+        {
+          "src": "results/within_product.png",
+          "alt": "Within-product price by number of sellers"
+        }
+      ],
+      "paper": "Cournot, A. A. (1838). Recherches sur les principes mathématiques de la théorie des richesses. Paris: L. Hachette. English translation by N. T. Bacon, Researches into the Mathematical Principles of the Theory of Wealth, New York and London: Macmillan, 1897.",
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ]
     },
     {
       "slug": "what-the-traffic-will-bear",
@@ -68,7 +83,22 @@
       "year": 1920,
       "authors": "Pigou",
       "cite": "Pigou (1920)",
-      "finding": "Valuable goods do not carry the markups Pigou predicted"
+      "finding": "Valuable goods do not carry the markups Pigou predicted",
+      "figures": [
+        {
+          "src": "results/value_vs_markup.png",
+          "alt": "Rail markups against the value of the goods"
+        },
+        {
+          "src": "results/band_shares.png",
+          "alt": "Revenue by R/VC zone within each commodity"
+        }
+      ],
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ],
+      "paper": "A. C. Pigou, The Economics of Welfare, London: Macmillan, 1920. Part II, chapter XIV, \"Discriminating Monopoly\" (pp. 240–255); chapter XV, \"The Special Problem of Railway Rates\" (pp. 256–282); Appendix III, § 24 (pp. 951–952). Chapters XVII and XVIII in the fourth edition (1932)."
     },
     {
       "slug": "short-of-orders",
@@ -79,7 +109,22 @@
       "year": 1926,
       "authors": "Sraffa",
       "cite": "Sraffa (1926)",
-      "finding": "Three in four factories running below capacity are short of orders"
+      "finding": "Three in four factories running below capacity are short of orders",
+      "figures": [
+        {
+          "src": "results/qpc_reasons.png",
+          "alt": "Why US factories produced less than they could, 2013-2026"
+        },
+        {
+          "src": "results/size_cost_profile.png",
+          "alt": "Unit cost by plant size"
+        }
+      ],
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ],
+      "paper": "Piero Sraffa, \"The Laws of Returns under Competitive Conditions,\" Economic Journal 36(144), December 1926, pp. 535–550. A first footnote states that the opening pages summarize the conclusions of the author's Italian paper \"Relazioni fra costo e quantità prodotta,\" Annali di Economia, Vol. II."
     },
     {
       "slug": "the-price-of-a-stamp",
@@ -90,7 +135,22 @@
       "year": 1927,
       "authors": "Ramsey",
       "cite": "Ramsey (1927)",
-      "finding": "Postal markups do not follow Ramsey's rule"
+      "finding": "Postal markups do not follow Ramsey's rule",
+      "figures": [
+        {
+          "src": "results/markup_vs_elasticity.png",
+          "alt": "Markup against inverse elasticity"
+        },
+        {
+          "src": "results/ramsey_prices.png",
+          "alt": "Ramsey price changes by product"
+        }
+      ],
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ],
+      "paper": "F. P. Ramsey, \"A Contribution to the Theory of Taxation,\" The Economic Journal 37(145), March 1927, pp. 47–61. Read alongside its usual companion, M. Boiteux, \"Sur la gestion des monopoles publics astreints à l'équilibre budgétaire,\" Econometrica 24(1), 1956, pp. 22–40."
     },
     {
       "slug": "excessive-sameness",
@@ -101,7 +161,22 @@
       "year": 1929,
       "authors": "Hotelling",
       "cite": "Hotelling (1929)",
-      "finding": "Small stores sit beside their rivals"
+      "finding": "Small stores sit beside their rivals",
+      "figures": [
+        {
+          "src": "results/colocation_ratios.png",
+          "alt": "Co-location of rival chains relative to chance"
+        },
+        {
+          "src": "results/party_medians.png",
+          "alt": "Party medians in Congress"
+        }
+      ],
+      "paper": "Harold Hotelling, \"Stability in Competition,\" Economic Journal 39(153), March 1929, pp. 41–57.",
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ]
     },
     {
       "slug": "market-power-without-profit",
@@ -112,7 +187,22 @@
       "year": 1933,
       "authors": "Chamberlin",
       "cite": "Chamberlin (1933)",
-      "finding": "Restaurants, salons and garages have pricing power and almost nothing left over"
+      "finding": "Restaurants, salons and garages have pricing power and almost nothing left over",
+      "figures": [
+        {
+          "src": "results/margin_vs_profit.png",
+          "alt": "Margin over variable cost and economic profit by industry"
+        },
+        {
+          "src": "results/shop_size_by_city_size.png",
+          "alt": "Establishment size and city size, by trade"
+        }
+      ],
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ],
+      "paper": "Edward Hastings Chamberlin, The Theory of Monopolistic Competition: A Re-orientation of the Theory of Value, Harvard Economic Studies vol. 38, Cambridge, MA: Harvard University Press, 1933. The copyright page of the 1948 sixth edition lists the years 1933, 1937, 1938, 1942, 1946 and 1948."
     },
     {
       "slug": "who-pays-full-price",
@@ -123,7 +213,22 @@
       "year": 1933,
       "authors": "Robinson",
       "cite": "Robinson (1933)",
-      "finding": "The most selective colleges charge the widest price gaps"
+      "finding": "The most selective colleges charge the widest price gaps",
+      "figures": [
+        {
+          "src": "results/discount_vs_admit.png",
+          "alt": "Income discount against admission rate"
+        },
+        {
+          "src": "results/output_pell_vs_discount.png",
+          "alt": "Pell share against income discount"
+        }
+      ],
+      "paper": "Joan Robinson, The Economics of Imperfect Competition, London, Macmillan, 1933. The review covers Book V, chapter 15 (\"Price Discrimination,\" pp. 179–202) and chapter 16 (\"The Moral of Price Discrimination,\" pp. 203–208), with the two formulas from Book I, chapter 2 (p. 36) and Book II, chapter 3 (p. 64) on which they rest.",
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ]
     },
     {
       "slug": "the-price-cost-gap",
@@ -134,7 +239,22 @@
       "year": 1934,
       "authors": "Lerner",
       "cite": "Lerner (1934)",
-      "finding": "A wide gap is common, and most of it is spent"
+      "finding": "A wide gap is common, and most of it is spent",
+      "figures": [
+        {
+          "src": "results/lerner_vs_margin.png",
+          "alt": "Lerner index against operating margin, 83 US industries"
+        },
+        {
+          "src": "results/lerner_trend.png",
+          "alt": "Lerner index over time, BEA and public companies"
+        }
+      ],
+      "paper": "Lerner, A. P. (1934). \"The Concept of Monopoly and the Measurement of Monopoly Power.\" Review of Economic Studies 1(3): 157–175 (issue dated June 1934). doi:10.2307/2967480.",
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ]
     },
     {
       "slug": "the-quiet-life",
@@ -145,7 +265,22 @@
       "year": 1935,
       "authors": "Hicks",
       "cite": "Hicks (1935)",
-      "finding": "Concentrated industries carry a wider spread in output per hour"
+      "finding": "Concentrated industries carry a wider spread in output per hour",
+      "figures": [
+        {
+          "src": "results/dispersion_vs_concentration.png",
+          "alt": "Productivity spread against concentration, 2017"
+        },
+        {
+          "src": "results/consolidation_scatter.png",
+          "alt": "Change in concentration against change in TFP spread"
+        }
+      ],
+      "paper": "Hicks, J. R. (1935). \"Annual Survey of Economic Theory: The Theory of Monopoly.\" Econometrica 3(1), January 1935, pp. 1–20. Author's affiliation as printed at the end of the article: London School of Economics.",
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ]
     },
     {
       "slug": "the-perennial-gale",
@@ -156,7 +291,26 @@
       "year": 1942,
       "authors": "Schumpeter",
       "cite": "Schumpeter (1942)",
-      "finding": "Concentrated industries raised productivity faster"
+      "finding": "Concentrated industries raised productivity faster",
+      "figures": [
+        {
+          "src": "results/tfp_by_quintile.png",
+          "alt": "TFP growth by concentration quintile"
+        },
+        {
+          "src": "results/price_in_hours.png",
+          "alt": "Price in hours of labor against concentration"
+        },
+        {
+          "src": "results/persistence.png",
+          "alt": "Concentration in 2002 and 2022"
+        }
+      ],
+      "paper": "Joseph A. Schumpeter, Capitalism, Socialism and Democracy. New York: Harper & Brothers, 1942. Chapters 7 (\"The Process of Creative Destruction\") and 8 (\"Monopolistic Practices\"), with chapter 5 (\"The Rate of Increase of Total Output\") for the growth figures the argument builds on.",
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ]
     },
     {
       "slug": "bain-1951-revisited",
@@ -167,7 +321,20 @@
       "year": 1951,
       "authors": "Bain",
       "cite": "Bain (1951)",
-      "finding": "Concentrated industries no longer earn more"
+      "finding": "Concentrated industries no longer earn more",
+      "figures": [
+        {
+          "src": "results/markup_trend.png",
+          "alt": "Markups in US manufacturing, 2013–2025"
+        },
+        {
+          "src": "results/changes_scatter.png",
+          "alt": "Concentration changes vs. profit changes"
+        }
+      ],
+      "docs": [
+        "TECHNICAL.md"
+      ]
     },
     {
       "slug": "room-for-one-more-plant",
@@ -178,7 +345,22 @@
       "year": 1958,
       "authors": "Modigliani",
       "cite": "Modigliani (1958)",
-      "finding": "Big plants go with concentrated industries"
+      "finding": "Big plants go with concentrated industries",
+      "figures": [
+        {
+          "src": "results/margin_vs_scale_2022.png",
+          "alt": "Scale barrier and price-cost margin, 2022"
+        },
+        {
+          "src": "results/changes_scatter.png",
+          "alt": "Within-industry changes, 2017 to 2022"
+        }
+      ],
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ],
+      "paper": "Franco Modigliani, \"New Developments on the Oligopoly Front,\" Journal of Political Economy 66(3), June 1958, pp. 215–232."
     },
     {
       "slug": "the-rate-base-bias",
@@ -189,7 +371,22 @@
       "year": 1962,
       "authors": "Averch, Johnson",
       "cite": "Averch & Johnson (1962)",
-      "finding": "Regulated utilities spent twice as much capital per kilowatt"
+      "finding": "Regulated utilities spent twice as much capital per kilowatt",
+      "figures": [
+        {
+          "src": "results/capital_vs_exit.png",
+          "alt": "New control capital and coal exits by ownership group"
+        },
+        {
+          "src": "results/wedge_over_time.png",
+          "alt": "Earned return on equity vs. market yields"
+        }
+      ],
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ],
+      "paper": "Harvey Averch and Leland L. Johnson, \"Behavior of the Firm Under Regulatory Constraint,\" American Economic Review 52(5), December 1962, pp. 1052–1069. Circulated as RAND Corporation paper P-2488-1, \"Behavior of the Firm Subject to External Regulatory Constraint.\""
     },
     {
       "slug": "the-replacement-effect",
@@ -200,7 +397,22 @@
       "year": 1962,
       "authors": "Arrow",
       "cite": "Arrow (1962)",
-      "finding": "Concentrated industries do not spend less on research"
+      "finding": "Concentrated industries do not spend less on research",
+      "figures": [
+        {
+          "src": "results/rd_vs_concentration.png",
+          "alt": "R&D intensity against four-firm concentration, 2017 and 2022"
+        },
+        {
+          "src": "results/changes_scatter.png",
+          "alt": "Changes in concentration and R&D intensity, 2017 to 2022"
+        }
+      ],
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ],
+      "paper": "Kenneth J. Arrow, \"Economic Welfare and the Allocation of Resources for Invention,\" in Universities-National Bureau Committee for Economic Research, The Rate and Direction of Inventive Activity: Economic and Social Factors, Princeton University Press for the National Bureau of Economic Research, 1962, pp. 609–626 (with a comment by C. J. Hitch, pp. 625–626)."
     },
     {
       "slug": "the-secret-price-cut",
@@ -211,7 +423,22 @@
       "year": 1964,
       "authors": "Stigler",
       "cite": "Stigler (1964)",
-      "finding": "Moderately concentrated industries sit a few points above average"
+      "finding": "Moderately concentrated industries sit a few points above average",
+      "figures": [
+        {
+          "src": "results/stigler_form.png",
+          "alt": "Price-cost ratio by concentration band"
+        },
+        {
+          "src": "results/margins_by_buyer.png",
+          "alt": "Margins against concentration for producer and consumer goods, 2022"
+        }
+      ],
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ],
+      "paper": "George J. Stigler, \"A Theory of Oligopoly,\" Journal of Political Economy 72(1), February 1964, pp. 44–61 (DOI 10.1086/258853). Reprinted as chapter 5 of Stigler, The Organization of Industry (Homewood, Ill.: Richard D. Irwin, 1968), pp. 39–63."
     },
     {
       "slug": "the-tariff-lobby",
@@ -222,7 +449,18 @@
       "year": 1967,
       "authors": "Tullock",
       "cite": "Tullock (1967)",
-      "finding": "Lobbying about tariffs rose with the tariffs, and a step ahead of them"
+      "finding": "Lobbying about tariffs rose with the tariffs, and a step ahead of them",
+      "figures": [
+        {
+          "src": "results/tariff_lobbying.png",
+          "alt": "Lobbying reports mentioning tariffs and customs duties, 2008–2026"
+        }
+      ],
+      "paper": "Gordon Tullock, \"The Welfare Costs of Tariffs, Monopolies, and Theft,\" Western Economic Journal 5(3), June 1967, pp. 224–232.",
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ]
     },
     {
       "slug": "bidding-for-the-bus",
@@ -233,7 +471,22 @@
       "year": 1968,
       "authors": "Demsetz",
       "cite": "Demsetz (1968)",
-      "finding": "Contracted service costs about a fifth less inside the same agency"
+      "finding": "Contracted service costs about a fifth less inside the same agency",
+      "figures": [
+        {
+          "src": "results/inhouse_vs_contract_2025.png",
+          "alt": "In-house vs contracted cost per hour, 2025"
+        },
+        {
+          "src": "results/williamson_drift.png",
+          "alt": "The gap by year, and cost per hour around a switch"
+        }
+      ],
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ],
+      "paper": "Harold Demsetz, \"Why Regulate Utilities?\" Journal of Law and Economics 11(1), April 1968, pp. 55–65."
     },
     {
       "slug": "when-the-patent-runs-out",
@@ -244,7 +497,26 @@
       "year": 1969,
       "authors": "Nordhaus",
       "cite": "Nordhaus (1969)",
-      "finding": "Nordhaus's table still comes out of his formula"
+      "finding": "Nordhaus's table still comes out of his formula",
+      "figures": [
+        {
+          "src": "results/event_path.png",
+          "alt": "Price and pills around generic entry"
+        },
+        {
+          "src": "results/optimal_life_curve.png",
+          "alt": "Optimal life as a function of x"
+        },
+        {
+          "src": "results/effective_life.png",
+          "alt": "Effective exclusivity"
+        }
+      ],
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ],
+      "paper": "William D. Nordhaus, Invention, Growth, and Welfare: A Theoretical Treatment of Technological Change, MIT Press, 1969 (MIT Monographs in Economics 10). The optimal-patent-life analysis reviewed here is the version circulated as William D. Nordhaus, \"The Optimal Life of a Patent,\" Cowles Foundation Discussion Paper No. 241, Yale University, November 27, 1967 (38 pages)."
     },
     {
       "slug": "who-gets-licensed",
@@ -255,7 +527,22 @@
       "year": 1971,
       "authors": "Stigler",
       "cite": "Stigler (1971)",
-      "finding": "Stigler's trucking regression reproduces from his own appendix"
+      "finding": "Stigler's trucking regression reproduces from his own appendix",
+      "figures": [
+        {
+          "src": "results/trucks_rail_haul.png",
+          "alt": "Rail haul and truck weight limits, 1932–33"
+        },
+        {
+          "src": "results/lic_earnings_scatter.png",
+          "alt": "License share against earnings, 2024"
+        }
+      ],
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ],
+      "paper": "George J. Stigler, \"The Theory of Economic Regulation,\" Bell Journal of Economics and Management Science 2(1), Spring 1971, pp. 3–21."
     },
     {
       "slug": "coase-durability-monopoly",
@@ -267,7 +554,20 @@
       "authors": "Coase",
       "cite": "Coase (1972)",
       "finding": "Concentration pays for goods that get used up, not for goods that last",
-      "featured": true
+      "featured": true,
+      "figures": [
+        {
+          "src": "figures/fig5_concentration_margins.png",
+          "alt": "Concentration and margins by product type"
+        },
+        {
+          "src": "figures/fig9_between_within.png",
+          "alt": "Comparing industries with each other and with themselves"
+        }
+      ],
+      "docs": [
+        "TECHNICAL.md"
+      ]
     },
     {
       "slug": "big-firms-small-firms",
@@ -278,7 +578,26 @@
       "year": 1973,
       "authors": "Demsetz",
       "cite": "Demsetz (1973)",
-      "finding": "The largest firms no longer stand apart in concentrated industries"
+      "finding": "The largest firms no longer stand apart in concentrated industries",
+      "figures": [
+        {
+          "src": "results/size_returns_by_concentration.png",
+          "alt": "Returns by size and concentration, 1963 and 2012"
+        },
+        {
+          "src": "results/gap_vs_concentration.png",
+          "alt": "Large-firm advantage against concentration, 2012"
+        },
+        {
+          "src": "results/leaders_gap_by_cr4.png",
+          "alt": "Payroll share, top four against the rest, 2022"
+        }
+      ],
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ],
+      "paper": "Harold Demsetz, \"Industry Structure, Market Rivalry, and Public Policy,\" Journal of Law and Economics 16(1), April 1973, pp. 1–9 (JSTOR stable URL jstor.org/stable/724822)."
     },
     {
       "slug": "where-the-rent-goes",
@@ -289,7 +608,22 @@
       "year": 1975,
       "authors": "Posner",
       "cite": "Posner (1975)",
-      "finding": "Posner's printed costs subtract the triangle he meant to add"
+      "finding": "Posner's printed costs subtract the triangle he meant to add",
+      "figures": [
+        {
+          "src": "results/sugar_premium.png",
+          "alt": "US and world raw sugar prices, 1980–2025"
+        },
+        {
+          "src": "results/broker_entry.png",
+          "alt": "Agents per sale against home prices, 2023"
+        }
+      ],
+      "paper": "Richard A. Posner, \"The Social Costs of Monopoly and Regulation,\" Journal of Political Economy 83(4), August 1975, pp. 807–827.",
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ]
     },
     {
       "slug": "bundling-the-snack-aisle",
@@ -300,7 +634,26 @@
       "year": 1976,
       "authors": "Adams, Yellen",
       "cite": "Adams & Yellen (1976)",
-      "finding": "Selling two snacks as one pays in 60% of pairs, and only a little"
+      "finding": "Selling two snacks as one pays in 60% of pairs, and only a little",
+      "figures": [
+        {
+          "src": "results/gain_vs_corr.png",
+          "alt": "Profit gain from bundling against the correlation of bids, 1,770 pairs"
+        },
+        {
+          "src": "results/cost_scan.png",
+          "alt": "Share of pairs where pure bundling beats separate prices, by cost"
+        },
+        {
+          "src": "results/big_bundles.png",
+          "alt": "Share of surplus captured as bundles grow, actual and shuffled bids"
+        }
+      ],
+      "paper": "William James Adams and Janet L. Yellen, \"Commodity Bundling and the Burden of Monopoly,\" Quarterly Journal of Economics 90(3), August 1976, pp. 475–498. DOI 10.2307/1886045. Adams was at the University of Michigan and Yellen at Harvard University when it appeared.",
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ]
     },
     {
       "slug": "capacity-as-a-threat",
@@ -311,7 +664,22 @@
       "year": 1977,
       "authors": "Spence, Dixit",
       "cite": "Spence (1977), Dixit (1980)",
-      "finding": "Concentrated, capital-heavy industries run fuller, not emptier"
+      "finding": "Concentrated, capital-heavy industries run fuller, not emptier",
+      "figures": [
+        {
+          "src": "results/utilization_vs_concentration.png",
+          "alt": "Utilization against concentration, 2015-2019"
+        },
+        {
+          "src": "results/openings_vs_utilization.png",
+          "alt": "Openings by new firms and incumbents against utilization two years earlier"
+        }
+      ],
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ],
+      "paper": "A. Michael Spence, \"Entry, Capacity, Investment and Oligopolistic Pricing,\" Bell Journal of Economics 8(2), Autumn 1977, pp. 534–544 (DOI 10.2307/3003302). Read with its companion and correction, Avinash Dixit, \"The Role of Investment in Entry-Deterrence,\" Economic Journal 90(357), March 1980, pp. 95–106 (DOI 10.2307/2231658)."
     },
     {
       "slug": "the-constant-markup",
@@ -322,7 +690,22 @@
       "year": 1977,
       "authors": "Spence, Dixit, Stiglitz",
       "cite": "Dixit & Stiglitz (1977)",
-      "finding": "Foreign sellers pass on about a fifth of a currency move"
+      "finding": "Foreign sellers pass on about a fifth of a currency move",
+      "figures": [
+        {
+          "src": "results/passthrough_by_horizon.png",
+          "alt": "Pass-through by horizon"
+        },
+        {
+          "src": "results/japan_yen_vs_prices.png",
+          "alt": "The yen and the dollar prices of goods from Japan"
+        }
+      ],
+      "paper": "Avinash K. Dixit and Joseph E. Stiglitz, \"Monopolistic Competition and Optimum Product Diversity,\" American Economic Review 67(3), June 1977, pp. 297–308; read together with A. Michael Spence, \"Product Selection, Fixed Costs, and Monopolistic Competition,\" Review of Economic Studies 43(2), June 1976, pp. 217–235.",
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ]
     },
     {
       "slug": "the-octane-markup",
@@ -333,7 +716,22 @@
       "year": 1978,
       "authors": "Mussa, Rosen",
       "cite": "Mussa & Rosen (1978)",
-      "finding": "Premium carries a bigger margin than regular in 96% of months"
+      "finding": "Premium carries a bigger margin than regular in 96% of months",
+      "figures": [
+        {
+          "src": "results/fig_spreads.png",
+          "alt": "Retail and wholesale premium spreads, 1995 to 2026"
+        },
+        {
+          "src": "results/fig_ratio_share.png",
+          "alt": "Ratio of retail to wholesale premium spreads, and premium's share of gallons and new models"
+        }
+      ],
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ],
+      "paper": "Michael Mussa and Sherwin Rosen, \"Monopoly and Product Quality,\" Journal of Economic Theory 18(2), August 1978, pp. 301–317. DOI 10.1016/0022-0531(78)90085-6."
     },
     {
       "slug": "the-patient-gamer",
@@ -344,7 +742,22 @@
       "year": 1979,
       "authors": "Stokey",
       "cite": "Stokey (1979)",
-      "finding": "Most list prices hold for a year, and many hold for good"
+      "finding": "Most list prices hold for a year, and many hold for good",
+      "figures": [
+        {
+          "src": "results/fig_price_paths.png",
+          "alt": "Price paths after release"
+        },
+        {
+          "src": "results/fig_waiting.png",
+          "alt": "Launch share against publisher record"
+        }
+      ],
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ],
+      "paper": "Nancy L. Stokey, \"Intertemporal Price Discrimination,\" Quarterly Journal of Economics 93(3), August 1979, pp. 355–371 (DOI 10.2307/1883163). Companion: Nancy L. Stokey, \"Rational Expectations and Durable Goods Pricing,\" Bell Journal of Economics 12(1), Spring 1981, pp. 112–128."
     },
     {
       "slug": "what-a-kilowatt-costs",
@@ -355,7 +768,22 @@
       "year": 1979,
       "authors": "Loeb, Magat",
       "cite": "Loeb & Magat (1979)",
-      "finding": "Nearly every utility charges households far more than a kilowatt-hour costs"
+      "finding": "Nearly every utility charges households far more than a kilowatt-hour costs",
+      "figures": [
+        {
+          "src": "results/price_vs_mc.png",
+          "alt": "Residential prices against marginal cost by hub"
+        },
+        {
+          "src": "results/class_markups.png",
+          "alt": "Lerner index by class within each utility"
+        }
+      ],
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ],
+      "paper": "Martin Loeb and Wesley A. Magat, \"A Decentralized Method for Utility Regulation,\" Journal of Law and Economics 22(2), October 1979, pp. 399–404, DOI 10.1086/466949. Read alongside its companion, Ingo Vogelsang and Jörg Finsinger, \"A Regulatory Adjustment Process for Optimal Pricing by Multiproduct Monopoly Firms,\" Bell Journal of Economics 10(1), 1979, pp. 157–171."
     },
     {
       "slug": "the-netflix-price-gap",
@@ -366,7 +794,22 @@
       "year": 1981,
       "authors": "Schmalensee",
       "cite": "Schmalensee (1981)",
-      "finding": "With straight-line demand, one Netflix price would leave subscribers unchanged and the world $2 billion better off"
+      "finding": "With straight-line demand, one Netflix price would leave subscribers unchanged and the world $2 billion better off",
+      "figures": [
+        {
+          "src": "results/netflix_demand_2024.png",
+          "alt": "Netflix 2024 regional demand curves and the single price"
+        },
+        {
+          "src": "results/curvature_scan.png",
+          "alt": "How the answer depends on the shape of demand"
+        }
+      ],
+      "paper": "Schmalensee, Richard. 1981. \"Output and Welfare Implications of Monopolistic Third-Degree Price Discrimination.\" American Economic Review 71(1): 242–247. Circulated earlier as MIT Sloan School of Management Working Paper 1095-80, January 1980.",
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ]
     },
     {
       "slug": "a-reputation-for-fighting",
@@ -377,7 +820,18 @@
       "year": 1982,
       "authors": "Milgrom, Roberts, Kreps, Wilson",
       "cite": "Kreps & Wilson (1982)",
-      "finding": "Incumbents cut fares by about 6% and kept their passengers"
+      "finding": "Incumbents cut fares by about 6% and kept their passengers",
+      "figures": [
+        {
+          "src": "results/event_time.png",
+          "alt": "Incumbent fare and passengers around entry"
+        }
+      ],
+      "paper": "Paul Milgrom and John Roberts, \"Predation, Reputation, and Entry Deterrence,\" Journal of Economic Theory 27(2), August 1982, pp. 280–312. Companion paper: David M. Kreps and Robert Wilson, \"Reputation and Imperfect Information,\" Journal of Economic Theory 27(2), August 1982, pp. 253–279.",
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ]
     },
     {
       "slug": "the-cigarette-tax-test",
@@ -388,7 +842,22 @@
       "year": 1982,
       "authors": "Bresnahan",
       "cite": "Bresnahan (1982)",
-      "finding": "The same pass-through gives opposite answers"
+      "finding": "The same pass-through gives opposite answers",
+      "figures": [
+        {
+          "src": "results/conduct_estimates.png",
+          "alt": "Three estimates of cigarette conduct"
+        },
+        {
+          "src": "results/levels_vs_margins.png",
+          "alt": "Net-of-tax price and rolling conduct estimates"
+        }
+      ],
+      "paper": "Bresnahan, Timothy F. 1982. \"The Oligopoly Solution Concept Is Identified.\" Economics Letters 10(1–2): 87–92. Companion survey named in the reading list: Bresnahan, T. F. 1989. \"Empirical Studies of Industries with Market Power.\" In Handbook of Industrial Organization, Vol. 2, ch. 17. North-Holland.",
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ]
     },
     {
       "slug": "rent-or-sell",
@@ -399,7 +868,21 @@
       "year": 1982,
       "authors": "Bulow",
       "cite": "Bulow (1982)",
-      "finding": "Renting lives almost entirely in durable final goods"
+      "finding": "Renting lives almost entirely in durable final goods",
+      "figures": [
+        {
+          "src": "results/rent_share_vs_cr4.png",
+          "alt": "Rent share and concentration across 63 manufacturing industries"
+        },
+        {
+          "src": "results/giants_vs_rest_2013.png",
+          "alt": "Giants and everyone else, by industry, 2013"
+        }
+      ],
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ]
     },
     {
       "slug": "hit-and-run-entry",
@@ -410,7 +893,22 @@
       "year": 1982,
       "authors": "Baumol",
       "cite": "Baumol (1982)",
-      "finding": "The airlines flying a route set its price"
+      "finding": "The airlines flying a route set its price",
+      "figures": [
+        {
+          "src": "results/fares_by_competition_2024.png",
+          "alt": "2024 fares by actual and potential competition"
+        },
+        {
+          "src": "results/southwest_threat.png",
+          "alt": "Incumbent fares after the Southwest threat"
+        }
+      ],
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ],
+      "paper": "William J. Baumol, \"Contestable Markets: An Uprising in the Theory of Industry Structure,\" American Economic Review 72(1), March 1982, pp. 1–15 (the author's presidential address to the American Economic Association). Companion book: W. J. Baumol, J. C. Panzar and R. D. Willig, Contestable Markets and the Theory of Industry Structure, Harcourt Brace Jovanovich, 1982."
     },
     {
       "slug": "fares-before-southwest",
@@ -421,7 +919,22 @@
       "year": 1982,
       "authors": "Milgrom, Roberts",
       "cite": "Milgrom & Roberts (1982)",
-      "finding": "Incumbents cut fares about 5% when Southwest arrives at both ends"
+      "finding": "Incumbents cut fares about 5% when Southwest arrives at both ends",
+      "figures": [
+        {
+          "src": "results/southwest_threat_split.png",
+          "alt": "Incumbent fares on threatened routes, by whether Southwest later came"
+        },
+        {
+          "src": "results/threat_by_entrant.png",
+          "alt": "Incumbent fares after each airline lands at both ends of a route"
+        }
+      ],
+      "paper": "Paul Milgrom and John Roberts, \"Limit Pricing and Entry under Incomplete Information: An Equilibrium Analysis,\" Econometrica 50(2), March 1982, pp. 443–459. Manuscript received March 1980, revised December 1980.",
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ]
     },
     {
       "slug": "who-keeps-the-savings",
@@ -432,7 +945,22 @@
       "year": 1982,
       "authors": "Baron, Myerson",
       "cite": "Baron & Myerson (1982)",
-      "finding": "Low-cost utilities earn more, by a little"
+      "finding": "Low-cost utilities earn more, by a little",
+      "figures": [
+        {
+          "src": "results/rent_vs_cost.png",
+          "alt": "Earned return on equity against wires-and-billing cost per customer"
+        },
+        {
+          "src": "results/passthrough.png",
+          "alt": "Revenue and net income responses to a $1 change in each cost"
+        }
+      ],
+      "paper": "Baron, David P., and Roger B. Myerson. 1982. \"Regulating a Monopolist with Unknown Costs.\" Econometrica 50(4): 911–930. Earlier version: Northwestern University CMS-EMS Discussion Paper 412, 1979.",
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ]
     },
     {
       "slug": "how-long-prices-stick",
@@ -443,7 +971,26 @@
       "year": 1983,
       "authors": "Calvo",
       "cite": "Calvo (1983)",
-      "finding": "Fitted to inflation, Calvo's model says prices last five years"
+      "finding": "Fitted to inflation, Calvo's model says prices last five years",
+      "figures": [
+        {
+          "src": "results/price_survival.png",
+          "alt": "Share of prices not yet changed, aggregate Calvo estimate vs. CPI micro frequencies"
+        },
+        {
+          "src": "results/category_slopes.png",
+          "alt": "Estimated vs. Calvo-predicted Phillips-curve slopes by CPI category"
+        },
+        {
+          "src": "results/peak_timing.png",
+          "alt": "Quarter of peak inflation by CPI category vs. months between price changes"
+        }
+      ],
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ],
+      "paper": "Guillermo A. Calvo, \"Staggered Prices in a Utility-Maximizing Framework,\" Journal of Monetary Economics 12(3), September 1983, pp. 383–398. doi:10.1016/0304-3932(83)90060-0."
     },
     {
       "slug": "when-to-hold-firm",
@@ -454,7 +1001,22 @@
       "year": 1983,
       "authors": "Riley, Zeckhauser",
       "cite": "Riley & Zeckhauser (1983)",
-      "finding": "Sellers who committed to a firm floor earned more"
+      "finding": "Sellers who committed to a firm floor earned more",
+      "figures": [
+        {
+          "src": "results/floor_tradeoff.png",
+          "alt": "Same catalogued product, different floors"
+        },
+        {
+          "src": "results/yes_vs_no.png",
+          "alt": "Revenue after the first offer, by response"
+        }
+      ],
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ],
+      "paper": "John Riley and Richard Zeckhauser, \"Optimal Selling Strategies: When to Haggle, When to Hold Firm,\" Quarterly Journal of Economics 98(2), 1983, pp. 267–289."
     },
     {
       "slug": "minimum-wage-moat",
@@ -465,7 +1027,26 @@
       "year": 1983,
       "authors": "Salop, Scheffman",
       "cite": "Salop & Scheffman (1983)",
-      "finding": "A higher minimum wage cost big restaurant chains at least as much as their small rivals"
+      "finding": "A higher minimum wage cost big restaurant chains at least as much as their small rivals",
+      "figures": [
+        {
+          "src": "results/cost_increase_by_size.png",
+          "alt": "Added payroll per 10% higher minimum wage, small vs. large firms"
+        },
+        {
+          "src": "results/share_vs_minimum_wage.png",
+          "alt": "Change in large firms' share of jobs against the rise in the minimum wage"
+        },
+        {
+          "src": "results/menu_prices.png",
+          "alt": "Restaurant prices against the rise in the minimum wage, 27 metro areas"
+        }
+      ],
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ],
+      "paper": "Steven C. Salop and David T. Scheffman, \"Raising Rivals' Costs,\" American Economic Review 73(2), Papers and Proceedings, May 1983, pp. 267–271."
     },
     {
       "slug": "the-last-kilowatt-hour",
@@ -476,7 +1057,26 @@
       "year": 1984,
       "authors": "Maskin, Riley",
       "cite": "Maskin & Riley (1984)",
-      "finding": "Bigger buyers pay less per kilowatt-hour"
+      "finding": "Bigger buyers pay less per kilowatt-hour",
+      "figures": [
+        {
+          "src": "results/household_unit_prices.png",
+          "alt": "Bill per kWh by household use"
+        },
+        {
+          "src": "results/residential_price_curve.png",
+          "alt": "Bill per kWh and price of the next kWh"
+        },
+        {
+          "src": "results/price_by_class.png",
+          "alt": "Price above wholesale, by class"
+        }
+      ],
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ],
+      "paper": "Eric Maskin and John Riley, \"Monopoly with Incomplete Information,\" RAND Journal of Economics 15(2), Summer 1984, pp. 171–196. Author affiliations as printed: Massachusetts Institute of Technology (Maskin) and University of California, Los Angeles (Riley)."
     },
     {
       "slug": "the-trigger-price",
@@ -487,7 +1087,22 @@
       "year": 1984,
       "authors": "Green, Porter",
       "cite": "Green & Porter (1984)",
-      "finding": "Oil prices do switch regimes, and the low regime is nearly a third cheaper"
+      "finding": "Oil prices do switch regimes, and the low regime is nearly a third cheaper",
+      "figures": [
+        {
+          "src": "results/price_wars.png",
+          "alt": "Oil prices and Saudi plus UAE output, with the low-price regime shaded"
+        },
+        {
+          "src": "results/war_onsets.png",
+          "alt": "Each low-price episode, price change against Saudi plus UAE output change"
+        }
+      ],
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ],
+      "paper": "Edward J. Green and Robert H. Porter, \"Noncooperative Collusion under Imperfect Price Information,\" Econometrica 52(1), January 1984, pp. 87–100."
     },
     {
       "slug": "the-cost-plus-hospital",
@@ -498,7 +1113,22 @@
       "year": 1985,
       "authors": "Shleifer",
       "cite": "Shleifer (1985)",
-      "finding": "Cost-reimbursed hospitals cost more per patient because they are smaller"
+      "finding": "Cost-reimbursed hospitals cost more per patient because they are smaller",
+      "figures": [
+        {
+          "src": "results/cost_gap.png",
+          "alt": "Cost per adjusted discharge against volume, and the adjusted gap by year"
+        },
+        {
+          "src": "results/conversion_event_study.png",
+          "alt": "Event study around conversion to critical access status"
+        }
+      ],
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ],
+      "paper": "Andrei Shleifer, \"A Theory of Yardstick Competition,\" RAND Journal of Economics 16(3), Autumn 1985, pp. 319–327."
     },
     {
       "slug": "the-supercharger-moat",
@@ -509,7 +1139,22 @@
       "year": 1985,
       "authors": "Katz, Shapiro",
       "cite": "Katz & Shapiro (1985)",
-      "finding": "Teslas did not cluster where the Superchargers were"
+      "finding": "Teslas did not cluster where the Superchargers were",
+      "figures": [
+        {
+          "src": "results/tesla_share_and_network.png",
+          "alt": "Tesla share of new cars and of fast-charging ports in Washington"
+        },
+        {
+          "src": "results/who_opens.png",
+          "alt": "Who opened their chargers"
+        }
+      ],
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ],
+      "paper": "Michael L. Katz and Carl Shapiro, \"Network Externalities, Competition, and Compatibility,\" American Economic Review 75(3), June 1985, pp. 424–440."
     },
     {
       "slug": "bargaining-against-yourself",
@@ -520,7 +1165,26 @@
       "year": 1986,
       "authors": "Gul, Sonnenschein, Wilson",
       "cite": "Gul et al. (1986)",
-      "finding": ""
+      "finding": "",
+      "figures": [
+        {
+          "src": "results/coase_limit.png",
+          "alt": "Opening price and time to sale in Example 1"
+        },
+        {
+          "src": "results/strike_survival.png",
+          "alt": "Share of strikes still running after day 3, with the two fitted models"
+        },
+        {
+          "src": "results/gap_survival.png",
+          "alt": "Strikes still running, first contract against existing relationships"
+        }
+      ],
+      "paper": "Faruk Gul, Hugo Sonnenschein and Robert Wilson, \"Foundations of Dynamic Monopoly and the Coase Conjecture,\" Journal of Economic Theory 39(1), 1986, pp. 155–190.",
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ]
     },
     {
       "slug": "price-wars-in-booms",
@@ -531,7 +1195,22 @@
       "year": 1986,
       "authors": "Rotemberg, Saloner",
       "cite": "Rotemberg & Saloner (1986)",
-      "finding": "Cement prices were countercyclical before 1982"
+      "finding": "Cement prices were countercyclical before 1982",
+      "figures": [
+        {
+          "src": "results/cement_cycle.png",
+          "alt": "Cement prices against GNP growth, before and after 1982"
+        },
+        {
+          "src": "results/industry_cr4_bins.png",
+          "alt": "Share of industries where the real wage rises with employment, by concentration"
+        }
+      ],
+      "paper": "Rotemberg, Julio J., and Garth Saloner. 1986. \"A Supergame-Theoretic Model of Price Wars during Booms.\" American Economic Review 76(3): 390–407. Circulated as \"A Supergame-Theoretic Model of Business Cycles and Price Wars During Booms,\" NBER Working Paper 1412, August 1984.",
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ]
     },
     {
       "slug": "who-pays-the-overrun",
@@ -542,7 +1221,22 @@
       "year": 1986,
       "authors": "Laffont, Tirole",
       "cite": "Laffont & Tirole (1986)",
-      "finding": "Cost reimbursement does not raise the cost of an hour"
+      "finding": "Cost reimbursement does not raise the cost of an hour",
+      "figures": [
+        {
+          "src": "results/cost_by_basis.png",
+          "alt": "Cost per hour by payment basis, 2025"
+        },
+        {
+          "src": "results/cost_index.png",
+          "alt": "Real cost per hour by payment basis, 2017 to 2025"
+        }
+      ],
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ],
+      "paper": "Jean-Jacques Laffont and Jean Tirole, \"Using Cost Observation to Regulate Firms,\" Journal of Political Economy 94(3), June 1986, pp. 614–641, DOI 10.1086/261392."
     },
     {
       "slug": "the-cancellation-fee",
@@ -553,7 +1247,22 @@
       "year": 1987,
       "authors": "Aghion, Bolton",
       "cite": "Aghion & Bolton (1987)",
-      "finding": "Texas fees shut out four in five cheaper offers"
+      "finding": "Texas fees shut out four in five cheaper offers",
+      "figures": [
+        {
+          "src": "results/shutout_lifecycle.png",
+          "alt": "Share of cheaper offers shut out over the life of a contract"
+        },
+        {
+          "src": "results/fee_vs_lost_profit.png",
+          "alt": "Cancellation fees against lost profit"
+        }
+      ],
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ],
+      "paper": "Philippe Aghion and Patrick Bolton, \"Contracts as a Barrier to Entry,\" American Economic Review 77(3), June 1987, pp. 388–401."
     },
     {
       "slug": "why-prices-sit-still",
@@ -564,7 +1273,22 @@
       "year": 1987,
       "authors": "Blanchard, Kiyotaki",
       "cite": "Blanchard & Kiyotaki (1987)",
-      "finding": "The raw slope matches the theory"
+      "finding": "The raw slope matches the theory",
+      "figures": [
+        {
+          "src": "results/frequency_vs_markup.png",
+          "alt": "Frequency of price change against markup"
+        },
+        {
+          "src": "results/index_moves_by_markup.png",
+          "alt": "Share of producer price indexes that changed each month, by markup"
+        }
+      ],
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ],
+      "paper": "Olivier J. Blanchard and Nobuhiro Kiyotaki, \"Monopolistic Competition and the Effects of Aggregate Demand,\" American Economic Review 77(4), September 1987, pp. 647–666. Working-paper version: \"Monopolistic Competition, Aggregate Demand Externalities and Real Effects of Nominal Money,\" NBER Working Paper 1770, December 1985."
     },
     {
       "slug": "what-the-next-unit-costs",
@@ -575,7 +1299,26 @@
       "year": 1988,
       "authors": "Hall",
       "cite": "Hall (1988)",
-      "finding": "Hall's pattern is still there, and larger by his yardstick"
+      "finding": "Hall's pattern is still there, and larger by his yardstick",
+      "figures": [
+        {
+          "src": "results/solow_residual_scatter.png",
+          "alt": "Solow residual against output growth, US manufacturing"
+        },
+        {
+          "src": "results/markup_ladder.png",
+          "alt": "Markup estimates as more inputs are counted"
+        },
+        {
+          "src": "results/industries_va_vs_go.png",
+          "alt": "Three-digit industries, value added against gross output"
+        }
+      ],
+      "paper": "Robert E. Hall, \"The Relation between Price and Marginal Cost in U.S. Industry,\" Journal of Political Economy 96(5), October 1988, pp. 921–947. Earlier version: NBER Working Paper No. 1785, January 1986.",
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ]
     },
     {
       "slug": "the-tied-browser",
@@ -586,7 +1329,26 @@
       "year": 1990,
       "authors": "Whinston",
       "cite": "Whinston (1990)",
-      "finding": "A tied browser takes most of its own phone"
+      "finding": "A tied browser takes most of its own phone",
+      "figures": [
+        {
+          "src": "results/capture_scatter.png",
+          "alt": "Browser share vs. platform share by country"
+        },
+        {
+          "src": "results/platform_owner_share.png",
+          "alt": "The platform owner's browser on its own platform"
+        },
+        {
+          "src": "results/choice_screen_event.png",
+          "alt": "Choice screens, EU vs. comparison countries"
+        }
+      ],
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ],
+      "paper": "Michael D. Whinston, \"Tying, Foreclosure, and Exclusion,\" American Economic Review 80(4), September 1990, pp. 837–859. Circulated earlier as NBER Working Paper No. 2995, June 1989."
     },
     {
       "slug": "the-price-of-new-ideas",
@@ -597,7 +1359,22 @@
       "year": 1990,
       "authors": "Romer",
       "cite": "Romer (1990)",
-      "finding": "Research effort rose sevenfold while productivity growth halved"
+      "finding": "Research effort rose sevenfold while productivity growth halved",
+      "figures": [
+        {
+          "src": "results/research_productivity.png",
+          "alt": "Research effort and TFP growth by decade"
+        },
+        {
+          "src": "results/markup_vs_rd.png",
+          "alt": "Price-cost margin against R&D intensity, 36 manufacturing industries"
+        }
+      ],
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ],
+      "paper": "Paul M. Romer, \"Endogenous Technological Change,\" Journal of Political Economy 98(5, Part 2), October 1990, pp. S71–S102."
     },
     {
       "slug": "who-owns-the-kilns",
@@ -608,7 +1385,22 @@
       "year": 1990,
       "authors": "Hart, Tirole",
       "cite": "Hart & Tirole (1990)",
-      "finding": "Every regional cement market is concentrated by the paper's own yardstick"
+      "finding": "Every regional cement market is concentrated by the paper's own yardstick",
+      "figures": [
+        {
+          "src": "results/capacity_and_prices.png",
+          "alt": "Clinker utilization and the price of cement relative to ready-mixed concrete, 2002 to 2023"
+        },
+        {
+          "src": "results/consolidation_scatter.png",
+          "alt": "Change in concentration and change in price by cement district, 2010 to 2023"
+        }
+      ],
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ],
+      "paper": "Oliver Hart and Jean Tirole, \"Vertical Integration and Market Foreclosure,\" Brookings Papers on Economic Activity: Microeconomics 1990, pp. 205–286. The article runs pp. 205–276 (including Appendixes A to F); comments by Dennis W. Carlton (pp. 277–280) and Oliver E. Williamson (pp. 280–283) and a general discussion (pp. 283–284) follow, with references on pp. 285–286."
     },
     {
       "slug": "how-big-a-town-needs-to-be",
@@ -619,7 +1411,22 @@
       "year": 1991,
       "authors": "Bresnahan, Reiss",
       "cite": "Bresnahan & Reiss (1991)",
-      "finding": "A small town now needs far more people to keep its first shop"
+      "finding": "A small town now needs far more people to keep its first shop",
+      "figures": [
+        {
+          "src": "results/per_firm_thresholds.png",
+          "alt": "Per-firm entry thresholds relative to a monopoly, paper vs 2016"
+        },
+        {
+          "src": "results/thresholds_2000_2016.png",
+          "alt": "Entry thresholds in 2000 and 2016"
+        }
+      ],
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ],
+      "paper": "Timothy F. Bresnahan and Peter C. Reiss, \"Entry and Competition in Concentrated Markets,\" Journal of Political Economy 99(5), October 1991, pp. 977–1009."
     },
     {
       "slug": "locking-up-the-customers",
@@ -630,7 +1437,22 @@
       "year": 1991,
       "authors": "Rasmusen, Ramseyer, Wiley",
       "cite": "Rasmusen et al. (1991)",
-      "finding": "A single plant is a sliver of almost every American market"
+      "finding": "A single plant is a sliver of almost every American market",
+      "figures": [
+        {
+          "src": "results/rival_scale_2022.png",
+          "alt": "Distribution of rival scale across 2022 manufacturing industries"
+        },
+        {
+          "src": "results/customers_needed_sequential.png",
+          "alt": "Fewest customers at which one-at-a-time offers exclude"
+        }
+      ],
+      "paper": "Eric B. Rasmusen, J. Mark Ramseyer and John S. Wiley Jr., \"Naked Exclusion,\" American Economic Review 81(5), December 1991, pp. 1137–1145.",
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ]
     },
     {
       "slug": "the-advertising-floor",
@@ -641,7 +1463,22 @@
       "year": 1991,
       "authors": "Sutton",
       "cite": "Sutton (1991)",
-      "finding": "No advertising-heavy food industry has a top four below 30%"
+      "finding": "No advertising-heavy food industry has a top four below 30%",
+      "figures": [
+        {
+          "src": "results/bounds_2022.png",
+          "alt": "Concentration against market size, 2022"
+        },
+        {
+          "src": "results/cr4_over_time.png",
+          "alt": "Average top 4 share by group, 2002 to 2022"
+        }
+      ],
+      "paper": "John Sutton, Sunk Costs and Market Structure, Cambridge, MA: MIT Press, 1991. The empirical test reviewed here is the cross-country test of the \"non-convergence\" prediction in Chapter 5.",
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ]
     },
     {
       "slug": "low-powered-utilities",
@@ -652,7 +1489,22 @@
       "year": 1991,
       "authors": "Laffont, Tirole",
       "cite": "Laffont & Tirole (1991)",
-      "finding": "American utilities bear about a fifth of their non-fuel costs"
+      "finding": "American utilities bear about a fifth of their non-fuel costs",
+      "figures": [
+        {
+          "src": "results/passthrough_binned.png",
+          "alt": "Revenue change against non-fuel cost change, by commission type"
+        },
+        {
+          "src": "results/price_gap_by_state.png",
+          "alt": "Investor-owned minus public-power residential price, by state"
+        }
+      ],
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ],
+      "paper": "Jean-Jacques Laffont and Jean Tirole, \"The Politics of Government Decision-Making: A Theory of Regulatory Capture,\" Quarterly Journal of Economics 106(4), November 1991, pp. 1089–1127."
     },
     {
       "slug": "who-climbs-the-ladder",
@@ -663,7 +1515,22 @@
       "year": 1991,
       "authors": "Grossman, Helpman",
       "cite": "Grossman & Helpman (1991)",
-      "finding": "Leaders in research-heavy industries are not replaced any faster"
+      "finding": "Leaders in research-heavy industries are not replaced any faster",
+      "figures": [
+        {
+          "src": "results/displacement_by_rd.png",
+          "alt": "Leaders overtaken by research intensity"
+        },
+        {
+          "src": "results/leader_rd_share.png",
+          "alt": "Leaders' share of research and of sales"
+        }
+      ],
+      "paper": "Gene M. Grossman and Elhanan Helpman, \"Quality Ladders in the Theory of Growth,\" Review of Economic Studies 58(1), January 1991, pp. 43–61 (doi 10.2307/2298044). Circulated as NBER Working Paper 3099, September 1989.",
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ]
     },
     {
       "slug": "how-long-a-lead-lasts",
@@ -674,7 +1541,22 @@
       "year": 1992,
       "authors": "Aghion, Howitt",
       "cite": "Aghion & Howitt (1992)",
-      "finding": "Industry leaders fall about once a decade, with or without research"
+      "finding": "Industry leaders fall about once a decade, with or without research",
+      "figures": [
+        {
+          "src": "results/leader_hazard.png",
+          "alt": "Leader replacement against research intensity"
+        },
+        {
+          "src": "results/scale_effects.png",
+          "alt": "Research effort and productivity growth"
+        }
+      ],
+      "paper": "Philippe Aghion and Peter Howitt, \"A Model of Growth Through Creative Destruction,\" Econometrica 60(2), March 1992, pp. 323–351. Circulated earlier as NBER Working Paper 3223, January 1990.",
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ]
     },
     {
       "slug": "the-boom-time-markup",
@@ -685,7 +1567,22 @@
       "year": 1992,
       "authors": "Rotemberg, Woodford",
       "cite": "Rotemberg & Woodford (1992)",
-      "finding": "Today's data reproduce the 1999 chapter's signs, and some of its numbers"
+      "finding": "Today's data reproduce the 1999 chapter's signs, and some of its numbers",
+      "figures": [
+        {
+          "src": "results/markup_and_recessions.png",
+          "alt": "Markups in the US business sector, 1947–2025"
+        },
+        {
+          "src": "results/defense_responses.png",
+          "alt": "Responses to military spending"
+        }
+      ],
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ],
+      "paper": "Julio J. Rotemberg and Michael Woodford, \"Oligopolistic Pricing and the Effects of Aggregate Demand on Economic Activity,\" Journal of Political Economy 100(6), 1992, pp. 1153–1207. Companion survey: Julio J. Rotemberg and Michael Woodford, \"The Cyclical Behavior of Prices and Costs,\" in J. B. Taylor and M. Woodford, eds., Handbook of Macroeconomics, vol. 1, 1999, pp. 1051–1135."
     },
     {
       "slug": "fixed-price-or-cost-plus",
@@ -696,7 +1593,22 @@
       "year": 1993,
       "authors": "Laffont, Tirole",
       "cite": "Laffont & Tirole (1993)",
-      "finding": "Cost-plus contracts grow more, and their growth is far more spread out"
+      "finding": "Cost-plus contracts grow more, and their growth is far more spread out",
+      "figures": [
+        {
+          "src": "results/growth_by_contract_type.png",
+          "alt": "Growth by contract type"
+        },
+        {
+          "src": "results/within_contractor_ladder.png",
+          "alt": "Cost-plus minus fixed price as the comparison narrows"
+        }
+      ],
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ],
+      "paper": "Jean-Jacques Laffont and Jean Tirole, A Theory of Incentives in Procurement and Regulation. Cambridge, MA: MIT Press, 1993 (ISBN 978-0-262-12174-3)."
     },
     {
       "slug": "taylor-1993-revisited",
@@ -708,7 +1620,32 @@
       "authors": "Taylor",
       "cite": "Taylor (1993)",
       "finding": "On the data Taylor had, the rule fits to within 0.40 points",
-      "featured": true
+      "featured": true,
+      "figures": [
+        {
+          "src": "results/fig1_primary_mechanism.png",
+          "alt": "Figure 1"
+        },
+        {
+          "src": "results/fig5_realtime_versus_revised.png",
+          "alt": "Figure 5"
+        },
+        {
+          "src": "results/fig2_methodological_horserace.png",
+          "alt": "Figure 2"
+        },
+        {
+          "src": "results/fig4_heterogeneity_and_sensitivity.png",
+          "alt": "Figure 4"
+        },
+        {
+          "src": "results/fig3_structural_or_counterfactual.png",
+          "alt": "Figure 3"
+        }
+      ],
+      "docs": [
+        "TECHNICAL.md"
+      ]
     },
     {
       "slug": "minimum-wage-across-the-delaware",
@@ -720,7 +1657,26 @@
       "authors": "Card, Krueger",
       "cite": "Card & Krueger (1994)",
       "finding": "Pennsylvania's restaurants shed workers and New Jersey's did not",
-      "featured": true
+      "featured": true,
+      "figures": [
+        {
+          "src": "results/ck1994_wage_dist.png",
+          "alt": "Starting wages before and after New Jersey's increase"
+        },
+        {
+          "src": "results/qcew_nj_pa_gap.png",
+          "alt": "New Jersey minus Pennsylvania fast-food jobs, by year"
+        },
+        {
+          "src": "results/qcew_placebo_states.png",
+          "alt": "New Jersey against the 20 states with a $7.25 floor"
+        }
+      ],
+      "paper": "David Card and Alan B. Krueger, \"Minimum Wages and Employment: A Case Study of the Fast-Food Industry in New Jersey and Pennsylvania,\" American Economic Review 84(4), September 1994, pp. 772–793.",
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ]
     },
     {
       "slug": "how-much-gets-passed-on",
@@ -731,7 +1687,22 @@
       "year": 1995,
       "authors": "Kimball",
       "cite": "Kimball (1995)",
-      "finding": "Exporters pass on about a quarter of a currency move, not one percent"
+      "finding": "Exporters pass on about a quarter of a currency move, not one percent",
+      "figures": [
+        {
+          "src": "results/passthrough_profile.png",
+          "alt": "Cumulative pass-through of exchange rates into US import prices"
+        },
+        {
+          "src": "results/japan_machinery.png",
+          "alt": "Yen, Japanese machinery import prices and US machinery prices since 2012"
+        }
+      ],
+      "paper": "Miles S. Kimball, \"The Quantitative Analytics of the Basic Neomonetarist Model,\" Journal of Money, Credit and Banking 27(4, Part 2), November 1995, pp. 1241–1277. Circulated as NBER Working Paper 5046, February 1995.",
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ]
     },
     {
       "slug": "the-pioneers-share",
@@ -742,7 +1713,22 @@
       "year": 1995,
       "authors": "Green, Scotchmer",
       "cite": "Green & Scotchmer (1995)",
-      "finding": "An outside improvement is worth about a fifth as much to the pioneer as its own"
+      "finding": "An outside improvement is worth about a fifth as much to the pioneer as its own",
+      "figures": [
+        {
+          "src": "results/value_by_follow_on.png",
+          "alt": "Value by own and outside follow-on"
+        },
+        {
+          "src": "results/follow_on_value_by_technology.png",
+          "alt": "Follow-on value by technology"
+        }
+      ],
+      "paper": "Jerry R. Green and Suzanne Scotchmer, \"On the Division of Profit in Sequential Innovation,\" RAND Journal of Economics 26(1), Spring 1995, pp. 20–33. An earlier version circulated as Harvard Institute of Economic Research Working Paper 1638 (1993).",
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ]
     },
     {
       "slug": "what-carmakers-keep",
@@ -753,7 +1739,22 @@
       "year": 1995,
       "authors": "Berry, Levinsohn, Pakes",
       "cite": "Berry et al. (1995)",
-      "finding": "The rerun puts 1990 markups a little above the paper's"
+      "finding": "The rerun puts 1990 markups a little above the paper's",
+      "figures": [
+        {
+          "src": "results/blp1995_margins_by_year.png",
+          "alt": "Estimated price-cost margins, 1971 to 1990"
+        },
+        {
+          "src": "results/ev_price_by_income.png",
+          "alt": "Price paid by neighborhood income"
+        }
+      ],
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ],
+      "paper": "Steven Berry, James Levinsohn and Ariel Pakes, \"Automobile Prices in Market Equilibrium,\" Econometrica 63(4), July 1995, pp. 841–890."
     },
     {
       "slug": "the-price-of-admission",
@@ -764,7 +1765,26 @@
       "year": 1996,
       "authors": "Armstrong",
       "cite": "Armstrong (1996)",
-      "finding": "Warehouse clubs sell close to cost and earn at the door"
+      "finding": "Warehouse clubs sell close to cost and earn at the door",
+      "figures": [
+        {
+          "src": "results/exclusion_corner.png",
+          "alt": "Who buys under the best price for the pair"
+        },
+        {
+          "src": "results/costco_tariff.png",
+          "alt": "Costco's operating profit, fees and merchandise margin, 2008 to 2026"
+        },
+        {
+          "src": "results/renewal_rates.png",
+          "alt": "Costco's renewal rate through four fee increases"
+        }
+      ],
+      "paper": "Mark Armstrong, \"Multiproduct Nonlinear Pricing,\" Econometrica 64(1), January 1996, pp. 51–75 (DOI 10.2307/2171924). Read alongside its companion on the reading list, Jean-Charles Rochet and Philippe Choné, \"Ironing, Sweeping, and Multidimensional Screening,\" Econometrica 66(4), July 1998, pp. 783–826.",
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ]
     },
     {
       "slug": "buying-out-drug-patents",
@@ -775,7 +1795,26 @@
       "year": 1998,
       "authors": "Kremer",
       "cite": "Kremer (1998)",
-      "finding": "Kremer's 2.6 holds up, and inequality has pushed it to 2.8"
+      "finding": "Kremer's 2.6 holds up, and inequality has pushed it to 2.8",
+      "figures": [
+        {
+          "src": "results/profit_curve.png",
+          "alt": "Monopoly profit at each price under income-proportional valuations"
+        },
+        {
+          "src": "results/entry_path.png",
+          "alt": "Price and doses around generic entry"
+        },
+        {
+          "src": "results/buyout_named.png",
+          "alt": "Buyout offers for Medicare's largest patented drugs"
+        }
+      ],
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ],
+      "paper": "Michael Kremer, \"Patent Buyouts: A Mechanism for Encouraging Innovation,\" Quarterly Journal of Economics 113(4), 1998, pp. 1137-1167. Working paper version: NBER Working Paper 6304, December 1997."
     },
     {
       "slug": "the-competitive-benchmark",
@@ -786,7 +1825,22 @@
       "year": 2002,
       "authors": "Borenstein, Bushnell, Wolak",
       "cite": "Borenstein et al. (2002)",
-      "finding": "California now prices close to cost"
+      "finding": "California now prices close to cost",
+      "figures": [
+        {
+          "src": "results/price_vs_benchmark.png",
+          "alt": "California and Texas prices against the competitive benchmark"
+        },
+        {
+          "src": "results/lerner_by_residual_demand.png",
+          "alt": "Lerner index by demand left for fossil plants"
+        }
+      ],
+      "paper": "Severin Borenstein, James B. Bushnell and Frank A. Wolak, \"Measuring Market Inefficiencies in California's Restructured Wholesale Electricity Market,\" American Economic Review 92(5), December 2002, pp. 1376–1405.",
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ]
     },
     {
       "slug": "the-swipe-fee-seesaw",
@@ -797,7 +1851,26 @@
       "year": 2003,
       "authors": "Rochet, Tirole",
       "cite": "Rochet & Tirole (2003)",
-      "finding": "Merchants paid for the debit card, and the cap cut their price in half"
+      "finding": "Merchants paid for the debit card, and the cap cut their price in half",
+      "figures": [
+        {
+          "src": "results/interchange_by_group.png",
+          "alt": "Average interchange fee per debit transaction, covered and exempt issuers"
+        },
+        {
+          "src": "results/event_study_fee_per_account.png",
+          "alt": "Fee per deposit account, covered minus exempt banks, relative to 2010"
+        },
+        {
+          "src": "results/offset_by_year.png",
+          "alt": "Interchange lost and deposit fees added per account, by year"
+        }
+      ],
+      "paper": "Jean-Charles Rochet and Jean Tirole, \"Platform Competition in Two-Sided Markets,\" Journal of the European Economic Association 1(4), June 2003, pp. 990–1029.",
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ]
     },
     {
       "slug": "the-second-app",
@@ -808,7 +1881,22 @@
       "year": 2003,
       "authors": "Caillaud, Jullien",
       "cite": "Caillaud & Jullien (2003)",
-      "finding": "Most drivers work for both apps"
+      "finding": "Most drivers work for both apps",
+      "figures": [
+        {
+          "src": "results/market_and_multihoming.png",
+          "alt": "Trip shares and multihoming in New York, 2015 to 2026"
+        },
+        {
+          "src": "results/take_rates.png",
+          "alt": "The platform's cut and subsidized trips, 2019 to 2026"
+        }
+      ],
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ],
+      "paper": "Bernard Caillaud and Bruno Jullien, \"Chicken & Egg: Competition among Intermediation Service Providers,\" RAND Journal of Economics 34(2), Summer 2003, pp. 309–328."
     },
     {
       "slug": "how-firms-grow-and-die",
@@ -819,7 +1907,26 @@
       "year": 2004,
       "authors": "Klette, Kortum",
       "cite": "Klette & Kortum (2004)",
-      "finding": "Among large companies, research rises in step with sales"
+      "finding": "Among large companies, research rises in step with sales",
+      "figures": [
+        {
+          "src": "results/growth_volatility.png",
+          "alt": "Volatility of growth by company size"
+        },
+        {
+          "src": "results/exit_by_size.png",
+          "alt": "Exit rate by firm size"
+        },
+        {
+          "src": "results/creative_destruction.png",
+          "alt": "Creative destruction rate over time"
+        }
+      ],
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ],
+      "paper": "Klette, Tor Jakob, and Samuel Kortum. 2004. \"Innovating Firms and Aggregate Innovation.\" Journal of Political Economy 112(5): 986–1018."
     },
     {
       "slug": "the-inverted-u",
@@ -831,7 +1938,22 @@
       "authors": "Aghion, Bloom, Blundell, Griffith, Howitt",
       "cite": "Aghion et al. (2005)",
       "finding": "Within American industries, the hump disappears",
-      "featured": true
+      "featured": true,
+      "figures": [
+        {
+          "src": "results/inverted_u.png",
+          "alt": "Within-industry patents against competition, with the paper's UK curve"
+        },
+        {
+          "src": "results/neck_and_neck.png",
+          "alt": "The neck-and-neck split"
+        }
+      ],
+      "paper": "Philippe Aghion, Nick Bloom, Richard Blundell, Rachel Griffith and Peter Howitt, \"Competition and Innovation: An Inverted-U Relationship,\" Quarterly Journal of Economics 120(2), May 2005, pp. 701–728. doi:10.1162/0033553053970214.",
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ]
     },
     {
       "slug": "where-secrecy-works",
@@ -842,7 +1964,22 @@
       "year": 2005,
       "authors": "Moser",
       "cite": "Moser (2005)",
-      "finding": "Industries that lean on secrets innovate at least as often"
+      "finding": "Industries that lean on secrets innovate at least as often",
+      "figures": [
+        {
+          "src": "results/secrecy_vs_patenting.png",
+          "alt": "Secrecy and patenting across 27 manufacturing industries"
+        },
+        {
+          "src": "results/then_and_now.png",
+          "alt": "Moser's 1851 patenting rates against 2022"
+        }
+      ],
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ],
+      "paper": "Petra Moser, \"How Do Patent Laws Influence Innovation? Evidence from Nineteenth-Century World's Fairs,\" American Economic Review 95(4), September 2005, pp. 1214–1236. Circulated as NBER Working Paper 9909, August 2003."
     },
     {
       "slug": "the-patent-puzzle",
@@ -853,7 +1990,22 @@
       "year": 2008,
       "authors": "Boldrin, Levine",
       "cite": "Boldrin & Levine (2008)",
-      "finding": "Patents rose sixfold and productivity growth did not rise"
+      "finding": "Patents rose sixfold and productivity growth did not rise",
+      "figures": [
+        {
+          "src": "results/patents_and_tfp.png",
+          "alt": "US patents per year and TFP growth, 1948–2025"
+        },
+        {
+          "src": "results/count_vs_value.png",
+          "alt": "Count index and value index against TFP growth over the next five years"
+        }
+      ],
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ],
+      "paper": "Michele Boldrin and David K. Levine, Against Intellectual Monopoly, Cambridge University Press, 2008; and \"The Case Against Patents,\" Journal of Economic Perspectives 27(1), Winter 2013, pp. 3–22."
     },
     {
       "slug": "new-firms-in-a-boom",
@@ -864,7 +2016,26 @@
       "year": 2012,
       "authors": "Bilbiie, Ghironi, Melitz",
       "cite": "Bilbiie et al. (2012)",
-      "finding": "The model's best number belonged to its era"
+      "finding": "The model's best number belonged to its era",
+      "figures": [
+        {
+          "src": "results/startups_and_deaths.png",
+          "alt": "New and dying US employer firms"
+        },
+        {
+          "src": "results/cycle_crosscorr.png",
+          "alt": "Cross-correlations with GDP"
+        },
+        {
+          "src": "results/industry_long_change.png",
+          "alt": "Firm counts and markups by industry"
+        }
+      ],
+      "paper": "Florin O. Bilbiie, Fabio Ghironi and Marc J. Melitz, \"Endogenous Entry, Product Variety, and Business Cycles,\" Journal of Political Economy 120(2), 2012, pp. 304–345. doi:10.1086/665825.",
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ]
     },
     {
       "slug": "the-export-markup",
@@ -875,7 +2046,26 @@
       "year": 2012,
       "authors": "De Loecker, Warzynski",
       "cite": "De Loecker & Warzynski (2012)",
-      "finding": "Export-oriented industries do not charge higher markups"
+      "finding": "Export-oriented industries do not charge higher markups",
+      "figures": [
+        {
+          "src": "results/export_vs_markup.png",
+          "alt": "Export share against markup"
+        },
+        {
+          "src": "results/input_agreement.png",
+          "alt": "Materials markup against payroll markup"
+        },
+        {
+          "src": "results/markup_trend.png",
+          "alt": "Markups in US manufacturing, 1958–2018"
+        }
+      ],
+      "paper": "De Loecker, J. & Warzynski, F. (2012). \"Markups and Firm-Level Export Status.\" American Economic Review 102(6), 2437–2471. Circulated as NBER Working Paper 15198, July 2009, revised October 2010.",
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ]
     },
     {
       "slug": "owning-a-gene",
@@ -886,7 +2076,22 @@
       "year": 2013,
       "authors": "Williams",
       "cite": "Williams (2013)",
-      "finding": "Celera's genes trail by about as much as Williams found"
+      "finding": "Celera's genes trail by about as much as Williams found",
+      "figures": [
+        {
+          "src": "results/celera_timing.png",
+          "alt": "Celera genes freed a year later, against those freed first"
+        },
+        {
+          "src": "results/celera_gap_by_year.png",
+          "alt": "Research on genes Celera held, relative to comparable genes"
+        }
+      ],
+      "paper": "Heidi L. Williams, \"Intellectual Property Rights and Innovation: Evidence from the Human Genome,\" Journal of Political Economy 121(1), February 2013, pp. 1–27.",
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ]
     },
     {
       "slug": "the-spillover-gap",
@@ -897,7 +2102,22 @@
       "year": 2013,
       "authors": "Bloom, Schankerman, Van Reenen",
       "cite": "Bloom et al. (2013)",
-      "finding": "Neighbors' research still predicts a firm's patents"
+      "finding": "Neighbors' research still predicts a firm's patents",
+      "figures": [
+        {
+          "src": "results/coefficients_vs_bsv.png",
+          "alt": "Paper and modern coefficients side by side"
+        },
+        {
+          "src": "results/blocks_coefficients.png",
+          "alt": "Coefficients by four-year block"
+        }
+      ],
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ],
+      "paper": "Nicholas Bloom, Mark Schankerman and John Van Reenen, \"Identifying Technology Spillovers and Product Market Rivalry,\" Econometrica 81(4), July 2013, pp. 1347–1393, doi:10.3982/ECTA9466."
     },
     {
       "slug": "the-fare-triangle",
@@ -908,7 +2128,26 @@
       "year": 2015,
       "authors": "Bergemann, Brooks, Morris",
       "cite": "Bergemann et al. (2015)",
-      "finding": "A single fare would already collect about half of what passengers paid"
+      "finding": "A single fare would already collect about half of what passengers paid",
+      "figures": [
+        {
+          "src": "results/fig3_floor_share.png",
+          "alt": "Share of total value a single fare collects, by route"
+        },
+        {
+          "src": "results/fig1_demand_curve.png",
+          "alt": "Fares on Anchorage to Fairbanks read as a demand curve, and revenue from each single fare"
+        },
+        {
+          "src": "results/fig2_triangle.png",
+          "alt": "Where coarse segmentations land in the Anchorage to Fairbanks triangle"
+        }
+      ],
+      "paper": "Dirk Bergemann, Benjamin Brooks and Stephen Morris, \"The Limits of Price Discrimination,\" American Economic Review 105(3), March 2015, pp. 921–957.",
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ]
     },
     {
       "slug": "end-of-season-sale",
@@ -919,7 +2158,22 @@
       "year": 2016,
       "authors": "Board, Skrzypacz",
       "cite": "Board & Skrzypacz (2016)",
-      "finding": "Clothing prices fall through every season, and staples do not"
+      "finding": "Clothing prices fall through every season, and staples do not",
+      "figures": [
+        {
+          "src": "results/seasonal_profiles.png",
+          "alt": "Typical price through the year"
+        },
+        {
+          "src": "results/retail_margins.png",
+          "alt": "Retail stock and next year's gross margin"
+        }
+      ],
+      "paper": "Simon Board and Andrzej Skrzypacz, \"Revenue Management with Forward-Looking Buyers,\" Journal of Political Economy 124(4), 2016, pp. 1046–1087. DOI 10.1086/686713.",
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ]
     },
     {
       "slug": "beer-after-millercoors",
@@ -930,7 +2184,22 @@
       "year": 2017,
       "authors": "Miller, Weinberg",
       "cite": "Miller & Weinberg (2017)",
-      "finding": "Beer got dearer after 2008, and so did the rest of the shelf"
+      "finding": "Beer got dearer after 2008, and so did the rest of the shelf",
+      "figures": [
+        {
+          "src": "results/fig1_prices_2001_2011.png",
+          "alt": "Beer, wine, spirits and soda prices, 2001 to 2011"
+        },
+        {
+          "src": "results/fig2_long_run.png",
+          "alt": "Beer against other drinks by brewing year, and the placebo scan"
+        }
+      ],
+      "paper": "Nathan H. Miller and Matthew C. Weinberg, \"Understanding the Price Effects of the MillerCoors Joint Venture,\" Econometrica 85(6), November 2017, pp. 1763–1791, doi:10.3982/ECTA13333.",
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ]
     },
     {
       "slug": "the-missing-investment",
@@ -941,7 +2210,26 @@
       "year": 2017,
       "authors": "Gutiérrez, Philippon",
       "cite": "Gutiérrez & Philippon (2017)",
-      "finding": "The gap is real, and it has kept growing"
+      "finding": "The gap is real, and it has kept growing",
+      "figures": [
+        {
+          "src": "results/investment_gap.png",
+          "alt": "Net investment vs. Q, 1990–2025"
+        },
+        {
+          "src": "results/concentration_scatter.png",
+          "alt": "Change in concentration vs. change in investment"
+        },
+        {
+          "src": "results/gap_by_asset.png",
+          "alt": "The gap by asset type"
+        }
+      ],
+      "paper": "Germán Gutiérrez and Thomas Philippon, \"Declining Competition and Investment in the U.S.,\" NBER Working Paper 23583, National Bureau of Economic Research, July 2017.",
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ]
     },
     {
       "slug": "cheap-oil-left-in-the-ground",
@@ -952,7 +2240,26 @@
       "year": 2019,
       "authors": "Asker, Collard-Wexler, Loecker",
       "cite": "Asker et al. (2019)",
-      "finding": "The cheapest oil was pumped the slowest"
+      "finding": "The cheapest oil was pumped the slowest",
+      "figures": [
+        {
+          "src": "results/supply_curve_2014.png",
+          "alt": "Who supplied the world's oil in 2014"
+        },
+        {
+          "src": "results/misallocation_by_year.png",
+          "alt": "What the world overpaid each year"
+        },
+        {
+          "src": "results/extension_split.png",
+          "alt": "Misallocation after 2014, split two ways"
+        }
+      ],
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ],
+      "paper": "John Asker, Allan Collard-Wexler and Jan De Loecker, \"(Mis)Allocation, Market Power, and Global Oil Extraction,\" American Economic Review 109(4), April 2019, pp. 1568–1615. Working paper version, \"Market Power, Production (Mis)Allocation and OPEC,\" NBER Working Paper 23801, September 2017."
     },
     {
       "slug": "superstar-firms-revisited",
@@ -963,7 +2270,22 @@
       "year": 2020,
       "authors": "Autor, Dorn, Katz, Patterson, Van Reenen",
       "cite": "Autor et al. (2020)",
-      "finding": "Industries that concentrated still lost labor share"
+      "finding": "Industries that concentrated still lost labor share",
+      "figures": [
+        {
+          "src": "results/scatter_cr20.png",
+          "alt": "Binned scatter of labor share changes against concentration changes"
+        },
+        {
+          "src": "results/decomposition.png",
+          "alt": "Decomposition of labor share changes into leaders, the rest and reallocation"
+        }
+      ],
+      "paper": "David Autor, David Dorn, Lawrence F. Katz, Christina Patterson and John Van Reenen, \"The Fall of the Labor Share and the Rise of Superstar Firms,\" Quarterly Journal of Economics 135(2), 2020, pp. 645–709, doi:10.1093/qje/qjaa004. An extensively revised version of NBER Working Paper 23396 (2017).",
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ]
     },
     {
       "slug": "how-markups-age",
@@ -974,7 +2296,22 @@
       "year": 2020,
       "authors": "Peters",
       "cite": "Peters (2020)",
-      "finding": "American factories raise their markups with age, a little more slowly than Indonesian ones"
+      "finding": "American factories raise their markups with age, a little more slowly than Indonesian ones",
+      "figures": [
+        {
+          "src": "results/markup_lifecycle.png",
+          "alt": "Markups by firm age"
+        },
+        {
+          "src": "results/churning_by_sector.png",
+          "alt": "Markup growth against churning"
+        }
+      ],
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ],
+      "paper": "Michael Peters, \"Heterogeneous Markups, Growth, and Endogenous Misallocation,\" Econometrica 88(5), September 2020, pp. 2037–2073, DOI 10.3982/ECTA15565."
     },
     {
       "slug": "profits-or-cheap-money",
@@ -985,7 +2322,22 @@
       "year": 2020,
       "authors": "Barkai",
       "cite": "Barkai (2020)",
-      "finding": "Today's accounts show the same shift, and a larger one"
+      "finding": "Today's accounts show the same shift, and a larger one",
+      "figures": [
+        {
+          "src": "results/factor_shares.png",
+          "alt": "Labor, capital and pure-profit shares, 1960–2025"
+        },
+        {
+          "src": "results/profits_vs_cost_of_capital.png",
+          "alt": "Pure profits and the real cost of capital"
+        }
+      ],
+      "paper": "Simcha Barkai, \"Declining Labor and Capital Shares,\" Journal of Finance 75(5), 2020, pp. 2421–2463, doi:10.1111/jofi.12909.",
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ]
     },
     {
       "slug": "the-markup-and-the-overhead",
@@ -996,7 +2348,26 @@
       "year": 2020,
       "authors": "De Loecker, Eeckhout, Unger",
       "cite": "De Loecker et al. (2020)",
-      "finding": "The 2016 level matches, and the rise continued to 2025"
+      "finding": "The 2016 level matches, and the rise continued to 2025",
+      "figures": [
+        {
+          "src": "results/markup_trend.png",
+          "alt": "Aggregate markup, 2011 to 2025"
+        },
+        {
+          "src": "results/markup_percentiles.png",
+          "alt": "The markup distribution"
+        },
+        {
+          "src": "results/overhead_vs_markup.png",
+          "alt": "Two markups on the same companies"
+        }
+      ],
+      "paper": "De Loecker, J., Eeckhout, J. & Unger, G. (2020). \"The Rise of Market Power and the Macroeconomic Implications.\" Quarterly Journal of Economics 135(2), 561–644. doi:10.1093/qje/qjz041.",
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ]
     },
     {
       "slug": "too-small-to-begin-with",
@@ -1007,7 +2378,22 @@
       "year": 2020,
       "authors": "Baqaee, Farhi",
       "cite": "Baqaee & Farhi (2020)",
-      "finding": "Reallocation still accounts for most of measured productivity growth"
+      "finding": "Reallocation still accounts for most of measured productivity growth",
+      "figures": [
+        {
+          "src": "results/cumulative.png",
+          "alt": "Cumulative decomposition"
+        },
+        {
+          "src": "results/markup_between_within.png",
+          "alt": "Markup decomposition"
+        }
+      ],
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ],
+      "paper": "David Rezza Baqaee and Emmanuel Farhi, \"Productivity and Misallocation in General Equilibrium,\" Quarterly Journal of Economics 135(1), 2020, pp. 105–163, doi 10.1093/qje/qjz030. Circulated as NBER Working Paper 24007 (November 2017, revised October 2020)."
     },
     {
       "slug": "good-and-bad-concentration",
@@ -1018,7 +2404,22 @@
       "year": 2020,
       "authors": "Covarrubias, Gutiérrez, Philippon",
       "cite": "Covarrubias et al. (2020)",
-      "finding": "After 2002, factories that concentrated raised prices"
+      "finding": "After 2002, factories that concentrated raised prices",
+      "figures": [
+        {
+          "src": "results/mfg_scatter.png",
+          "alt": "Manufacturing price changes against concentration changes"
+        },
+        {
+          "src": "results/slopes_by_window.png",
+          "alt": "Price slope by five-year window"
+        }
+      ],
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ],
+      "paper": "Matias Covarrubias, Germán Gutiérrez and Thomas Philippon, \"From Good to Bad Concentration? US Industries over the Past 30 Years,\" NBER Macroeconomics Annual 34 (2020), pp. 1–46 (University of Chicago Press; DOI 10.1086/707169). Circulated as NBER Working Paper 25983 (June 2019, revised September 2019)."
     },
     {
       "slug": "bought-and-shelved",
@@ -1029,7 +2430,22 @@
       "year": 2021,
       "authors": "Cunningham, Ederer, Ma",
       "cite": "Cunningham et al. (2021)",
-      "finding": "Overlapping drugs kept going at about the same rate as the rest"
+      "finding": "Overlapping drugs kept going at about the same rate as the rest",
+      "figures": [
+        {
+          "src": "results/overlap_rates.png",
+          "alt": "Continuation by stage and overlap"
+        },
+        {
+          "src": "results/stop_reasons.png",
+          "alt": "Stated reasons for stopping industry trials"
+        }
+      ],
+      "paper": "Colleen Cunningham, Florian Ederer and Song Ma, \"Killer Acquisitions,\" Journal of Political Economy 129(3), 2021, pp. 649–702, doi:10.1086/712506.",
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ]
     },
     {
       "slug": "the-fed-and-the-few",
@@ -1040,7 +2456,22 @@
       "year": 2022,
       "authors": "Wang, Werning",
       "cite": "Wang & Werning (2022)",
-      "finding": "Concentrated industries lag a little after Fed surprises, but not reliably"
+      "finding": "Concentrated industries lag a little after Fed surprises, but not reliably",
+      "figures": [
+        {
+          "src": "results/price_response.png",
+          "alt": "Producer prices after a Fed surprise"
+        },
+        {
+          "src": "results/surge_speed.png",
+          "alt": "Months to pass on half the 2020–24 rise"
+        }
+      ],
+      "paper": "Olivier Wang and Iván Werning, \"Dynamic Oligopoly and Price Stickiness,\" American Economic Review 112(8), August 2022, pp. 2815–2849, doi 10.1257/aer.20201739. Working paper version: NBER Working Paper 27536, July 2020.",
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ]
     },
     {
       "slug": "the-markup-tax",
@@ -1051,7 +2482,22 @@
       "year": 2023,
       "authors": "Edmond, Midrigan, Xu",
       "cite": "Edmond et al. (2023)",
-      "finding": "The paper's arithmetic holds up"
+      "finding": "The paper's arithmetic holds up",
+      "figures": [
+        {
+          "src": "results/size_profile.png",
+          "alt": "Relative labor productivity by relative size, 2012 and 2022"
+        },
+        {
+          "src": "results/aggregate_markup.png",
+          "alt": "The aggregate markup implied by the national accounts, 1997–2025"
+        }
+      ],
+      "paper": "Chris Edmond, Virgiliu Midrigan and Daniel Yi Xu, \"How Costly Are Markups?\" Journal of Political Economy 131(7), 2023, pp. 1619–1675. Circulated as NBER Working Paper 24800, July 2018.",
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ]
     },
     {
       "slug": "market-power-on-wheels",
@@ -1062,7 +2508,26 @@
       "year": 2024,
       "authors": "Grieco, Murry, Yurukoglu",
       "cite": "Grieco et al. (2024)",
-      "finding": "Concentration fell by as much as the paper says"
+      "finding": "Concentration fell by as much as the paper says",
+      "figures": [
+        {
+          "src": "results/concentration_and_margins.png",
+          "alt": "Concentration and markup measures"
+        },
+        {
+          "src": "results/quality_and_prices.png",
+          "alt": "Quality and prices"
+        },
+        {
+          "src": "results/after_2018.png",
+          "alt": "After 2018"
+        }
+      ],
+      "docs": [
+        "TECHNICAL.md",
+        "METHODS_REVIEW.md"
+      ],
+      "paper": "Paul L. E. Grieco, Charles Murry and Ali Yurukoglu, \"The Evolution of Market Power in the US Automobile Industry,\" Quarterly Journal of Economics 139(2), 2024, pp. 1201–1253. First circulated as NBER Working Paper 29013 (July 2021)."
     },
     {
       "slug": "Minnesota-Economic-Climate-Research",

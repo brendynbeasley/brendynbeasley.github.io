@@ -1,12 +1,12 @@
 {
-  "title": "How a study *gets made*",
+  "title": "How a study gets made",
   "eyebrow": "Method",
   "summary": "Every replication goes through the same five steps, and every repository is laid out the same way, so a reader always knows where to look.",
   "template": "case-study",
   "blocks": [
     {
       "type": "text",
-      "body": "A replication is only worth reading if someone else can check it. So I treat each one like a small paper with its working shown: the question, the data, the code, the results, and an honest list of what the study cannot tell you.\n\nThe {replications} replications on this site were all built this way."
+      "body": "A replication is only worth reading if someone else can check it. I treat each one like a small paper with its working shown: the question, the data, the code, the results, and a list of what the study cannot tell you.\n\nThe {replications} replications on this site were all built this way."
     },
     {
       "type": "steps",
@@ -43,12 +43,42 @@
       "type": "cards",
       "heading": "What is in every repository",
       "items": [
-        { "label": "README.md", "title": "The write-up", "text": "The study in plain English, with its charts.", "theme": "pricing" },
-        { "label": "TECHNICAL.md", "title": "The companion", "text": "Data, rules, every test statistic and how to reproduce them.", "theme": "measurement" },
-        { "label": "data/", "title": "The sources", "text": "The public files the study is built from.", "theme": "applied" },
-        { "label": "src/", "title": "The code", "text": "Python that goes from raw files to finished tables.", "theme": "innovation" },
-        { "label": "results/", "title": "The findings", "text": "Tables, figures and a written list of what was found.", "theme": "macro" },
-        { "label": "requirements.txt", "title": "The environment", "text": "The exact packages needed to run it again.", "theme": "regulation" }
+        {
+          "label": "README.md",
+          "title": "The write-up",
+          "text": "The study in plain English, with its charts.",
+          "theme": "pricing"
+        },
+        {
+          "label": "TECHNICAL.md",
+          "title": "The companion",
+          "text": "Data, rules, every test statistic and how to reproduce them.",
+          "theme": "measurement"
+        },
+        {
+          "label": "data/",
+          "title": "The sources",
+          "text": "The public files the study is built from.",
+          "theme": "applied"
+        },
+        {
+          "label": "src/",
+          "title": "The code",
+          "text": "Python that goes from raw files to finished tables.",
+          "theme": "innovation"
+        },
+        {
+          "label": "results/",
+          "title": "The findings",
+          "text": "Tables, figures and a written list of what was found.",
+          "theme": "macro"
+        },
+        {
+          "label": "requirements.txt",
+          "title": "The environment",
+          "text": "The exact packages needed to run it again.",
+          "theme": "regulation"
+        }
       ]
     },
     {
@@ -64,7 +94,7 @@
     },
     {
       "type": "cta",
-      "title": "See what the method *turned up*",
+      "title": "The studies",
       "text": "{studies} studies, each with a one-line finding.",
       "label": "Open the research index",
       "href": "/#research"

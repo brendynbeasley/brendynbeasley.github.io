@@ -29,11 +29,10 @@ export class Shell {
   }
 
   mark() {
+    // Two sellers and the border between them: the site's background at the size of an icon.
     const svg = h('svg.brand__mark', { viewBox: '0 0 22 22', 'aria-hidden': 'true' });
-    // A five-column dot histogram: the site's whole idea at favicon size.
-    [[3, 1], [7, 2], [11, 4], [15, 2], [19, 1]].forEach(([x, count]) => {
-      for (let k = 0; k < count; k++) svg.append(h('circle', { cx: x, cy: 19 - k * 4.4, r: 1.7, fill: 'currentColor' }));
-    });
+    for (const r of [2, 5, 8]) svg.append(h('circle', { cx: 7, cy: 12, r }));
+    for (const r of [2, 5]) svg.append(h('circle', { cx: 17, cy: 7, r }));
     return svg;
   }
 

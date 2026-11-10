@@ -1,70 +1,27 @@
 {
   "name": "Brendyn Beasley",
   "eyebrow": ["Economics B.S.", "Statistics minor", "University of Minnesota", "Class of 2027"],
-  "tagline": "I take the papers that built economics and *ask again.*",
-  "lede": "{studies} studies so far. Each one starts from a result that shaped the field, rebuilds its test from public data and reports what still holds.",
   "about": {
-    "statement": "I study economics and statistics at the University of Minnesota. My work starts with a question someone has already answered. I take a paper that shaped the field, rebuild its test from public data, and see whether the answer *still holds.*",
-    "note": "So far that is {replications} replications, from Cournot's {firstYear} theory of competition to papers published in {lastYear}, plus original work on how wet years reshape Minnesota's county economies. Each replication ships with its data, its code, a technical companion and a write-up in plain English."
+    "title": "About",
+    "statement": "I study economics and statistics at the University of Minnesota and graduate in 2027. I re-run published economics papers on current public data and write up what I find. That is {replications} replications so far, each with its data and code, and {originals} projects of my own.",
+    "looking": "",
+    "note": ""
   },
   "stats": [
-    { "value": "{studies}", "label": "studies, each one a question asked again" },
-    { "value": "{span}", "label": "years between the oldest paper I have re-tested ({firstYear}) and the newest ({lastYear})" },
-    { "value": "{papers}", "label": "papers catalogued in my reading archive on market power" },
-    { "value": "{builds}", "label": "interactive tools built and shipped" }
+    { "value": "{studies}", "label": "studies" },
+    { "value": "{span}", "label": "years from the oldest paper re-tested ({firstYear}) to the newest ({lastYear})" },
+    { "value": "{papers}", "label": "papers in my market-power reading archive" },
+    { "value": "{builds}", "label": "projects in the Lab" }
   ],
   "education": [
     { "school": "University of Minnesota", "degree": "B.S. Economics", "detail": "Minor in Statistics", "when": "Class of 2027" }
   ],
+  "experience": [],
   "toolkit": ["Python", "Stata", "R", "Julia", "JavaScript", "HTML & CSS", "Git & GitHub"],
-  "capabilities": [
-    {
-      "title": "Replicate",
-      "theme": "measurement",
-      "text": "Rebuild a published result from its original sources, then extend it with data the authors never had: Census tables, SEC filings, FRED series, Medicare records, 88 million eBay listings."
-    },
-    {
-      "title": "Estimate",
-      "theme": "macro",
-      "text": "Panel regressions with fixed effects, instrumental variables, event studies, bootstrapped intervals and placebo tests, chosen to fit the question and not the other way round."
-    },
-    {
-      "title": "Explain",
-      "theme": "pricing",
-      "text": "Every study is written to be read: one question, the real numbers, a section on why it matters and a section on its limits."
-    },
-    {
-      "title": "Build",
-      "theme": "innovation",
-      "text": "Design and ship interactive tools that run in a browser: study apps, a paper archive, a county-level research dashboard."
-    }
-  ],
   "sections": {
-    "about": { "label": "About" },
-    "research": {
-      "label": "Research",
-      "title": "The questions, *asked again.*",
-      "lede": "Every dot below the line is one of my studies, placed at the year its original paper appeared. Above the line is the literature it came from.",
-      "featured": "Start with these",
-      "index": "The full index"
-    },
-    "builds": {
-      "label": "Lab",
-      "title": "Things you can *open.*",
-      "lede": "Study tools, a paper archive, a research dashboard. They run in the browser, so each card can show you the real page."
-    },
-    "contact": {
-      "label": "Contact",
-      "title": "Have a question worth *asking again?*",
-      "text": "I am glad to talk about research, data, or a paper you think deserves a second look."
-    }
-  },
-  "captions": {
-    "bell": "{dots} draws from a normal distribution. The {studies} coloured ones are studies.",
-    "market": "Supply, demand, and the point where they meet.",
-    "timeline": "{papers} papers on market power, and the {studies} studies that ask their questions again.",
-    "window": "Things that run in a browser.",
-    "question": "The next question."
+    "research": { "title": "Research", "featured": "Selected studies", "index": "All studies" },
+    "builds": { "title": "Lab" },
+    "contact": { "title": "Contact" }
   },
   "contact": {
     "email": "",
@@ -77,7 +34,7 @@
     "source": "https://github.com/brendynbeasley/brendynbeasley.github.io"
   },
   "meta": {
-    "title": "Brendyn Beasley · Economics & Statistics",
-    "description": "Brendyn Beasley studies economics and statistics at the University of Minnesota, re-testing the papers that built economics with public data."
+    "title": "Brendyn Beasley · Economics and statistics",
+    "description": "Brendyn Beasley studies economics and statistics at the University of Minnesota. 94 replication studies on market power, each with its data and code."
   }
 }

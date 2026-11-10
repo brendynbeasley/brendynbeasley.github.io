@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <!-- The Studio keeps this title, the description and the name below in step with content/site.json. -->
-  <title>Brendyn Beasley · Economics &amp; Statistics</title>
-  <meta name="description" content="Brendyn Beasley studies economics and statistics at the University of Minnesota, re-testing the papers that built economics with public data.">
+  <title>Brendyn Beasley · Economics and statistics</title>
+  <meta name="description" content="Brendyn Beasley studies economics and statistics at the University of Minnesota. 94 replication studies on market power, each with its data and code.">
   <meta name="theme-color" content="#f3eee4">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Brendyn Beasley · Economics &amp; Statistics">
-  <meta property="og:description" content="I take the papers that built economics and ask again.">
+  <meta property="og:title" content="Brendyn Beasley · Economics and statistics">
+  <meta property="og:description" content="Economics and statistics at the University of Minnesota. 94 replication studies on market power.">
   <meta property="og:image" content="https://brendynbeasley.github.io/assets/og.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
@@ -17,9 +17,10 @@
   <link rel="preload" href="assets/fonts/instrument-roman.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/css/base.css">
   <link rel="stylesheet" href="assets/css/home.css">
+  <link rel="stylesheet" href="assets/css/exhibits.css">
   <link rel="modulepreload" href="assets/js/home.js">
-  <link rel="modulepreload" href="assets/js/figure/figure.js">
-  <link rel="modulepreload" href="assets/js/figure/formations.js">
+  <link rel="modulepreload" href="assets/js/market/market.js">
+  <link rel="modulepreload" href="assets/js/market/view.js">
   <!-- Pick the theme before first paint so the page never flashes the wrong one. -->
   <script>
     (function () {
@@ -45,35 +46,36 @@
 <body class="home">
   <a class="skip" href="#about">Skip to content</a>
 
-  <!-- The figure: one canvas behind everything. See assets/js/figure/. -->
+  <!-- Two canvases sit behind everything.
+       market: a model of price competition that never stops running (assets/js/market/)
+       figure: the dots that form the research timeline (assets/js/figure/) -->
+  <canvas class="market" id="market" aria-hidden="true"></canvas>
   <canvas class="figure" id="figure" aria-hidden="true"></canvas>
   <div class="grain" aria-hidden="true"></div>
 
   <main id="main">
 
-    <!-- Each data-scene names the chart the figure forms while that element is on screen. -->
-    <section class="hero" id="top" data-scene="bell" aria-label="Introduction">
+    <!-- data-market: the market takes the screen here.  data-scene: what the dots do here. -->
+    <section class="hero" id="top" data-market data-scene="rest" aria-label="Introduction">
       <div class="wrap hero__in">
         <p class="label hero__eyebrow" data-slot="eyebrow"><span>Economics B.S.</span><span>Statistics minor</span><span>University of Minnesota</span><span>Class of 2027</span></p>
         <h1 class="hero__name display" data-slot="name"><span class="line"><!--site:first-->Brendyn<!--/site:first--></span><span class="line"><!--site:last-->Beasley<!--/site:last--></span></h1>
-        <div class="hero__row">
-          <p class="hero__tag serif" data-slot="tagline">I take the papers that built economics and <em>ask again.</em></p>
-          <p class="hero__lede" data-slot="lede"></p>
-        </div>
+        <div data-slot="console"></div>
       </div>
-      <a class="hero__cue label" href="#about"><span>Scroll</span><i></i></a>
     </section>
 
     <div class="ticker" aria-hidden="true"><div class="ticker__track" data-slot="ticker"></div></div>
 
     <section class="section" id="about" aria-labelledby="about-h">
-      <div class="stage stage--side" data-scene="market" style="--len: 1.9">
+      <div class="stage stage--side" style="--len: 1.9">
         <div class="stage__pin">
-          <div class="wrap">
+          <div class="wrap stage__split">
             <div class="stage__copy">
-              <h2 class="label stage__label" id="about-h"><b>01</b> <span data-slot="about-label">About</span></h2>
+              <p class="label stage__label"><b>01</b></p>
+              <h2 class="display stage__title" id="about-h" data-slot="about-title">About</h2>
               <p class="statement serif" data-slot="statement"></p>
             </div>
+            <div class="stage__art" data-slot="map"></div>
           </div>
         </div>
       </div>
@@ -81,13 +83,13 @@
     </section>
 
     <section class="section" id="research" aria-labelledby="research-h">
-      <div class="stage stage--top" data-scene="timeline" style="--len: 2.2">
+      <div class="stage stage--top" data-scene="timeline" style="--len: 2.1">
         <div class="stage__pin">
           <div class="wrap">
             <div class="stage__copy">
-              <p class="label stage__label"><b>02</b> <span data-slot="research-label">Research</span></p>
-              <h2 class="display stage__title" id="research-h" data-slot="research-title"></h2>
-              <p class="stage__lede" data-slot="research-lede"></p>
+              <p class="label stage__label"><b>02</b></p>
+              <h2 class="display stage__title" id="research-h" data-slot="research-title">Research</h2>
+              <p class="label stage__facts" data-slot="research-facts"></p>
             </div>
           </div>
           <p class="wrap stage__hint label" data-slot="research-hint"></p>
@@ -97,13 +99,14 @@
     </section>
 
     <section class="section" id="builds" aria-labelledby="builds-h">
-      <div class="stage stage--side" data-scene="window" style="--len: 1.7">
+      <div class="stage stage--side" data-scene="rest" style="--len: 1.7">
         <div class="stage__pin">
+          <div class="stage__wall" data-slot="wall"></div>
           <div class="wrap">
             <div class="stage__copy">
-              <p class="label stage__label"><b>03</b> <span data-slot="builds-label">Lab</span></p>
-              <h2 class="display stage__title" id="builds-h" data-slot="builds-title"></h2>
-              <p class="stage__lede" data-slot="builds-lede"></p>
+              <p class="label stage__label"><b>03</b></p>
+              <h2 class="display stage__title" id="builds-h" data-slot="builds-title">Lab</h2>
+              <p class="label stage__facts" data-slot="builds-facts"></p>
             </div>
           </div>
         </div>
@@ -111,25 +114,24 @@
       <div class="wrap body" data-slot="builds-body"></div>
     </section>
 
-    <section class="contact" id="contact" data-scene="question" aria-labelledby="contact-h">
+    <section class="contact" id="contact" data-market aria-labelledby="contact-h">
       <div class="wrap">
         <div class="contact__in">
-          <p class="label stage__label"><b>04</b> <span data-slot="contact-label">Contact</span></p>
-          <h2 class="display contact__title" id="contact-h" data-slot="contact-title"></h2>
-          <p class="stage__lede" data-slot="contact-text"></p>
+          <p class="label stage__label"><b>04</b></p>
+          <h2 class="display contact__title" id="contact-h" data-slot="contact-title">Contact</h2>
           <div class="contact__links" data-slot="contact-links"></div>
+          <div class="session" data-slot="session"></div>
         </div>
       </div>
     </section>
   </main>
 
-  <p class="caption label" aria-hidden="true"><b></b><span></span></p>
   <a class="tip" hidden></a>
   <nav class="axis" aria-label="Jump to a section"></nav>
 
   <noscript>
     <div class="wrap" style="position:relative;z-index:2;padding:40px 0">
-      <p>This site draws its content with JavaScript. Without it, you can still find everything on
+      <p>This site draws its content with JavaScript. Without it, everything is still on
       <a href="https://github.com/brendynbeasley">GitHub</a>.</p>
     </div>
   </noscript>

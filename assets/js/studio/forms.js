@@ -8,6 +8,9 @@
  */
 
 import { h, icon, clear } from '../core/dom.js';
+import { check, summarize } from '../core/copycheck.js';
+
+const PROSE = new Set(['text', 'textarea', 'markdown']);
 
 const grow = (ta) => { ta.style.height = 'auto'; ta.style.height = `${ta.scrollHeight + 2}px`; };
 
@@ -71,8 +74,17 @@ export function renderFields(fields, value, onChange, ctx = {}) {
       return h('fieldset.group', f.label && h('legend', f.label), renderFields(f.fields, value[f.key], onChange, ctx));
     }
     if (f.type === 'list') return listField(f, value, onChange, ctx);
-    const control = (CONTROLS[f.type] || CONTROLS.text)(f, () => value[f.key], (v) => { value[f.key] = v; onChange(f.key); }, ctx);
-    return h(`label.field.field--${f.type}`, h('span.field__label', f.label), control, f.hint && h('span.field__hint', f.hint));
+    // Under every box of prose: a note if the wording reads as machine-written.
+    const flag = PROSE.has(f.type) && !f.plain ? h('span.field__flag', { role: 'status' }) : null;
+    const review = () => {
+      if (!flag) return;
+      const found = check(value[f.key], { title: Boolean(f.title) });
+      flag.textContent = found.length ? `Reads as AI: ${summarize(found)}` : '';
+      flag.classList.toggle('is-ban', found.some((x) => x.level === 'ban'));
+    };
+    const control = (CONTROLS[f.type] || CONTROLS.text)(f, () => value[f.key], (v) => { value[f.key] = v; review(); onChange(f.key); }, ctx);
+    review();
+    return h(`label.field.field--${f.type}`, h('span.field__label', f.label), control, flag, f.hint && h('span.field__hint', f.hint));
   });
 }
 

@@ -17,13 +17,15 @@ import { Counter } from '../core/motion.js';
 import { WindowCard } from '../ui/cards.js';
 import { ResearchIndex } from '../ui/research.js';
 import { glyph } from '../ui/glyphs.js';
+import { TaylorExhibit } from '../exhibits/taylor.js';
+import { MinnesotaMap } from '../exhibits/minnesota.js';
 
 const THEMES = ['foundations', 'pricing', 'strategy', 'exclusion', 'measurement', 'regulation', 'macro', 'innovation', 'applied'];
 const href = (url = '') => (url.startsWith('/') ? Store.url(url) : url);
 
 /** Fields shared by every block that shows a linked page with a preview. */
 const PREVIEW_FIELDS = [
-  { key: 'title', label: 'Title', type: 'text' },
+  { key: 'title', label: 'Title', type: 'text', title: true },
   { key: 'kind', label: 'Kind', type: 'text', hint: 'For example: Web app, Study tool, Dashboard' },
   { key: 'summary', label: 'What it is', type: 'textarea' },
   { key: 'url', label: 'Live page', type: 'url', hint: 'The GitHub Pages address, if it has one' },
@@ -61,7 +63,7 @@ class TextBlock extends Block {
   static label = 'Text';
   static about = 'Paragraphs, lists and links. Markdown works.';
   static fields = [
-    { key: 'heading', label: 'Heading', type: 'text' },
+    { key: 'heading', label: 'Heading', type: 'text', title: true },
     { key: 'body', label: 'Text', type: 'markdown' },
   ];
   static sample = { heading: '', body: 'Write here. **Bold**, *italic* and [links](https://example.com) all work.' };
@@ -74,7 +76,7 @@ class StatsBlock extends Block {
   static label = 'Numbers';
   static about = 'A row of big numbers with a line under each.';
   static fields = [
-    { key: 'heading', label: 'Heading', type: 'text' },
+    { key: 'heading', label: 'Heading', type: 'text', title: true },
     { key: 'items', label: 'Numbers', type: 'list', title: 'value', item: [
       { key: 'value', label: 'Number', type: 'text' },
       { key: 'label', label: 'What it counts', type: 'text' },
@@ -97,10 +99,10 @@ class CardsBlock extends Block {
   static label = 'Cards';
   static about = 'A grid of plates. Give a card a link and the whole card becomes clickable.';
   static fields = [
-    { key: 'heading', label: 'Heading', type: 'text' },
+    { key: 'heading', label: 'Heading', type: 'text', title: true },
     { key: 'items', label: 'Cards', type: 'list', title: 'title', item: [
       { key: 'label', label: 'Small label', type: 'text' },
-      { key: 'title', label: 'Title', type: 'text' },
+      { key: 'title', label: 'Title', type: 'text', title: true },
       { key: 'text', label: 'Text', type: 'textarea' },
       { key: 'href', label: 'Link', type: 'url' },
       { key: 'theme', label: 'Corner drawing', type: 'select', options: THEMES },
@@ -127,9 +129,9 @@ class StepsBlock extends Block {
   static label = 'Steps';
   static about = 'A numbered sequence: a method, a timeline, a list of roles.';
   static fields = [
-    { key: 'heading', label: 'Heading', type: 'text' },
+    { key: 'heading', label: 'Heading', type: 'text', title: true },
     { key: 'items', label: 'Steps', type: 'list', title: 'title', item: [
-      { key: 'title', label: 'Title', type: 'text' },
+      { key: 'title', label: 'Title', type: 'text', title: true },
       { key: 'meta', label: 'Side note', type: 'text', hint: 'A date, a place, a file name' },
       { key: 'text', label: 'Text', type: 'markdown' },
     ] },
@@ -148,7 +150,7 @@ class PreviewBlock extends Block {
   static type = 'preview';
   static label = 'Linked page with preview';
   static about = 'One page you built, shown in a browser frame with its live preview.';
-  static fields = [{ key: 'heading', label: 'Heading', type: 'text' }, ...PREVIEW_FIELDS];
+  static fields = [{ key: 'heading', label: 'Heading', type: 'text', title: true }, ...PREVIEW_FIELDS];
   static sample = { title: 'My page', kind: 'Web app', summary: 'What it does, in a sentence or two.', url: '', repo: '', image: '', live: true };
 
   body() { return h('div.preview', new WindowCard(this.data).render(0)); }
@@ -159,7 +161,7 @@ class GalleryBlock extends Block {
   static label = 'Gallery of linked pages';
   static about = 'Several pages side by side, each with its preview.';
   static fields = [
-    { key: 'heading', label: 'Heading', type: 'text' },
+    { key: 'heading', label: 'Heading', type: 'text', title: true },
     { key: 'items', label: 'Pages', type: 'list', title: 'title', item: PREVIEW_FIELDS },
   ];
   static sample = { items: [{ ...PreviewBlock.sample }] };
@@ -172,7 +174,7 @@ class EmbedBlock extends Block {
   static label = 'Live embed';
   static about = 'Runs one of your interactive pages right inside this page, full width.';
   static fields = [
-    { key: 'heading', label: 'Heading', type: 'text' },
+    { key: 'heading', label: 'Heading', type: 'text', title: true },
     { key: 'url', label: 'Page to embed', type: 'url' },
     { key: 'height', label: 'Height in pixels', type: 'number' },
     { key: 'caption', label: 'Caption', type: 'text' },
@@ -256,7 +258,7 @@ class ResearchBlock extends Block {
   static label = 'Research index';
   static about = 'The searchable list of studies, optionally limited to one theme.';
   static fields = [
-    { key: 'heading', label: 'Heading', type: 'text' },
+    { key: 'heading', label: 'Heading', type: 'text', title: true },
     { key: 'theme', label: 'Theme', type: 'select', options: ['all', ...THEMES] },
     { key: 'limit', label: 'Rows before "Show all"', type: 'number' },
   ];
@@ -272,15 +274,41 @@ class BuildsBlock extends Block {
   static type = 'builds';
   static label = 'Everything from the Lab';
   static about = 'Every linked page from the home page, with previews.';
-  static fields = [{ key: 'heading', label: 'Heading', type: 'text' }];
+  static fields = [{ key: 'heading', label: 'Heading', type: 'text', title: true }];
   static sample = { heading: 'From the lab' };
 
   body() { return h('div.windows', (this.ctx.builds?.items || []).filter((b) => !b.draft).map((b, i) => new WindowCard(b).render(i))); }
 }
 
+class ExhibitBlock extends Block {
+  static type = 'exhibit';
+  static label = 'Live exhibit';
+  static about = 'One of the working exhibits: the Taylor rule chart, the Minnesota map, or the controls for the market behind the page.';
+  static fields = [
+    { key: 'heading', label: 'Heading', type: 'text', title: true },
+    { key: 'kind', label: 'Which exhibit', type: 'select', options: [
+      { value: 'taylor', label: 'Taylor rule chart' }, { value: 'minnesota', label: 'Minnesota county map' }, { value: 'market', label: 'Market controls' }] },
+  ];
+  static sample = { kind: 'taylor' };
+
+  body() {
+    const box = h('div.exhibit-slot', { 'data-kind': this.data.kind });
+    const study = (slug) => this.ctx.research?.items.find((s) => s.slug === slug);
+    const onStudy = this.ctx.openStudy || (() => {});
+    if (this.data.kind === 'market') {
+      if (this.ctx.market) box.append(this.ctx.market.renderControls());
+    } else if (this.data.kind === 'minnesota') {
+      Store.json('content/data/minnesota.json', { optional: true }).then((d) => d && box.append(new MinnesotaMap(d, { study: study('Minnesota-Economic-Climate-Research'), onStudy }).render()));
+    } else {
+      Store.json('content/data/taylor.json', { optional: true }).then((d) => d && box.append(new TaylorExhibit(d, { study: study('taylor-1993-revisited'), onStudy }).render()));
+    }
+    return box;
+  }
+}
+
 /** Every block the site knows how to draw, by type. */
 export const BLOCKS = Object.fromEntries(
-  [TextBlock, StatsBlock, CardsBlock, StepsBlock, PreviewBlock, GalleryBlock, EmbedBlock, ImageBlock, QuoteBlock, CtaBlock, ResearchBlock, BuildsBlock]
+  [TextBlock, StatsBlock, CardsBlock, StepsBlock, PreviewBlock, GalleryBlock, EmbedBlock, ImageBlock, QuoteBlock, CtaBlock, ExhibitBlock, ResearchBlock, BuildsBlock]
     .map((B) => [B.type, B]));
 
 export function renderBlocks(blocks = [], ctx = {}) {

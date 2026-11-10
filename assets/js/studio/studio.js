@@ -15,7 +15,7 @@ import { Theme } from '../core/theme.js';
 import { debounce, slugify } from '../core/util.js';
 import { GitHubClient } from './github.js';
 import { renderFields } from './forms.js';
-import { SITE_FIELDS, researchFields, BUILD_FIELDS, PAGE_FIELDS, blocksField, TEMPLATES, RESERVED, studyFromReadme } from './schema.js';
+import { SITE_FIELDS, researchFields, BUILD_FIELDS, PAGE_FIELDS, blocksField, TEMPLATES, RESERVED, studyFromReadme, paperFromReview } from './schema.js';
 
 const DRAFT = 'studio:draft:';
 const ASSET = 'studio:asset:';
@@ -220,7 +220,7 @@ class Studio {
     const data = this.doc(PATHS.research);
     const paint = () => { clear(form).append(...renderFields(researchFields(data.themes), data, () => this.touch(PATHS.research), this.formCtx)); };
     const form = h('form.form', { onSubmit: (e) => e.preventDefault() });
-    this.panel('Research', 'Every study on the site. Add one by pasting its repository address: the title, question, year and finding are read from its README.',
+    this.panel('Research', 'Every study on the site. Add one by pasting its repository address: the title, question, year, finding, charts and citation are read from the repository.',
       this.importer({
         label: 'Add a study from a GitHub repository', placeholder: 'https://github.com/you/your-study', button: 'Add study',
         run: async (url) => {
@@ -231,6 +231,12 @@ class Studio {
           const res = await fetch(`https://raw.githubusercontent.com/${m[1]}/${m[2]}/HEAD/README.md`);
           if (!res.ok) throw new Error('Could not read a README from that repository. Is it public?');
           const study = { ...studyFromReadme(await res.text(), repo), theme: data.themes[0]?.id || '', featured: false };
+          // The two companion files, if the repository has them: the citation comes from the methods review.
+          const side = (name) => fetch(`https://raw.githubusercontent.com/${m[1]}/${m[2]}/HEAD/${name}`).then((r) => (r.ok ? r.text() : '')).catch(() => '');
+          const [technical, review] = await Promise.all([side('TECHNICAL.md'), side('METHODS_REVIEW.md')]);
+          const docs = [technical && 'TECHNICAL.md', review && 'METHODS_REVIEW.md'].filter(Boolean);
+          if (docs.length) study.docs = docs;
+          if (paperFromReview(review)) study.paper = paperFromReview(review);
           data.items.unshift(study);
           this.touch(PATHS.research); paint();
           form.querySelector('details.item')?.setAttribute('open', '');
@@ -367,7 +373,7 @@ class Studio {
       .replace(/<title>[^<]*<\/title>/, `<title>${title}</title>`)
       .replace(/(<meta name="description" content=")[^"]*(")/, `$1${desc}$2`)
       .replace(/(<meta property="og:title" content=")[^"]*(")/, `$1${title}$2`)
-      .replace(/(<meta property="og:description" content=")[^"]*(")/, `$1${escapeHtml(plain(site.tagline))}$2`)
+      .replace(/(<meta property="og:description" content=")[^"]*(")/, `$1${desc}$2`)
       .replace(/(<!--site:first-->)[\s\S]*?(<!--\/site:first-->)/, `$1${escapeHtml(first)}$2`)
       .replace(/(<!--site:last-->)[\s\S]*?(<!--\/site:last-->)/, `$1${escapeHtml(rest.join(' '))}$2`)
       .replace(/("@type": "Person",\s*"name": ")[^"]*(")/, `$1${site.name.replace(/"/g, '')}$2`);
