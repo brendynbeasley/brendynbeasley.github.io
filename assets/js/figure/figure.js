@@ -200,7 +200,8 @@ export class Figure {
         this.px[i] = x; this.py[i] = y;
         const s = as + (B.s[i] - as) * e;
         let a = (aa + (B.a[i] - aa) * e) * alpha;
-        if (i < ns) a = Math.min(1, a * 1.3);
+        // Studies stand out while a chart has the stage, and recede behind content.
+        if (i < ns) a = Math.min(1, a * (0.75 + 0.55 * focus));
         if (a < 0.012 || y < -30 || y > CH + 30) continue;
         g.globalAlpha = a;
         if (i < ns && this.studies[i]?.featured) { g.fillStyle = pal.feature; }
