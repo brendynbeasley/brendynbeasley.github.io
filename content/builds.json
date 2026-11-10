@@ -1,0 +1,92 @@
+{
+  "items": [
+    {
+      "slug": "paper-archive",
+      "title": "Paper Archive",
+      "kind": "Web app",
+      "year": 2026,
+      "summary": "A reading tracker for 6,185 papers on monopoly and market power. Four buttons per paper (printed, read, notes, researched), and every click is saved back to the repository as a commit.",
+      "url": "https://brendynbeasley.github.io/paper-archive/",
+      "repo": "https://github.com/brendynbeasley/paper-archive",
+      "image": "assets/previews/paper-archive.jpg",
+      "live": true
+    },
+    {
+      "slug": "deeper-stash",
+      "title": "Deeper Stash",
+      "kind": "Web app",
+      "year": 2026,
+      "summary": "Bite-sized ideas from books, articles and podcasts in a swipeable feed, with stashes, guided journeys, quizzes and a spaced daily review so they stick.",
+      "url": "https://brendynbeasley.github.io/deeper-stash/",
+      "repo": "https://github.com/brendynbeasley/deeper-stash",
+      "image": "assets/previews/deeper-stash.jpg",
+      "live": true
+    },
+    {
+      "slug": "north-star-atlas",
+      "title": "North Star Atlas",
+      "kind": "Research dashboard",
+      "year": 2026,
+      "summary": "The interactive side of the Minnesota Climate Project: map county patterns, compare a county with the state, and see the regression results as charts.",
+      "url": "",
+      "repo": "https://github.com/brendynbeasley/Minnesota-Economic-Climate-Research/tree/HEAD/products/north-star-atlas",
+      "image": "assets/previews/north-star-atlas.jpg",
+      "live": false
+    },
+    {
+      "slug": "teller",
+      "title": "TELLER",
+      "kind": "Study tool",
+      "year": 2026,
+      "summary": "A money-and-banking tutor that lives in a retro terminal. Pick a machine, from a Commodore 64 to MS-DOS, set the pace and the difficulty, and work through the chapter at the prompt.",
+      "url": "https://brendynbeasley.github.io/teller-chapter11/",
+      "repo": "https://github.com/brendynbeasley/teller-chapter11",
+      "image": "assets/previews/teller-chapter11.jpg",
+      "live": true
+    },
+    {
+      "slug": "recall",
+      "title": "Recall",
+      "kind": "Desktop app",
+      "year": 2026,
+      "summary": "An offline flashcard studio for Windows that pairs Quizlet-style study modes and games with Anki-style spaced repetition (SM-2 or FSRS).",
+      "url": "",
+      "repo": "https://github.com/brendynbeasley/recall",
+      "image": "assets/previews/recall.jpg",
+      "live": false
+    },
+    {
+      "slug": "money-banking",
+      "title": "Money & Banking",
+      "kind": "Course companion",
+      "year": 2026,
+      "summary": "A whole money-and-banking course in 23 chapters, from the financial system and interest rates to banks, central banks and monetary policy.",
+      "url": "https://brendynbeasley.github.io/money-banking/",
+      "repo": "https://github.com/brendynbeasley/money-banking",
+      "image": "assets/previews/money-banking.jpg",
+      "live": false
+    },
+    {
+      "slug": "math-stats-study",
+      "title": "Math Stats",
+      "kind": "Course companion",
+      "year": 2026,
+      "summary": "Sampling distributions, estimation, hypothesis tests, linear models, ANOVA, nonparametrics and Bayesian methods, with every chapter problem turned into a quiz.",
+      "url": "https://brendynbeasley.github.io/math-stats-study/",
+      "repo": "https://github.com/brendynbeasley/math-stats-study",
+      "image": "assets/previews/math-stats-study.jpg",
+      "live": false
+    },
+    {
+      "slug": "bonds-loans-study-guide",
+      "title": "Bonds & Loans",
+      "kind": "Study guide",
+      "year": 2026,
+      "summary": "Bond and loan maths in four steps: learn, flashcards, practice, test yourself. Fill-in-the-blanks, a matching game and a formula sheet come with it.",
+      "url": "https://brendynbeasley.github.io/bonds-loans-study-guide/",
+      "repo": "https://github.com/brendynbeasley/bonds-loans-study-guide",
+      "image": "assets/previews/bonds-loans-study-guide.jpg",
+      "live": true
+    }
+  ]
+}

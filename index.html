@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <!-- The Studio keeps this title, the description and the name below in step with content/site.json. -->
+  <title>Brendyn Beasley · Economics &amp; Statistics</title>
+  <meta name="description" content="Brendyn Beasley studies economics and statistics at the University of Minnesota, re-testing the papers that built economics with public data.">
+  <meta name="theme-color" content="#f3eee4">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Brendyn Beasley · Economics &amp; Statistics">
+  <meta property="og:description" content="I take the papers that built economics and ask again.">
+  <meta property="og:image" content="https://brendynbeasley.github.io/assets/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/fraunces-roman.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/instrument-roman.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/home.css">
+  <link rel="modulepreload" href="assets/js/home.js">
+  <link rel="modulepreload" href="assets/js/figure/figure.js">
+  <link rel="modulepreload" href="assets/js/figure/formations.js">
+  <!-- Pick the theme before first paint so the page never flashes the wrong one. -->
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.dataset.theme = t;
+        if (t === 'dark') document.querySelector('meta[name="theme-color"]').content = '#0f0d0b';
+      } catch (e) {}
+    })();
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Brendyn Beasley",
+    "url": "https://brendynbeasley.github.io/",
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "University of Minnesota" },
+    "knowsAbout": ["Economics", "Statistics", "Industrial organization", "Econometrics"],
+    "sameAs": ["https://github.com/brendynbeasley"]
+  }
+  </script>
+</head>
+<body class="home">
+  <a class="skip" href="#about">Skip to content</a>
+
+  <!-- The figure: one canvas behind everything. See assets/js/figure/. -->
+  <canvas class="figure" id="figure" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+
+  <main id="main">
+
+    <!-- Each data-scene names the chart the figure forms while that element is on screen. -->
+    <section class="hero" id="top" data-scene="bell" aria-label="Introduction">
+      <div class="wrap hero__in">
+        <p class="label hero__eyebrow" data-slot="eyebrow"><span>Economics B.S.</span><span>Statistics minor</span><span>University of Minnesota</span><span>Class of 2027</span></p>
+        <h1 class="hero__name display" data-slot="name"><span class="line"><!--site:first-->Brendyn<!--/site:first--></span><span class="line"><!--site:last-->Beasley<!--/site:last--></span></h1>
+        <div class="hero__row">
+          <p class="hero__tag serif" data-slot="tagline">I take the papers that built economics and <em>ask again.</em></p>
+          <p class="hero__lede" data-slot="lede"></p>
+        </div>
+      </div>
+      <a class="hero__cue label" href="#about"><span>Scroll</span><i></i></a>
+    </section>
+
+    <div class="ticker" aria-hidden="true"><div class="ticker__track" data-slot="ticker"></div></div>
+
+    <section class="section" id="about" aria-labelledby="about-h">
+      <div class="stage stage--side" data-scene="market" style="--len: 1.9">
+        <div class="stage__pin">
+          <div class="wrap">
+            <div class="stage__copy">
+              <h2 class="label stage__label" id="about-h"><b>01</b> <span data-slot="about-label">About</span></h2>
+              <p class="statement serif" data-slot="statement"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wrap body" data-slot="about-body"></div>
+    </section>
+
+    <section class="section" id="research" aria-labelledby="research-h">
+      <div class="stage stage--top" data-scene="timeline" style="--len: 2.2">
+        <div class="stage__pin">
+          <div class="wrap">
+            <div class="stage__copy">
+              <p class="label stage__label"><b>02</b> <span data-slot="research-label">Research</span></p>
+              <h2 class="display stage__title" id="research-h" data-slot="research-title"></h2>
+              <p class="stage__lede" data-slot="research-lede"></p>
+            </div>
+          </div>
+          <p class="wrap stage__hint label" data-slot="research-hint"></p>
+        </div>
+      </div>
+      <div class="wrap body" data-slot="research-body"></div>
+    </section>
+
+    <section class="section" id="builds" aria-labelledby="builds-h">
+      <div class="stage stage--side" data-scene="window" style="--len: 1.7">
+        <div class="stage__pin">
+          <div class="wrap">
+            <div class="stage__copy">
+              <p class="label stage__label"><b>03</b> <span data-slot="builds-label">Lab</span></p>
+              <h2 class="display stage__title" id="builds-h" data-slot="builds-title"></h2>
+              <p class="stage__lede" data-slot="builds-lede"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wrap body" data-slot="builds-body"></div>
+    </section>
+
+    <section class="contact" id="contact" data-scene="question" aria-labelledby="contact-h">
+      <div class="wrap">
+        <div class="contact__in">
+          <p class="label stage__label"><b>04</b> <span data-slot="contact-label">Contact</span></p>
+          <h2 class="display contact__title" id="contact-h" data-slot="contact-title"></h2>
+          <p class="stage__lede" data-slot="contact-text"></p>
+          <div class="contact__links" data-slot="contact-links"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <p class="caption label" aria-hidden="true"><b></b><span></span></p>
+  <a class="tip" hidden></a>
+  <nav class="axis" aria-label="Jump to a section"></nav>
+
+  <noscript>
+    <div class="wrap" style="position:relative;z-index:2;padding:40px 0">
+      <p>This site draws its content with JavaScript. Without it, you can still find everything on
+      <a href="https://github.com/brendynbeasley">GitHub</a>.</p>
+    </div>
+  </noscript>
+
+  <script type="module" src="assets/js/home.js"></script>
+</body>
+</html>

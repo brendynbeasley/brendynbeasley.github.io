@@ -1,0 +1,77 @@
+/* ==========================================================================
+   page.css — inner pages and the blocks they are made of.
+   ========================================================================== */
+
+.phead { position: relative; min-height: 86vh; min-height: 86svh; display: flex; align-items: center; padding-block: calc(var(--bar) + 40px) 60px; }
+.phead > .wrap { width: min(100% - 2 * var(--gutter), var(--max)); }
+.phead__in { max-width: min(54%, 720px); }
+.phead__title { font-size: clamp(44px, 6.6vw, 112px); text-wrap: balance; animation: rise 1.2s var(--e-out) 0.1s both; }
+.phead__summary { margin-top: clamp(16px, 2.6vh, 28px); max-width: 44ch; font-size: clamp(17px, 1.5vw, 21px); color: var(--ink-2); text-wrap: pretty; animation: rise 1.2s var(--e-out) 0.3s both; }
+@keyframes rise { from { opacity: 0; transform: translateY(18px); } }
+
+.pbody { display: grid; gap: clamp(70px, 12vh, 150px); padding-block: clamp(30px, 6vh, 70px) clamp(90px, 16vh, 190px); }
+.block { display: grid; gap: clamp(22px, 3vw, 38px); min-width: 0; }
+.block__heading {
+  font-family: var(--f-display); font-weight: 400; font-size: clamp(26px, 2.9vw, 44px); line-height: 1.05; letter-spacing: -0.02em;
+  padding-bottom: 16px; border-bottom: 1px solid var(--rule); font-variation-settings: "opsz" 96, "SOFT" 30; text-wrap: balance;
+}
+.block__heading em { font-style: italic; color: var(--accent); }
+
+/* Prose */
+.prose { max-width: 66ch; font-size: clamp(17px, 1.25vw, 19px); line-height: 1.62; color: var(--ink-2); display: grid; gap: 1.05em; }
+.prose > :first-child { margin-top: 0; }
+.prose p:first-child { color: var(--ink); }
+.prose h2, .prose h3 { font-family: var(--f-display); font-weight: 400; color: var(--ink); letter-spacing: -0.015em; line-height: 1.12; margin-top: 0.6em; }
+.prose h2 { font-size: 1.7em; } .prose h3 { font-size: 1.32em; }
+.prose ul, .prose ol { display: grid; gap: 0.5em; padding-left: 1.3em; }
+.prose ul { list-style: none; }
+.prose ul li { position: relative; }
+.prose ul li::before { content: ""; position: absolute; left: -1.1em; top: 0.68em; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
+.prose ol { list-style: decimal; }
+.prose ol li::marker { font: 500 0.8em var(--f-mono); color: var(--accent); }
+.prose strong { color: var(--ink); font-weight: 600; }
+.prose code { font: 0.86em var(--f-mono); background: var(--paper-2); padding: 0.14em 0.4em; border-radius: 3px; color: var(--ink); }
+.prose blockquote { font-family: var(--f-display); font-style: italic; font-size: 1.25em; line-height: 1.35; color: var(--ink); padding-left: 0.9em; border-left: 2px solid var(--accent); }
+.block--text .prose { margin-left: clamp(0px, 16vw, 232px); }
+
+/* Cards */
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 270px), 1fr)); gap: clamp(20px, 2.4vw, 34px); }
+.cards .plate { min-height: 210px; }
+
+/* Steps */
+.steps { border-top: 1px solid var(--ink); }
+.step { display: grid; grid-template-columns: clamp(64px, 9vw, 150px) minmax(0, 1fr) minmax(0, 220px); gap: clamp(14px, 2.4vw, 40px); padding: clamp(22px, 3vw, 38px) 0; border-bottom: 1px solid var(--rule); align-items: start; }
+.step__n { font-size: clamp(38px, 5vw, 76px); line-height: 0.85; font-weight: 320; color: var(--accent); font-variant-numeric: tabular-nums; }
+.step__title { font-family: var(--f-display); font-weight: 400; font-size: clamp(22px, 2.1vw, 31px); line-height: 1.1; letter-spacing: -0.015em; margin-bottom: 10px; }
+.step .prose { font-size: 16.5px; max-width: 60ch; }
+.step__meta { text-align: right; padding-top: 8px; }
+
+/* Preview, embed, image */
+.preview { max-width: 980px; }
+.preview .window__title { font-size: clamp(28px, 3vw, 42px); }
+.embed .window__frame iframe { width: 100%; border: 0; background: #fff; }
+.embed figcaption, .picture figcaption, .quote figcaption { margin-top: 14px; }
+.picture img { width: 100%; border: 1px solid var(--rule); border-radius: var(--radius); background: var(--card); }
+
+/* Quote and call to action */
+.quote blockquote { font-size: clamp(30px, 4.6vw, 76px); line-height: 1.04; max-width: 20ch; text-wrap: balance; }
+.quote blockquote::before { content: "“"; color: var(--accent); margin-left: -0.42em; }
+.quote blockquote::after { content: "”"; color: var(--accent); }
+.cta { display: grid; gap: 18px; justify-items: start; padding: clamp(30px, 5vw, 70px) 0; border-block: 1px solid var(--ink); }
+.cta h2 { font-size: clamp(36px, 5.4vw, 88px); text-wrap: balance; }
+.cta p { max-width: 50ch; font-size: 18px; }
+
+/* The end of a page */
+.pend { position: relative; min-height: 84vh; min-height: 84svh; display: flex; align-items: flex-start; padding-top: clamp(30px, 6vh, 70px); border-top: 1px solid var(--rule); }
+.pend > .wrap { width: min(100% - 2 * var(--gutter), var(--max)); display: grid; gap: 14px; }
+.pend__link { display: inline-flex; align-items: center; gap: 0.3em; width: fit-content; font-size: clamp(38px, 5.6vw, 92px); text-decoration: none; }
+.pend__link .ico { font-size: 0.5em; color: var(--accent); transition: transform 0.6s var(--e-out); }
+.pend__link:hover .ico { transform: translateX(0.3em); }
+
+@media (max-width: 760px) {
+  .phead { align-items: flex-start; padding-top: calc(var(--bar) + 5svh); }
+  .phead__in { max-width: 100%; }
+  .block--text .prose { margin-left: 0; }
+  .step { grid-template-columns: 54px minmax(0, 1fr); }
+  .step__meta { grid-column: 2; text-align: left; padding-top: 0; }
+}

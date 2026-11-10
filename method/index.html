@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <!-- This file is the template for every page. The Studio copies it into a folder
+       named after the page and fills in the three values below. On its own it shows
+       whichever page is named in the address, as /page/?p=name -->
+  <meta name="page" content="method">
+  <title>How a study gets made · Brendyn Beasley</title>
+  <meta name="description" content="How each replication is chosen, rebuilt from public data and written up.">
+  <meta name="theme-color" content="#f3eee4">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="../assets/fonts/fraunces-roman.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/home.css">
+  <link rel="stylesheet" href="../assets/css/page.css">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.dataset.theme = t;
+        if (t === 'dark') document.querySelector('meta[name="theme-color"]').content = '#0f0d0b';
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body class="page">
+  <a class="skip" href="#content">Skip to content</a>
+  <canvas class="figure" id="figure" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+
+  <main id="main">
+    <header class="phead" data-scene="scatter">
+      <div class="wrap">
+        <div class="phead__in">
+          <p class="label stage__label"><b>§</b> <span data-slot="eyebrow"></span></p>
+          <h1 class="display phead__title" data-slot="title"></h1>
+          <p class="phead__summary" data-slot="summary"></p>
+        </div>
+      </div>
+    </header>
+    <div class="wrap pbody" id="content" data-slot="blocks"></div>
+    <section class="pend" data-scene="bell"><div class="wrap" data-slot="end"></div></section>
+  </main>
+
+  <noscript><p class="wrap" style="position:relative;z-index:2;padding:40px 0">This page needs JavaScript to draw its content.</p></noscript>
+  <script type="module" src="../assets/js/page.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "pages": [
+    {
+      "slug": "method",
+      "title": "How a study gets made",
+      "navLabel": "Method",
+      "template": "case-study",
+      "nav": true
+    }
+  ]
+}

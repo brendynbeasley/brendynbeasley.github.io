@@ -1,0 +1,73 @@
+{
+  "title": "How a study *gets made*",
+  "eyebrow": "Method",
+  "summary": "Every replication goes through the same five steps, and every repository is laid out the same way, so a reader always knows where to look.",
+  "template": "case-study",
+  "blocks": [
+    {
+      "type": "text",
+      "body": "A replication is only worth reading if someone else can check it. So I treat each one like a small paper with its working shown: the question, the data, the code, the results, and an honest list of what the study cannot tell you.\n\nThe {replications} replications on this site were all built this way."
+    },
+    {
+      "type": "steps",
+      "heading": "Five steps, every time",
+      "items": [
+        {
+          "title": "Pick the paper",
+          "meta": "Paper Archive",
+          "text": "The reading list comes from a bibliography of {papers} papers on monopoly and market power. 610 of them are marked as must-reads and ordered into a 14-phase reading plan. I work through it and choose papers whose central claim can be tested again."
+        },
+        {
+          "title": "Read it closely",
+          "meta": "METHODS_REVIEW.md",
+          "text": "Before any code, I write a methods review: what the paper claims, which result I am going to test, what I actually read, and what the original numbers were."
+        },
+        {
+          "title": "Find public data",
+          "meta": "data/",
+          "text": "Everything is rebuilt from sources anyone can download: Census tables, FRED series, SEC filings, Medicare records. The raw files sit in the repository next to the code that reads them."
+        },
+        {
+          "title": "Rebuild, then extend",
+          "meta": "src/ and results/",
+          "text": "First reproduce the original result as closely as the public data allows. Then run the same test on the years the authors never saw. Tables, figures and the full list of findings are saved to `results/`."
+        },
+        {
+          "title": "Write it for a reader",
+          "meta": "README.md",
+          "text": "The write-up opens with a real example, explains the idea without jargon, reports the numbers, and ends with two sections: why it matters, and the limits of the study. A separate technical companion holds the data notes, test statistics and steps to reproduce everything."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "heading": "What is in every repository",
+      "items": [
+        { "label": "README.md", "title": "The write-up", "text": "The study in plain English, with its charts.", "theme": "pricing" },
+        { "label": "TECHNICAL.md", "title": "The companion", "text": "Data, rules, every test statistic and how to reproduce them.", "theme": "measurement" },
+        { "label": "data/", "title": "The sources", "text": "The public files the study is built from.", "theme": "applied" },
+        { "label": "src/", "title": "The code", "text": "Python that goes from raw files to finished tables.", "theme": "innovation" },
+        { "label": "results/", "title": "The findings", "text": "Tables, figures and a written list of what was found.", "theme": "macro" },
+        { "label": "requirements.txt", "title": "The environment", "text": "The exact packages needed to run it again.", "theme": "regulation" }
+      ]
+    },
+    {
+      "type": "preview",
+      "heading": "Where the reading list lives",
+      "title": "Paper Archive",
+      "kind": "Web app",
+      "summary": "The tracker behind step one. Every paper has four buttons (printed, read, notes, researched), and each click is saved back to the repository as a commit.",
+      "url": "https://brendynbeasley.github.io/paper-archive/",
+      "repo": "https://github.com/brendynbeasley/paper-archive",
+      "image": "assets/previews/paper-archive.jpg",
+      "live": true
+    },
+    {
+      "type": "cta",
+      "title": "See what the method *turned up*",
+      "text": "{studies} studies, each with a one-line finding.",
+      "label": "Open the research index",
+      "href": "/#research"
+    }
+  ]
+}
