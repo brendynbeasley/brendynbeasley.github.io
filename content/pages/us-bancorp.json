@@ -7,7 +7,7 @@
   "blocks": [
     {
       "type": "text",
-      "body": "I took U.S. Bancorp apart using only public records, mostly SEC filings and data from bank regulators. This page has the main findings and a chart that updates itself every morning. The full report will go up here next."
+      "body": "I took U.S. Bancorp apart using SEC filings, bank regulators’ data, and research databases licensed through the University of Minnesota. This page has the main findings and a chart that updates itself every morning. The full report will go up here next."
     },
     {
       "type": "exhibit",
@@ -18,9 +18,14 @@
       "heading": "What I found so far",
       "items": [
         {
-          "title": "Its lead over rival banks is gone",
-          "meta": "2005 to 2024",
-          "text": "In 2005 it earned about 21 points more on its equity than its typical rival. By 2024 the gap was close to zero."
+          "title": "Its lead over rival banks has mostly gone",
+          "meta": "2005 to 2025",
+          "text": "In 2005 it earned about 21 points more on its equity than its typical rival. By 2024 the bank itself was slightly behind. The parent company is still a little ahead, but mainly because it holds less equity, not because it earns more on its assets."
+        },
+        {
+          "title": "Shareholders did worse than at rival banks",
+          "meta": "late 2016 to 2025",
+          "text": "Counting dividends, its stock returned 61%. The typical rival returned 178%. It came last of ten."
         },
         {
           "title": "Fees are what still set it apart",
@@ -34,13 +39,23 @@
         },
         {
           "title": "It was hit harder in 2022 and 2023",
-          "meta": "2015 to 2023",
-          "text": "Its capital cushion was the thinnest of 11 big banks every year from 2015 to 2020. When rates jumped, its bond losses were the second worst of the 11, and its stock fell further than its rivals’ in the March 2023 bank scare. Its capital stayed below its typical rival’s through 2025 and only moved above it in 2026."
+          "meta": "2015 to 2026",
+          "text": "Its capital cushion was below its typical rival’s almost every year from 2015 to 2025. When rates jumped, its bond losses were the second worst of 11, and its stock fell further than its rivals’ in the March 2023 bank scare. Bond investors stayed calmer than stock investors. Its capital moved above the typical rival’s only in 2026."
         },
         {
           "title": "Most of its Twin Cities deposits are probably not local",
           "meta": "2025",
           "text": "On paper it holds 41% of the area’s deposits. But 85% of that sits in two downtown offices that likely hold business from across the country. Leave those two out and its share is about 15%, the same as in 1994."
+        },
+        {
+          "title": "It lends far less to local small businesses than it used to",
+          "meta": "1996 to 2025",
+          "text": "Its share of small-business lending in the Twin Cities fell from 36% to 9%. Over the same years its local deposit share stayed near 15%."
+        },
+        {
+          "title": "The Twin Cities share of its jobs has not been shrinking",
+          "meta": "2010 to 2025",
+          "text": "About 17% of its U.S. employees work here, close to the 2010 share. It rose to 20% by 2020 and dropped when the Union Bank deal added California staff. These counts are estimates built from online job profiles."
         },
         {
           "title": "The books look clean",
@@ -59,9 +74,9 @@
       "heading": "How I did it",
       "items": [
         {
-          "title": "Public records only",
+          "title": "Public data first",
           "meta": "about 50,000 files",
-          "text": "Filings, regulator data and court records. Each file is logged with where it came from and when."
+          "text": "Filings, regulator data and court records, plus stock, bond, analyst and workforce data licensed through the University of Minnesota. Each file is logged with where it came from and when."
         },
         {
           "title": "Every section checked twice",
@@ -78,7 +93,7 @@
     {
       "type": "text",
       "heading": "What I still can’t answer",
-      "body": "Some questions need records that aren’t public: what those two downtown offices really hold, how the Union Bank purchase has done on its own, and how many Minnesota jobs the bank supports. Each one would take a records request or data the bank would have to release."
+      "body": "Some questions need records that aren’t public: what those two downtown offices really hold, how the Union Bank purchase has done on its own, and what workers are actually paid. The last one needs Census data that takes an application and about a year to get."
     },
     {
       "type": "cta",
