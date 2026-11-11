@@ -104,7 +104,7 @@ export class BankMonitor {
       h('div.bankmon__why',
         h('p', v.why),
         h('p.label', `Last check ${day(this.d.checked)}, ${ago(this.d.checked)}  ·  `, this.live),
-        failed.length ? h('p.bankmon__warn', `${failed.length} source${failed.length > 1 ? 's' : ''} could not be reached on that run: ${failed.map((x) => x.name).join(', ')}.`) : null));
+        failed.length ? h('p.bankmon__warn', `${failed.length} source${failed.length > 1 ? 's' : ''} could not be checked on that run: ${failed.map((x) => x.name).join(', ')}.`) : null));
   }
 
   async ask() {
