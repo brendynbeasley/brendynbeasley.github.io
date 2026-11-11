@@ -1,0 +1,174 @@
+{
+  "title": "U.S. Bancorp, *watched every morning*",
+  "eyebrow": "Study in progress",
+  "summary": "How the bank run from Minneapolis makes its money, what became of its famous lead over its peers, and what it really is in the Twin Cities. The report is written. The exhibit below checks public sources every morning for anything that could change it.",
+  "template": "case-study",
+  "sellers": 9,
+  "blocks": [
+    {
+      "type": "text",
+      "body": "This is the first chapter of a study of banking in the Twin Cities: an outside, public-records teardown of U.S. Bancorp and its bank, U.S. Bank National Association. It is not investment advice and gives no price target.\n\nThe report was finished on 11 November 2026. It runs to about 15,400 words, built from 28 module memos, each of which was checked by a separate adversarial review that recomputed a sample of its figures. Every number in it is traced to a public document or to the script that computed it, and a machine check refuses any memo with a figure it cannot trace.\n\nTwo steps are left before the full report goes up here, both required by the study's own plan. The sections on conduct, litigation and named people get a review aimed only at fairness and defamation risk, and the bank is offered a chance to comment on the factual claims. Until then this page shows the live monitor and the working findings, without the conduct material."
+    },
+    {
+      "type": "exhibit",
+      "heading": "The monitor",
+      "kind": "usbancorp"
+    },
+    {
+      "type": "steps",
+      "heading": "Working findings, before the bank's reply",
+      "items": [
+        {
+          "title": "The famous performance lead is gone or nearly gone",
+          "meta": "High that it narrowed; low on today's sign",
+          "text": "On the bank-level basis the gap between U.S. Bancorp's return on tangible common equity and the median of its five closest peers was 20.85 points in 2005, 7.58 in 2015, 3.94 in 2019 and -1.89 in 2024. On the holding-company basis the 2024 gap is still +2.57, so today's sign depends on the basis. The efficiency ratio went from 45.1 against a peer median of 61.4 in 2005 to 61.0 against 56.9 in 2024, rank 10 of 12."
+        },
+        {
+          "title": "What remains distinctive is fees and an institutional funding base",
+          "meta": "High on fees; medium on deposits",
+          "text": "Fees were 40.2% of bank-level revenue against a peer median of 27.2% in 2025, and the bank is first of 117 reporting banks in corporate trust. Its share of deposits that pay no interest fell from 29.1% to 16.1% between 2021 Q4 and 2024 Q4, and its estimated uninsured deposit share, 53.1% in 2026 Q2, is the highest of 11."
+        },
+        {
+          "title": "The accounting is clean and roughly neutral",
+          "meta": "Medium-high",
+          "text": "No restatement or material weakness in any 10-K. Reserves covered later losses at about the peer median in the financial crisis and below it, though not in the bottom quartile, in 2011 to 2019. Items management calls one-time recur, and they lean 3.8 to 1 toward excluding charges rather than gains."
+        },
+        {
+          "title": "Capital was run thin, then the Union Bank deal and the 2022 rate shock exposed the balance sheet",
+          "meta": "High on facts; medium on the reading",
+          "text": "Holding-company common equity tier 1 was the lowest of 11 at every year-end from 2015 to 2020. The unrealized loss on the held-to-maturity book was -32.5% of tangible equity at 2022 Q4, second worst of 11. In March 2023 the stock fell -27.6% against a peer median of -19.0%. Capital is back at the peer median in 2025."
+        },
+        {
+          "title": "Labor was lean in the past and is ordinary now, with no causal result",
+          "meta": "Medium",
+          "text": "The labor share of value added averaged 29.5% against a peer median of 41.5% in 2001 to 2007, the lowest in the group. Disclosed median employee pay rose 24.5% in real terms from FY2017 to FY2025, more than the peer median or the CEO's pay. None of the labor results is causal: the one causal design attempted did not survive review."
+        },
+        {
+          "title": "Union Bank was cheap to buy and costly to hold through 2023, but is not shown to have destroyed value",
+          "meta": "Low-medium",
+          "text": "Promised tangible-book dilution of about 1% became about 11%, merger charges ran 24% over the announced estimate, and the $900 million of cost savings was reported met. Whether the deal paid off for shareholders cannot yet be determined."
+        },
+        {
+          "title": "The Twin Cities deposit share sits mostly in two booking offices",
+          "meta": "High on numbers; medium on what the balances are",
+          "text": "U.S. Bank reports 41.1% of metro deposits, but 85.1% of its metro deposits sit in two downtown offices whose balances are probably national. Excluding very large offices its share is 14.6%, about where it was in 1994 (14.9%). Its share of local mortgage originations fell from 12.1% in 2011 to 2.2% in 2025 on a constant definition."
+        },
+        {
+          "title": "The headquarters is anchored in Minneapolis, but its economic weight is uncertain",
+          "meta": "Low-medium",
+          "text": "Minnesota branches were cut less than in any other large state once Union Bank offices are set aside, and the head-office lease was renewed in 2023. But the Twin Cities share of the firm's jobs cannot be measured from public data, and a cross-metro study of headquarters losses finds no detectable effect on local bank employment."
+        },
+        {
+          "title": "Priced like an ordinary regional bank",
+          "meta": "Medium",
+          "text": "Trailing price to earnings of 11.9 against a peer median of 11.8. The premium on tangible book over the peer median fell from 61% at 2016 Q4 to 8% at 2026 Q3, and most of what is left is an accounting effect of unrealized securities losses."
+        },
+        {
+          "title": "Some of the biggest questions cannot be answered from outside",
+          "meta": "High, as a statement of the gaps",
+          "text": "What the two booking offices hold, Union Bank's stand-alone earnings, any worker-level pay, and where the foundation's money goes. Each has a named dataset or records request that would settle it."
+        }
+      ]
+    },
+    {
+      "type": "stats",
+      "heading": "The Twin Cities in four numbers",
+      "items": [
+        {
+          "value": "41.1%",
+          "label": "of metro deposits are booked at U.S. Bank, 2025"
+        },
+        {
+          "value": "85.1%",
+          "label": "of those sit in two downtown offices"
+        },
+        {
+          "value": "14.6%",
+          "label": "its share once very large offices are set aside, against 14.9% in 1994"
+        },
+        {
+          "value": "2.2%",
+          "label": "its share of local first-lien mortgages in 2025, down from 12.1% in 2011"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "How the monitor works",
+      "body": "Every morning at about 7:17 Central, GitHub runs a short script, `tools/usb-monitor.mjs`, on its own servers. Nothing runs on my computer. The script asks six public sources whether anything has happened since the report was written:\n\n- the FDIC's Call Report data for U.S. Bank and its five core peers\n- every new U.S. Bancorp filing on SEC EDGAR, and new 10-Ks and 10-Qs from the peers\n- Federal Reserve Board press releases\n- the Federal Register\n- CFPB enforcement actions and the consumer complaint count\n- new years of FDIC deposit data and HMDA mortgage data\n\nEach new item is routed to the findings and report sections it could touch, using the same map the project's own monitor uses. Five tripwires watch the latest quarter: a move in the share of deposits that pay no interest, the efficiency ratio, the loan-loss allowance, nonaccrual loans, or a jump in total assets. The verdict is one of four: **no change**, **no change expected**, **review** (new periodic data has arrived), or **revisit** (a serious filing or order, or a tripwire crossed).\n\nThe monitor routes; it never edits the report. A person reads what it finds and decides whether a conclusion changes."
+    },
+    {
+      "type": "steps",
+      "heading": "How the study was made",
+      "items": [
+        {
+          "title": "Questions first",
+          "meta": "plan/",
+          "text": "A research design with 27 hypotheses, each dated and graded for what kind of answer it could get before any data was examined."
+        },
+        {
+          "title": "Public data only",
+          "meta": "49,637 files",
+          "text": "SEC filings, Call Reports, FDIC deposit data, HMDA and CRA lending, enforcement orders, labor and political records. Every file is logged with its address, the date it was fetched and a checksum."
+        },
+        {
+          "title": "Twenty-six modules",
+          "meta": "A to Z",
+          "text": "Anatomy, accounting, financial analysis, labor, competition, conduct, governance, valuation, the Twin Cities and more, each written from its own scripts."
+        },
+        {
+          "title": "An adversarial review of every memo",
+          "meta": "29 reviews",
+          "text": "A separate session recomputed a sample of each memo's figures and argued against its reading. The report uses the reviewed versions."
+        },
+        {
+          "title": "Rebuilt from a clean copy",
+          "meta": "rebuild check",
+          "text": "The data layer was rebuilt from a fresh clone and matched the original file for file, apart from differences the check explains."
+        },
+        {
+          "title": "Who did the work",
+          "meta": "disclosure",
+          "text": "The collection, analysis and drafting were done by AI models under my direction. Every figure is traced to a public source or to code, so a reader can check it without trusting the drafting."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "heading": "What would settle the open questions",
+      "items": [
+        {
+          "label": "01",
+          "title": "What the two booking offices hold",
+          "text": "Decides whether Twin Cities deposits are local at all. Needs the bank's treasury or the FDIC's notes.",
+          "theme": "measurement"
+        },
+        {
+          "label": "02",
+          "title": "Union Bank on its own",
+          "text": "Decides whether the deal paid. Needs company disclosure or segment data.",
+          "theme": "strategy"
+        },
+        {
+          "label": "03",
+          "title": "Jobs and pay in Minnesota by employer",
+          "text": "The lead labor question. Needs Census LEHD through a research data center, or state wage records.",
+          "theme": "applied"
+        },
+        {
+          "label": "04",
+          "title": "Internal transfer pricing",
+          "text": "Decides which business earns the deposit spread. Needs company disclosure.",
+          "theme": "pricing"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "The rest of the *research*",
+      "text": "Replications and original studies on market power, banking and growth.",
+      "label": "All studies",
+      "href": "/#research"
+    }
+  ]
+}

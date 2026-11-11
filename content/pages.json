@@ -6,6 +6,13 @@
       "navLabel": "Method",
       "template": "case-study",
       "nav": true
+    },
+    {
+      "slug": "us-bancorp",
+      "title": "U.S. Bancorp, watched every morning",
+      "navLabel": "U.S. Bancorp",
+      "template": "case-study",
+      "nav": true
     }
   ]
 }

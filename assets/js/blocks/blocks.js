@@ -13,12 +13,13 @@
 import { h, icon, linkAttrs, emph } from '../core/dom.js';
 import { Store } from '../core/store.js';
 import { markdown } from '../core/markdown.js';
-import { Counter } from '../core/motion.js';
+import { Counter, Reveal } from '../core/motion.js';
 import { WindowCard } from '../ui/cards.js';
 import { ResearchIndex } from '../ui/research.js';
 import { glyph } from '../ui/glyphs.js';
 import { TaylorExhibit } from '../exhibits/taylor.js';
 import { MinnesotaMap } from '../exhibits/minnesota.js';
+import { BankMonitor } from '../exhibits/bankmonitor.js';
 
 const THEMES = ['foundations', 'pricing', 'strategy', 'exclusion', 'measurement', 'regulation', 'macro', 'innovation', 'applied'];
 const href = (url = '') => (url.startsWith('/') ? Store.url(url) : url);
@@ -283,20 +284,24 @@ class BuildsBlock extends Block {
 class ExhibitBlock extends Block {
   static type = 'exhibit';
   static label = 'Live exhibit';
-  static about = 'One of the working exhibits: the Taylor rule chart, the Minnesota map, or the controls for the market behind the page.';
+  static about = 'One of the working exhibits: the Taylor rule chart, the Minnesota map, the U.S. Bancorp monitor, or the controls for the market behind the page.';
   static fields = [
     { key: 'heading', label: 'Heading', type: 'text', title: true },
     { key: 'kind', label: 'Which exhibit', type: 'select', options: [
-      { value: 'taylor', label: 'Taylor rule chart' }, { value: 'minnesota', label: 'Minnesota county map' }, { value: 'market', label: 'Market controls' }] },
+      { value: 'taylor', label: 'Taylor rule chart' }, { value: 'minnesota', label: 'Minnesota county map' }, { value: 'usbancorp', label: 'U.S. Bancorp monitor' }, { value: 'market', label: 'Market controls' }] },
   ];
   static sample = { kind: 'taylor' };
 
   body() {
     const box = h('div.exhibit-slot', { 'data-kind': this.data.kind });
+    // Exhibits arrive after their data loads, so they join the scroll reveal late.
+    new MutationObserver(() => Reveal.watch(box)).observe(box, { childList: true });
     const study = (slug) => this.ctx.research?.items.find((s) => s.slug === slug);
     const onStudy = this.ctx.openStudy || (() => {});
     if (this.data.kind === 'market') {
       if (this.ctx.market) box.append(this.ctx.market.renderControls());
+    } else if (this.data.kind === 'usbancorp') {
+      Store.json('content/data/usbancorp.json', { optional: true, fresh: true }).then((d) => d && box.append(new BankMonitor(d).render()));
     } else if (this.data.kind === 'minnesota') {
       Store.json('content/data/minnesota.json', { optional: true }).then((d) => d && box.append(new MinnesotaMap(d, { study: study('Minnesota-Economic-Climate-Research'), onStudy }).render()));
     } else {
@@ -306,9 +311,36 @@ class ExhibitBlock extends Block {
   }
 }
 
+class DocumentBlock extends Block {
+  static type = 'document';
+  static label = 'Long document';
+  static about = 'A whole Markdown file, such as a study report, with its tables, figures and a list of sections.';
+  static fields = [
+    { key: 'heading', label: 'Heading', type: 'text', title: true },
+    { key: 'src', label: 'Markdown file', type: 'text', hint: 'A path in this repository, for example content/reports/us-bancorp/report.md' },
+    { key: 'toc', label: 'List the sections at the top', type: 'toggle', default: true },
+  ];
+  static sample = { src: '', toc: true };
+
+  body() {
+    const box = h('div.doc', h('p.muted', 'Loading the document…'));
+    if (!this.data.src) { box.replaceChildren(h('p.muted', 'Name a Markdown file to show it here.')); return box; }
+    const url = Store.url(this.data.src);
+    fetch(url, { cache: 'no-cache' }).then((r) => (r.ok ? r.text() : Promise.reject(new Error(r.status)))).then((text) => {
+      const nodes = markdown(text, { full: true, base: url });
+      const heads = nodes.filter((n) => n.tagName === 'H2' && n.id);
+      box.replaceChildren(
+        this.data.toc !== false && heads.length > 2 ? h('nav.doc__toc', { 'aria-label': 'Sections' }, heads.map((n) => h('a.chip', { href: `#${n.id}` }, n.textContent.replace(/:.*$/, '')))) : null,
+        h('div.prose', nodes));
+      if (location.hash) document.getElementById(decodeURIComponent(location.hash.slice(1)))?.scrollIntoView();
+    }).catch(() => box.replaceChildren(h('p.muted', 'The document could not be loaded.')));
+    return box;
+  }
+}
+
 /** Every block the site knows how to draw, by type. */
 export const BLOCKS = Object.fromEntries(
-  [TextBlock, StatsBlock, CardsBlock, StepsBlock, PreviewBlock, GalleryBlock, EmbedBlock, ImageBlock, QuoteBlock, CtaBlock, ExhibitBlock, ResearchBlock, BuildsBlock]
+  [TextBlock, StatsBlock, CardsBlock, StepsBlock, PreviewBlock, GalleryBlock, EmbedBlock, ImageBlock, QuoteBlock, CtaBlock, ExhibitBlock, DocumentBlock, ResearchBlock, BuildsBlock]
     .map((B) => [B.type, B]));
 
 export function renderBlocks(blocks = [], ctx = {}) {

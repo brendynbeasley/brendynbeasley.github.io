@@ -1,0 +1,49 @@
+# Keeps the U.S. Bancorp study current without anyone's computer switched on.
+# Every morning GitHub runs tools/usb-monitor.mjs, which checks public sources
+# for anything new since the report and rewrites content/data/usbancorp.json.
+# The page /us-bancorp/ draws its live exhibit from that file.
+#
+# One secret is needed: SEC_USER_AGENT, a name and an email, which SEC asks
+# automated clients to send. Without it the SEC check is skipped and the rest runs.
+
+name: U.S. Bancorp monitor
+
+on:
+  schedule:
+    - cron: '17 12 * * *'   # 12:17 UTC, about 7:17 in Minneapolis
+  workflow_dispatch:        # the "Run workflow" button on the Actions tab
+
+permissions:
+  contents: write
+
+concurrency:
+  group: usb-monitor
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Check the sources
+        env:
+          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
+        run: node tools/usb-monitor.mjs
+
+      - name: Save what changed
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add content/data/usbancorp.json
+          # Every run moves the "last checked" time, so each daily run saves one small commit.
+          if git diff --cached --quiet; then echo 'Nothing to save.'; exit 0; fi
+          msg="Monitor: $(node -e "const d=require('./content/data/usbancorp.json');console.log(d.verdict.status.toLowerCase()+', '+d.runs[0].added+' new')")"
+          git commit -m "$msg"
+          for i in 1 2 3; do git pull --rebase --quiet && git push --quiet && exit 0; sleep 5; done
+          exit 1

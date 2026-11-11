@@ -184,3 +184,81 @@ button.console__chip:hover { background: var(--ink); color: var(--paper); border
 @media (prefers-reduced-motion: reduce) {
   .ledger__bar i { width: var(--w); }
 }
+
+/* ---- The U.S. Bancorp monitor ------------------------------------------------ */
+.bankmon__verdict { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: clamp(16px, 3vw, 40px); align-items: start; padding: 18px 0 20px; border-block: 1px solid var(--ink); }
+.bankmon__status { display: flex; align-items: center; gap: 12px; }
+.bankmon__status .display { font-size: clamp(30px, 3.6vw, 52px); line-height: 1; letter-spacing: -0.02em; }
+.bankmon__dot { width: 14px; height: 14px; border-radius: 50%; background: var(--ink-3); box-shadow: 0 0 0 0 currentColor; animation: bm-pulse 2.4s var(--e-out) infinite; color: var(--ink-3); }
+.is-calm .bankmon__dot { background: #2f7d4f; color: #2f7d4f; }
+.is-note .bankmon__dot { background: var(--accent-2); color: var(--accent-2); }
+.is-alarm .bankmon__dot { background: var(--accent); color: var(--accent); }
+@keyframes bm-pulse { 0% { box-shadow: 0 0 0 0 color-mix(in srgb, currentColor 45%, transparent); } 70% { box-shadow: 0 0 0 10px transparent; } 100% { box-shadow: 0 0 0 0 transparent; } }
+.bankmon__why { display: grid; gap: 8px; font-size: 15.5px; color: var(--ink-2); max-width: 70ch; }
+.bankmon__why .label { text-transform: none; letter-spacing: 0.02em; font-size: 11.5px; }
+.bankmon__live b { color: var(--accent); font-weight: 600; }
+.bankmon__warn { color: var(--accent); font-size: 14px; }
+.bankmon__panel { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 4fr); gap: clamp(22px, 4vw, 56px); margin-top: 22px; }
+.bankmon__chips { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+.bankmon__chart { width: 100%; min-height: 240px; touch-action: pan-y; }
+.bankmon__chart svg { display: block; overflow: visible; cursor: crosshair; }
+.bankmon__measure { font-family: var(--f-display); font-size: clamp(17px, 1.5vw, 21px); color: var(--ink); margin-bottom: 4px; }
+.bankmon__readout { margin-top: 10px; min-height: 2.6em; text-transform: none; letter-spacing: 0.02em; font-size: 12px; color: var(--ink-2); }
+.bankmon__readout b { color: var(--accent); }
+.bm-line { fill: none; stroke-linejoin: round; stroke-linecap: round; }
+.bm-line--usb { stroke: var(--ink); stroke-width: 2; }
+.bm-line--median { stroke: var(--accent); stroke-width: 1.7; }
+.bm-line--peer { stroke: var(--ink-3); stroke-width: 0.8; opacity: 0.45; }
+.bm-dot { stroke: var(--card); stroke-width: 1.5; }
+.bm-dot--usb { fill: var(--ink); } .bm-dot--median { fill: var(--accent); }
+.bm-mark { stroke: var(--ink-3); stroke-width: 1; stroke-dasharray: 2 3; }
+.bm-marklabel { font: 500 9.5px var(--f-mono); fill: var(--ink-3); letter-spacing: 0.06em; text-transform: uppercase; }
+.bankmon__side { display: grid; align-content: start; }
+.bankmon__trips { display: grid; margin-top: 8px; border-top: 1px solid var(--ink); }
+.trip { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 12px; padding: 9px 2px; border-bottom: 1px solid var(--rule-2); font-size: 14px; }
+.trip__val { font: 500 12px var(--f-mono); font-variant-numeric: tabular-nums; text-align: right; color: var(--ink); }
+.trip__bar { height: 6px; background: repeating-linear-gradient(90deg, var(--rule) 0 1px, transparent 1px 4px); align-self: center; }
+.trip__bar i { display: block; height: 100%; background: var(--ink); }
+.trip.is-crossed .trip__bar i, .trip.is-crossed .trip__val { background: var(--accent); color: var(--accent); }
+.trip.is-crossed .trip__val { background: none; }
+.trip__lim, .trip__link { font: 500 10.5px var(--f-mono); color: var(--ink-3); letter-spacing: 0.04em; }
+.trip__lim { text-align: right; }
+.trip__link { grid-column: 1 / -1; }
+.bankmon__streams { list-style: none; display: grid; gap: 8px; margin-top: 10px; padding: 0; font-size: 13px; color: var(--ink-2); }
+.bankmon__streams li { display: grid; grid-template-columns: 16px minmax(0, 1fr); gap: 6px; }
+.bankmon__streams b { color: var(--ink); font-weight: 600; }
+.bankmon__tick { font: 600 12px var(--f-mono); color: #2f7d4f; }
+.bankmon__streams .is-down .bankmon__tick { color: var(--accent); }
+.bankmon__log { margin-top: 26px; padding-top: 18px; border-top: 1px solid var(--rule); }
+.bankmon__empty { margin-top: 10px; font-size: 15px; color: var(--ink-2); max-width: 70ch; }
+.bankmon__events { list-style: none; padding: 0; margin-top: 10px; display: grid; border-top: 1px solid var(--ink); }
+.ev { display: grid; grid-template-columns: 100px minmax(0, 1fr) 64px; gap: 14px; padding: 11px 2px; border-bottom: 1px solid var(--rule-2); align-items: baseline; }
+.ev__title { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--rule); font-size: 15px; }
+.ev__title:hover { border-color: var(--accent); }
+.ev__meta, .ev__if { font-size: 12.5px; color: var(--ink-3); margin-top: 4px; }
+.ev__if { color: var(--ink-2); }
+.ev__sev { text-align: right; }
+.ev.is-high .ev__sev { color: var(--accent); }
+.ev.is-medium .ev__sev { color: var(--ink); }
+@media (max-width: 900px) {
+  .bankmon__panel { grid-template-columns: minmax(0, 1fr); }
+  .bankmon__verdict { grid-template-columns: minmax(0, 1fr); }
+  .ev { grid-template-columns: minmax(0, 1fr) 56px; }
+  .ev__date { grid-column: 1 / -1; }
+}
+@media (prefers-reduced-motion: reduce) { .bankmon__dot { animation: none; } }
+
+/* ---- A long document (the full report) ----------------------------------------- */
+.doc { max-width: 78ch; }
+.doc .prose { max-width: none; margin-left: 0; }
+.doc .prose h2 { font-size: 1.9em; margin-top: 1.4em; padding-top: 0.6em; border-top: 1px solid var(--rule); }
+.doc .prose h4 { font-family: var(--f-sans); font-size: 1em; font-weight: 600; color: var(--ink); }
+.doc .prose hr { border: 0; border-top: 1px solid var(--rule); margin: 0.6em 0; }
+.doc .prose em { color: var(--ink-3); font-style: italic; }
+.doc__table { overflow-x: auto; border-top: 1px solid var(--ink); }
+.doc__table table { border-collapse: collapse; width: 100%; font-size: 14px; line-height: 1.45; }
+.doc__table th, .doc__table td { text-align: left; vertical-align: top; padding: 8px 10px 8px 0; border-bottom: 1px solid var(--rule-2); }
+.doc__table th { font: 500 11px var(--f-mono); letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-3); }
+.doc__fig { display: grid; gap: 8px; margin: 0.4em 0; }
+.doc__fig img { width: 100%; background: #fff; border: 1px solid var(--rule); border-radius: var(--radius); }
+.doc__toc { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 18px; }

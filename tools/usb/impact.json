@@ -1,0 +1,385 @@
+{
+ "sec_10k": {
+  "label": "New annual report (10-K)",
+  "findings": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   7,
+   10
+  ],
+  "sections": [
+   "2.2",
+   "3.1",
+   "3.2",
+   "3.3",
+   "3.4",
+   "3.5",
+   "3.7",
+   "4.4",
+   "5.1"
+  ],
+  "hyp": [
+   "H1",
+   "H12",
+   "H13",
+   "H14",
+   "H19",
+   "H22"
+  ],
+  "revisit_if": "Any restatement, material weakness or auditor change; a stated Category II / regulatory-category change (H22); first disclosure of Union Bank stand-alone results or accretion (H14, Q1/Q9); a change in goodwill, allowance methodology or HTM/AFS classification (finding 3); a headcount figure that breaks the 2022-2025 trend (finding 5, 7)."
+ },
+ "sec_10q": {
+  "label": "New quarterly report (10-Q)",
+  "findings": [
+   1,
+   2,
+   4,
+   10
+  ],
+  "sections": [
+   "3.1",
+   "3.2",
+   "3.4",
+   "5.1",
+   "5.2"
+  ],
+  "hyp": [
+   "H12",
+   "H13",
+   "H19",
+   "H22"
+  ],
+  "revisit_if": "Return on tangible common equity, noninterest-bearing deposit share, CET1 or unrealized securities losses move by more than the tripwires in metrics_watch (see update); any new legal or regulatory matter in the notes."
+ },
+ "sec_8k_2_02": {
+  "label": "Earnings release (8-K Item 2.02)",
+  "findings": [
+   1,
+   2,
+   4,
+   10
+  ],
+  "sections": [
+   "3.1",
+   "3.2",
+   "5.1",
+   "5.2"
+  ],
+  "hyp": [
+   "H12",
+   "H13",
+   "H19"
+  ],
+  "revisit_if": "Same tripwires as the 10-Q; guidance that contradicts the forecasts in 5.2."
+ },
+ "sec_8k_4_02": {
+  "label": "Non-reliance on prior financials (8-K Item 4.02)",
+  "findings": [
+   3
+  ],
+  "sections": [
+   "3.3",
+   "Appendix A"
+  ],
+  "hyp": [
+   "H13"
+  ],
+  "revisit_if": "ALWAYS. Finding 3 states there is no restatement or material weakness in any 10-K.",
+  "severity": "high"
+ },
+ "sec_8k_4_01": {
+  "label": "Change of auditor (8-K Item 4.01)",
+  "findings": [
+   3
+  ],
+  "sections": [
+   "3.3"
+  ],
+  "revisit_if": "Always read the disagreement / reportable-event disclosure.",
+  "severity": "high"
+ },
+ "sec_8k_5_02": {
+  "label": "Director / officer change (8-K Item 5.02)",
+  "findings": [
+   5,
+   6,
+   9
+  ],
+  "sections": [
+   "3.5",
+   "3.6",
+   "4.1",
+   "4.5"
+  ],
+  "hyp": [
+   "H10",
+   "H11",
+   "H15"
+  ],
+  "revisit_if": "Departure of the CEO, CFO, chief risk or compliance officer, or any change in the Minneapolis-based leadership mix (finding 9)."
+ },
+ "sec_8k_1_01_2_01": {
+  "label": "Material agreement / acquisition or disposition (8-K Items 1.01, 2.01, 1.02)",
+  "findings": [
+   7,
+   4,
+   10
+  ],
+  "sections": [
+   "3.7",
+   "3.4",
+   "5.3"
+  ],
+  "hyp": [
+   "H14",
+   "H17"
+  ],
+  "revisit_if": "Any announced acquisition, disposition or sale of a business line (corporate trust and payments are the distinctive fee businesses, finding 2)."
+ },
+ "sec_8k_2_05": {
+  "label": "Exit or restructuring costs (8-K Item 2.05)",
+  "findings": [
+   5,
+   7,
+   9
+  ],
+  "sections": [
+   "3.5",
+   "3.7",
+   "4.4"
+  ],
+  "hyp": [
+   "H3",
+   "H8",
+   "H17",
+   "H21"
+  ],
+  "revisit_if": "Any announced job or branch reductions; check Minnesota WARN notices and branch counts."
+ },
+ "sec_8k_other": {
+  "label": "Other 8-K",
+  "findings": [],
+  "sections": [
+   "3.9"
+  ],
+  "revisit_if": "Read the item; usually no change."
+ },
+ "sec_proxy": {
+  "label": "Proxy statement (DEF 14A / DEFA14A)",
+  "findings": [
+   5,
+   6
+  ],
+  "sections": [
+   "3.5",
+   "3.6",
+   "4.5"
+  ],
+  "hyp": [
+   "H2",
+   "H15",
+   "H18"
+  ],
+  "revisit_if": "Pay-ratio, incentive-metric or clawback changes; new 5% holders; new directors with Minnesota ties."
+ },
+ "sec_other": {
+  "label": "Other SEC filing (Forms 3/4/5, 13F, S-3, 424B, 11-K, 25, etc.)",
+  "findings": [],
+  "sections": [
+   "3.4"
+  ],
+  "revisit_if": "Debt issuance and insider activity do not change conclusions unless unusual."
+ },
+ "sec_peer": {
+  "label": "Peer annual / quarterly report",
+  "findings": [
+   1,
+   2,
+   4,
+   10
+  ],
+  "sections": [
+   "3.1",
+   "3.2",
+   "5.1",
+   "Appendix C"
+  ],
+  "revisit_if": "The peer medians used in findings 1, 2 and 10 are recomputed by the rebuild; compare the new gaps with the report values."
+ },
+ "callreport_quarter": {
+  "label": "New Call Report quarter (bank-level)",
+  "findings": [
+   1,
+   2,
+   4,
+   8
+  ],
+  "sections": [
+   "3.1",
+   "3.2",
+   "3.4",
+   "4.2",
+   "5.1"
+  ],
+  "hyp": [
+   "H7a",
+   "H7d",
+   "H16",
+   "H19"
+  ],
+  "revisit_if": "Bank-level RoTCE gap to the peer median changes sign; noninterest-bearing deposit share changes by more than 2 points in a quarter; booked-office deposits (RC-O / SOD notes) shift by more than 10%."
+ },
+ "y9c_quarter": {
+  "label": "New FR Y-9C quarter (holding company)",
+  "findings": [
+   1,
+   4
+  ],
+  "sections": [
+   "3.1",
+   "3.4"
+  ],
+  "hyp": [
+   "H22"
+  ],
+  "revisit_if": "CET1 ranks last among the 11 peers again, or average assets cross a category threshold (Q: Category II)."
+ },
+ "enforcement_fed": {
+  "label": "Federal Reserve Board enforcement / order naming the bank (or a peer)",
+  "findings": [
+   6,
+   4
+  ],
+  "sections": [
+   "3.6",
+   "3.7",
+   "3.8",
+   "Appendix C"
+  ],
+  "hyp": [
+   "H15",
+   "H25"
+  ],
+  "revisit_if": "ALWAYS for an action naming the target. A peer-only action is context for 3.6 (peer comparison counts).",
+  "severity": "high"
+ },
+ "enforcement_occ_cfpb_fdic": {
+  "label": "OCC / CFPB / FDIC / DOJ / SEC action or settlement naming the bank",
+  "findings": [
+   6,
+   4
+  ],
+  "sections": [
+   "3.6",
+   "3.8",
+   "3.5"
+  ],
+  "hyp": [
+   "H15",
+   "H25"
+  ],
+  "revisit_if": "ALWAYS. Finding 6 summarises the AML case and the 2022 incentive-pay order; a new order that cites staffing, caps or incentive pay would extend it.",
+  "severity": "high"
+ },
+ "federal_register": {
+  "label": "Federal Register document naming the bank",
+  "findings": [],
+  "sections": [
+   "3.6",
+   "5.3"
+  ],
+  "revisit_if": "Rule or notice that changes capital, deposit-insurance or consent-order status."
+ },
+ "cfpb_complaints": {
+  "label": "CFPB complaint-database change",
+  "findings": [
+   6
+  ],
+  "sections": [
+   "3.8"
+  ],
+  "hyp": [
+   "H25"
+  ],
+  "revisit_if": "Complaint count per quarter or share of untimely/relief responses moves materially versus the last snapshot."
+ },
+ "warn_mn": {
+  "label": "WARN notice naming the bank (any state; Minnesota matters most)",
+  "findings": [
+   5,
+   9
+  ],
+  "sections": [
+   "3.5",
+   "4.4",
+   "3.7"
+  ],
+  "hyp": [
+   "H3",
+   "H8",
+   "H10",
+   "H17"
+  ],
+  "revisit_if": "A Minnesota notice naming the bank, or a multi-state pattern of notices (finding 9 says Minnesota branch cuts were smaller than elsewhere)."
+ },
+ "sod_year": {
+  "label": "New FDIC Summary of Deposits year",
+  "findings": [
+   8,
+   9
+  ],
+  "sections": [
+   "4.1",
+   "4.2",
+   "4.6"
+  ],
+  "hyp": [
+   "H7c",
+   "H7d",
+   "H16",
+   "H21",
+   "H26"
+  ],
+  "revisit_if": "The two booking offices' share of metro deposits (85.1% in the report), the share excluding very large offices (14.6%), or branch counts change by more than 2 points."
+ },
+ "hmda_year": {
+  "label": "New HMDA data year",
+  "findings": [
+   8
+  ],
+  "sections": [
+   "4.3",
+   "3.8"
+  ],
+  "hyp": [
+   "H8",
+   "H9",
+   "H21"
+  ],
+  "revisit_if": "Metro origination share, denial-rate gaps or the $100 billion community-plan tracking (Q7) change."
+ },
+ "cra_year": {
+  "label": "New CRA data / evaluation",
+  "findings": [
+   8
+  ],
+  "sections": [
+   "4.3",
+   "4.5"
+  ],
+  "hyp": [
+   "H8",
+   "H9"
+  ],
+  "revisit_if": "Manual download needed (FFIEC blocks automated access); once loaded compare small-business lending in the metro."
+ },
+ "news_high": {
+  "label": "Significant news (headline match; secondary source, a lead only)",
+  "findings": [],
+  "sections": [],
+  "revisit_if": "Verify against a primary source (filing, order, docket) before any figure is used. Headlines are not evidence."
+ }
+}
