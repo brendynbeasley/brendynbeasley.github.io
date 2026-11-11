@@ -175,7 +175,7 @@ export class MarketConsole {
     button.setAttribute('aria-expanded', String(open));
     if (!open) return;
     const m = this.market, n = m.present.length;
-    const code = h('span', 'Counting the code…');
+    const code = h('span', 'Counting the code');
     this.notes.replaceChildren(
       h('p', h('b', 'The background is a market, and it is running.'), ' Each + is a seller. Customers are spread evenly over the screen and buy from whichever seller is cheapest once travel is paid for, so every seller ends up with a territory. The rings are lines of equal delivered price.'),
       h('p', 'Sixty times a second each seller moves its price part of the way to its best reply, using the exact slope of its demand. HHI is the sum of squared percentage shares. The markup is the Lerner index, (price − cost) ÷ price. The model follows Hotelling (1929) and d’Aspremont, Gabszewicz and Thisse (1979).'),

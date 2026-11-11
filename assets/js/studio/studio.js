@@ -144,7 +144,7 @@ class Studio {
   paintStatus() {
     const n = this.pending;
     clear(this.status).append(
-      h('p.label', this.client ? h('b', '● Connected') : '○ Not connected', this.client ? ` to ${this.settings.owner}/${this.settings.repo}` : ''),
+      h('p.label', this.client ? h('b', 'Connected') : 'Not connected', this.client ? ` to ${this.settings.owner}/${this.settings.repo}` : ''),
       h('p.s-status__n', n ? `${n} unpublished ${n === 1 ? 'change' : 'changes'}` : 'Everything is published'),
       h('a.btn.btn--solid.btn--sm', { href: '#publish', ...(n ? {} : { style: { opacity: 0.5 } }) }, n ? 'Review and publish' : 'Publish settings', icon('right')));
   }

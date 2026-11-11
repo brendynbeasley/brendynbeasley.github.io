@@ -94,7 +94,7 @@ const mine = found.filter((f) => f.own), theirs = found.filter((f) => !f.own);
 const bans = mine.filter((f) => f.level === 'ban'), warns = mine.filter((f) => f.level === 'warn');
 const show = (f) => console.log(`  ${f.level === 'ban' ? 'BAN ' : 'warn'} ${relative(ROOT, join(ROOT, f.file))}  ${f.where}\n       “${f.match}”: ${f.note}\n       ${f.text.length > 110 ? `${f.text.slice(0, 110)}…` : f.text}`);
 
-console.log(`Checked against ${counts.banned} banned words and phrases and ${counts.warned} patterns.\n`);
+console.log(`Checked against ${counts.words} words and phrases, ${counts.sentences} sentence patterns and ${counts.symbols} symbols (${counts.banned} banned, ${counts.warned} to review).\n`);
 if (bans.length) { console.log('Banned wording in the site copy:'); bans.forEach(show); console.log(); }
 if (warns.length) { console.log('Worth a second look:'); warns.forEach(show); console.log(); }
 console.log(`Site copy: ${bans.length} banned, ${warns.length} to review.`);

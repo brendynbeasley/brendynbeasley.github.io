@@ -70,7 +70,7 @@ Point an AI coding assistant at this repository and say what you want changed.
 
 ## Common jobs
 
-| I want to… | Do this |
+| I want to | Do this |
 |---|---|
 | Add a study | Studio → **Research** → paste the repository address. Title, question, year, finding, charts and citation are read from the repository. Check the theme. Run `node tools/data.mjs studies` now and then to recount the methods ledger. |
 | Link a new page I built | Studio → **Lab** → paste its address. Add a screenshot, or leave it blank and the card shows the live page. |

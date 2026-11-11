@@ -323,7 +323,7 @@ class DocumentBlock extends Block {
   static sample = { src: '', toc: true };
 
   body() {
-    const box = h('div.doc', h('p.muted', 'Loading the document…'));
+    const box = h('div.doc', h('p.muted', 'Loading the document.'));
     if (!this.data.src) { box.replaceChildren(h('p.muted', 'Name a Markdown file to show it here.')); return box; }
     const url = Store.url(this.data.src);
     fetch(url, { cache: 'no-cache' }).then((r) => (r.ok ? r.text() : Promise.reject(new Error(r.status)))).then((text) => {
