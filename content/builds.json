@@ -34,25 +34,25 @@
       "live": false
     },
     {
-      "slug": "teller",
-      "title": "TELLER",
+      "slug": "money-and-banking-4721",
+      "title": "Money and Banking 4721",
       "kind": "Study tool",
       "year": 2026,
-      "summary": "A money-and-banking tutor that lives in a retro terminal. Pick a machine, from a Commodore 64 to MS-DOS, set the pace and the difficulty, and work through the chapter at the prompt.",
-      "url": "https://brendynbeasley.github.io/teller-chapter11/",
-      "repo": "https://github.com/brendynbeasley/teller-chapter11",
-      "image": "assets/previews/teller-chapter11.jpg",
+      "summary": "A money-and-banking tutor that lives in a retro terminal. All 23 chapters of the textbook, taught a piece at a time and checked as you go, with spaced review, flashcards, arcade games, simulators and a boss for every chapter.",
+      "url": "https://brendynbeasley.github.io/money-and-banking-4721/",
+      "repo": "https://github.com/brendynbeasley/money-and-banking-4721",
+      "image": "assets/previews/money-and-banking-4721.jpg",
       "live": true
     },
     {
-      "slug": "referee",
-      "title": "REFEREE",
+      "slug": "monopoly-classical-theory",
+      "title": "Monopoly: Classical Theory",
       "kind": "Study tool",
       "year": 2026,
-      "summary": "A retro-terminal tutor for 54 classic papers on competition, monopoly and cost theory, 1886 to 1942. Six volumes with typed lessons, animated diagrams, boss fights, flashcards and a who-said-it game.",
+      "summary": "A retro-terminal tutor for 54 classic papers on competition, monopoly and cost theory, 1886 to 1942. Six volumes with typed lessons, animated diagrams, spaced review, flashcards, arcade games and a boss for every volume.",
       "url": "https://brendynbeasley.github.io/referee-terminal/",
       "repo": "https://github.com/brendynbeasley/referee-terminal",
-      "image": "assets/previews/referee-terminal.jpg",
+      "image": "assets/previews/monopoly-classical-theory.jpg",
       "live": true
     },
     {
