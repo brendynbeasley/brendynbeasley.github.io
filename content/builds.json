@@ -56,6 +56,17 @@
       "live": true
     },
     {
+      "slug": "competition-cost-study",
+      "title": "Competition & Cost Study Hub",
+      "kind": "Study site",
+      "year": 2026,
+      "summary": "Exam prep for 54 classic papers on competition, monopoly and cost theory: a timeline map, a one-page brief for each paper, the debates step by step, a practice exam with answers and 465 flashcards.",
+      "url": "https://brendynbeasley.github.io/competition-cost-study/",
+      "repo": "https://github.com/brendynbeasley/competition-cost-study",
+      "image": "assets/previews/competition-cost-study.jpg",
+      "live": true
+    },
+    {
       "slug": "recall",
       "title": "Recall",
       "kind": "Desktop app",
