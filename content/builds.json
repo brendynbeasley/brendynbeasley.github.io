@@ -50,8 +50,8 @@
       "kind": "Study tool",
       "year": 2026,
       "summary": "A retro-terminal tutor for 54 classic papers on competition, monopoly and cost theory, 1886 to 1942. Six volumes with typed lessons, animated diagrams, spaced review, flashcards, arcade games and a boss for every volume.",
-      "url": "https://brendynbeasley.github.io/referee-terminal/",
-      "repo": "https://github.com/brendynbeasley/referee-terminal",
+      "url": "https://brendynbeasley.github.io/monopoly-classical-theory/",
+      "repo": "https://github.com/brendynbeasley/monopoly-classical-theory",
       "image": "assets/previews/monopoly-classical-theory.jpg",
       "live": true
     },
