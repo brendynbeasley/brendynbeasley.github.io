@@ -45,6 +45,17 @@
       "live": true
     },
     {
+      "slug": "referee",
+      "title": "REFEREE",
+      "kind": "Study tool",
+      "year": 2026,
+      "summary": "A retro-terminal tutor for 54 classic papers on competition, monopoly and cost theory, 1886 to 1942. Six volumes with typed lessons, animated diagrams, boss fights, flashcards and a who-said-it game.",
+      "url": "https://brendynbeasley.github.io/referee-terminal/",
+      "repo": "https://github.com/brendynbeasley/referee-terminal",
+      "image": "assets/previews/referee-terminal.jpg",
+      "live": true
+    },
+    {
       "slug": "recall",
       "title": "Recall",
       "kind": "Desktop app",
