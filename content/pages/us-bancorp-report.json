@@ -1,0 +1,25 @@
+{
+  "title": "The full report on *U.S. Bancorp*",
+  "eyebrow": "U.S. Bancorp study",
+  "template": "writing",
+  "summary": "How the bank run from Minneapolis works, what happened to its lead over its rivals, and what it is in the Twin Cities. About 19,000 words, with every number traced to a source.",
+  "sellers": 7,
+  "blocks": [
+    {
+      "type": "text",
+      "body": "This is the complete report. The short version, with a chart that updates every morning, is on [the study page](/us-bancorp/).\n\nThe letters in square brackets, like [C], name the section of the study each finding comes from. File names in the text point to the project's working files, which are not public yet. Labels in italics say what kind of statement each one is: a fact from a document, a calculation, an estimate or an interpretation."
+    },
+    {
+      "type": "document",
+      "src": "content/reports/us-bancorp/report.md",
+      "toc": true
+    },
+    {
+      "type": "cta",
+      "title": "Back to the *study page*",
+      "text": "Main findings and the live chart.",
+      "label": "U.S. Bancorp",
+      "href": "/us-bancorp/"
+    }
+  ]
+}

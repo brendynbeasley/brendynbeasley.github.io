@@ -7,7 +7,7 @@
   "blocks": [
     {
       "type": "text",
-      "body": "I took U.S. Bancorp apart using SEC filings, bank regulators’ data, and research databases licensed through the University of Minnesota. This page has the main findings and a chart that updates itself every morning. The full report will go up here next."
+      "body": "I took U.S. Bancorp apart using SEC filings, bank regulators’ data, and research databases licensed through the University of Minnesota. This page has the main findings and a chart that updates itself every morning. The [full report](/us-bancorp-report/) has every number and where it came from."
     },
     {
       "type": "exhibit",
@@ -94,6 +94,13 @@
       "type": "text",
       "heading": "What I still can’t answer",
       "body": "Some questions need records that aren’t public: what those two downtown offices really hold, how the Union Bank purchase has done on its own, and what workers are actually paid. The last one needs Census data that takes an application and about a year to get."
+    },
+    {
+      "type": "cta",
+      "title": "Read the *full report*",
+      "text": "About 19,000 words, with every number traced to a source.",
+      "label": "Full report",
+      "href": "/us-bancorp-report/"
     },
     {
       "type": "cta",

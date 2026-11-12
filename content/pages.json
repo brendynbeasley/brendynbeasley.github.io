@@ -13,6 +13,13 @@
       "navLabel": "U.S. Bancorp",
       "template": "case-study",
       "nav": true
+    },
+    {
+      "slug": "us-bancorp-report",
+      "title": "The full report on U.S. Bancorp",
+      "navLabel": "U.S. Bancorp report",
+      "template": "writing",
+      "nav": false
     }
   ]
 }
